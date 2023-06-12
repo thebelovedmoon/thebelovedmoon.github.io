@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sakura Sumiyoi">
+    <title>まほろば妖女奇譚、2020年8月12日〜2022年6月30日</title>
+    <link href="youjokitan.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="mahoroba_favi.png" type="image/x-icon">
+    <style>
+      body {
+        background: #000;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        cursor: wait;
+      }
+      #sayonara {
+        background-image: url(mahoroba_sayonara_flat_landscape.svg);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+      }
+      #ctr {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        width: 50%;
+        height: 50%;
+      }
+      @media screen and (max-width: 1000px) {
+        #ctr {
+          width: 75%;
+          height: 75%;
+        }
+      }
+      @media screen and (max-width: 625px) {
+        #sayonara {
+          background-image: url(mahoroba_sayonara_flat_portrait.svg);
+        }
+      }
+    </style>
+    <script src="init.js"></script>
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Mahoroba's Epilogue">
+    <meta name="og:image" content="https://thebelovedmoon.github.io/sumiyoi/youjokitan/mahoroba_epilogue.png">
+    <meta name="og:url" content="https://thebelovedmoon.github.io/sumiyoi/youjokitan">
+    <meta name="og:description" content="まほろば妖女奇譚、2020年8月12日〜2022年6月30日">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SakuraSumiyoi">
+    <meta name="theme-color" content="#FDE6FF">
+    <meta name="msapplication-TileColor" content="#FDE6FF">
+    <meta name="msapplication-navbutton-color" content="#FDE6FF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FDE6FF">
+  </head>
+  <body>
+    <div id="ctr">
+      <div id="sayonara"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #793a80;
+}
+
+#loading {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #793a80;
+  background-image: url(../vtresmarias/vtm_agaBG.jpg);
+  -webkit-animation: 1.25s;
+  -moz-transition: 1.25s;
+  -o-transition: 1.25s;
+  transition: 1.25s;
+}
+.vtmLotusLoad {
+  height: 75px;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 1;
+  -webkit-animation: lotusLoad 2.5s infinite;
+  animation: lotusLoad 2.5s infinite;
+}
+@-webkit-keyframes lotusLoad {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+@keyframes lotusLoad {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+.lotusCol {
+  float: left;
+  width: 33.33%;
+}
+.lotusRow:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 750px) {
+  .lotusCol {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+body {
+  background-color: #66a898;
+  background-image: url("../hinaoujo/backgrounds/6574814.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Yeseva One", cursive;
+  color: white;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 2000px) {
+  body {
+    font-size: xx-large;
+  }
+}
+
+.mainHead {
+  width: 100%;
+  height: 100%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-shadow: -5px 5px #3d374c99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 750px) {
+  .mainHead {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

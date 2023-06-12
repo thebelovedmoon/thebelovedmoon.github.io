@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@font-face {
+  font-family: "Cascadia Code", sans-serif;
+  src: url(CascadiaCode.woff2) format(woff2);
+  font-feature-settings: "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "zero", "onum";
+}
+@font-face {
+  font-family: "Cascadia Code", cursive;
+  src: url(CascadiaCodeItalic.woff2) format(woff2);
+  font-style: italic;
+  font-feature-settings: "calt", "ss01";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://thebelovedmoon.github.io/AuroraLiveVR-resource/gradient_yellow.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Architects Daughter", cursive;
+  color: #fff;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #f0a9a9;
+  text-decoration: none;
+}
+a:active {
+  color: #fed962;
+  text-decoration: none;
+}
+a:visited {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.ovl-sekai {
+  background-image: url("https://thebelovedmoon.github.io/AuroraLiveVR-resource/KaleidoSekai_icon_solid.svg");
+  background-size: 150%;
+  background-position: 150% center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75%;
+}
+.ovl-royalence {
+  background-image: url("https://thebelovedmoon.github.io/AuroraLiveVR-resource/Royalence_logo_solid.svg");
+  background-size: 75%;
+  background-position: -50% center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75%;
+}
+.ovl-clr {
+  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+}
+.text {
+  width: 100%;
+  height: 100%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .text {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .text {
+    font-size: xx-large;
+  }
+}
+
+.logoplace {
+  width: 100%;
+  height: 150px;
+}
+.KaleidoSekai {
+  background-image: url(https://thebelovedmoon.github.io/AuroraLiveVR-resource/KaleidoSekai_official.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.AuroraLiveVR {
+  background-image: url(https://thebelovedmoon.github.io/AuroraLiveVR-resource/AuroraLiveVR.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.KaleidoSekai-AgaChuu {
+  background-image: url(https://thebelovedmoon.github.io/AuroraLiveVR-resource/KaleidoSekai_ALVR-AgaChuu.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.suzuHead {
+  background-image: url(suzuHead.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.AgaALVR {
+  background-image: url(AgaALVR.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.AgaEmii {
+  background-image: url(AgaChuu_EmiiShion.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fed962;
+  color: #000;
+  width: 100%;
+  padding: 1px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding: 25px;
+  padding-bottom: 0;
+  background-color: #000;
+  text-align: center;
+}
+
+.dualfeed-col /* dual feed */ {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+.trifeed-col /* tri feed */ {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 20px;
+}
+.quadfeed-col /* quad feed */ {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+.feed-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 1000px) {
+  .dualfeed-col, .trifeed-col, .quadfeed-col {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.jgshe-head {
+  background-image: url(http://www.jgshe.com/assets/img/bg/head.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.AgaChuu-bg {
+  background-image: url(AgaChuu_gradient.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.embed-iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.rounded-5 {
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.rounded-12-5 {
+  -moz-border-radius: 12.5px;
+  -ms-border-radius: 12.5px;
+  -webkit-border-radius: 12.5px;
+  -o-border-radius: 12.5px;
+  border-radius: 12.5px;
+}
+.rounded-25 {
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+.rounded-50 {
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}

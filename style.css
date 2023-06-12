@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/*
+  font-family: "Hachi Maru Pop", cursive;
+  font-family: "Satisfy", cursive;
+*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #793a80;
+}
+
+#loading {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #793a80;
+  background-image: url(vtresmarias/vtm_agaBG.jpg);
+  -webkit-animation: 1.25s;
+  -moz-transition: 1.25s;
+  -o-transition: 1.25s;
+  transition: 1.25s;;
+}
+.vtmLotusLoad {
+  height: 75px;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 1;
+  -webkit-animation: lotusLoad 2.5s infinite;
+  animation: lotusLoad 2.5s infinite;
+}
+@-webkit-keyframes lotusLoad {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+@keyframes lotusLoad {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+.lotusCol {
+  float: left;
+  width: 33.33%;
+}
+.lotusRow:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 750px) {
+  .lotusCol {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+body {
+  background-color: #793a80;
+  font-family: "Satisfy", cursive;
+  color: white;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 2000px) {
+  body {
+    font-size: xx-large;
+  }
+}
+
+.text {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 250px;
+  padding-right: 250px;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.imgBorders {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 25%;
+}
+.textOVL {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff80;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffffc0;
+}
+*/
+
+.imgEmbed {
+  max-width: 100%;
+  height: auto;
+}
+
+.vtmFullHead-back {
+  background-image: url(vtresmarias/vtm_agaBG.jpg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Hachi Maru Pop", cursive;
+}
+
+.vtmMain-back {
+  width: 100%;
+  background-image: url(vtresmarias/vtm_trioGraphic.png), url(vtresmarias/pastelsky_1.jpg);
+  background-blend-mode: normal;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center, center center;
+  background-repeat: no-repeat;
+}
+.vtmMain-fore {
+  width: 100%;
+  background-image: url(vtresmarias/vtm_typeface_wide.svg);
+  background-size: 75%;
+  background-position: -25% center;
+  background-repeat: no-repeat;
+}
+.vtmMain-featTxt {
+  background-color: #00000060;
+  padding: 20px;
+}

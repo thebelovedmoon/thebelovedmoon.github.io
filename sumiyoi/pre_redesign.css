@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@font-face {
+  font-family: 'Monotype Corsiva', cursive;
+  src: url(MTCORSVA.TTF);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* previous css (archived 13 Nov 2022)
+
+body {
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  color: #ffffff;
+  background: linear-gradient(to bottom right, #111111 25%, #595959 100%);
+  background-image: url(reiji_eva.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#nav {
+  background: linear-gradient(to bottom right, #111111 25%, #595959 100%);
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  font-size: 36px;
+  padding-top: 10px;
+  padding-bottom: 7.5px;
+  width: 100%;
+  font-family: "Charmonman", cursive;
+  box-shadow: 0 7.5px 10px #595959;
+}
+
+#beta {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  box-shadow: 7.5px 0 10px #595959;
+}
+
+#sumiyoi {
+  font-family: "Charmonman", cursive;
+}
+
+#thebelovedmoon, a {
+  font-family: "Monotype Corsiva";
+  color: #dcc6bb;
+  text-decoration: none;
+}
+
+.genDiv {
+  background: linear-gradient(to bottom right, #111111 25%, #595959 100%);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.reiji-eva-ovl {
+  position: relative;
+  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+}
+
+.bestpick {
+  background-image: url(sumiyoi_bestpick.png);
+  height: 75%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.head1 {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  text-align: center;
+}
+
+.head2 {
+  background-color: #000000;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.head3 {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.ytembed {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.ytembed::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.ytembed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+body {
+  background: linear-gradient(to bottom right, #111111 25%, #595959 100%);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Courgette', cursive;
+  color: #fff;
+}
+
+.generalDiv {
+  width: 100%;
+}
+
+.sumiyoiHeader {
+  background-color: #7e073d;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 7.5px 10px #ffffff40;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+.sakurasumiyoi-logoplace {
+  width: 100%;
+  height: 75px;
+}
+.sakurasumiyoi {
+  background-image: url(sakurasumiyoi.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.linksDiv {
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.headerLinks {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+}
+.sumiyoi:link {
+  color: #fff;
+  text-decoration: none;
+}
+.sumiyoi:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.sumiyoi:active {
+  color: #fff;
+  text-decoration: none;
+}
+.sumiyoi:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.promoHead {
+  background-image: url(346_sumiyoi.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 75%;
+  cursor: pointer;
+}
+.promoHead:hover {
+  opacity: 75%;
+}
+.url346 {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.lifeaftermahotan {
+  background-image: url(youjokitan/mahoroba_sayonara.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.LAmhtn-logoplace, .mhtnSayonara-logoplace {
+  width: 100%;
+  height: 250px;
+}
+.LAmhtn {
+  background-image: url(lifeaftermahotan.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.mhtnSayonara {
+  background-image: url(mahotanND.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.mhtnCol {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 15px;
+}
+.mhtnRow:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 800px) {
+  .lifeaftermahotan {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .mhtnCol {
+    width: 100%;
+    padding: 12.5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .LAmhtn-logoplace, .mhtnSayonara-logoplace {
+    height: 100px;
+  }
+}
+.mhtnBtnOVL {
+  padding: 25px;
+}
+.mhtnBtn {
+  background-color: #ffa9a900;
+  border: solid #ffa9a9;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  color: #ffa9a9;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mhtnBtn:hover {
+  background-color: #ff4031;
+  border: solid #ff403100;
+  color: #fff;
+}
+
+.mangaEva {
+  background-image: url(reiji_eva.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  text-align: center;
+}
+.ReijiEva {
+  background-color: #00000080;
+  width: 100%;
+  padding: 50px;
+}
+@media screen and (max-width: 800px) {
+  .ReijiEva {
+    padding: 25px;
+  }
+}
+.ytembed {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.ytembed::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+.ytembed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btnManga {
+  background-color: #f7f3f300;
+  border: solid #f7f3f3;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  color: #f7f3f3;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -o-border-radius: 500px;
+  border-radius: 500px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btnManga:hover {
+  background-color: #d74c72;
+  border: solid #d74c7200;
+  color: #f7f3f3;
+}
+.wtm {
+  background-color: #00000080;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+.sumiyoiBio {
+  background-image: url(sakurasumiyoi.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  text-align: left;
+}
+
+footer {
+  background-color: #000;
+  padding: 10px;
+  font-family: 'Monotype Corsiva', cursive;
+  text-align: center;
+}

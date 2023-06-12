@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+/* font-family: 'Nanum Pen Script', cursive;*/
+
+.ytembed {
+  overflow: hidden;
+  position: relative;
+}
+.ytembed::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+.ytembed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.twtr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+img, blockquote, iframe {
+  -moz-border-radius: 12.5px;
+  -ms-border-radius: 12.5px;
+  -webkit-border-radius: 12.5px;
+  -o-border-radius: 12.5px;
+  border-radius: 12.5px;
+}
