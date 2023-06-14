@@ -204,10 +204,10 @@ a:active {
   text-decoration: none;
 }
 .navURL:hover {
-  color: #eeeeee;
+  color: #66a898;
   text-decoration: none;
 }
 .navURL:active {
-  color: #66a898;
+  color: #f0a9a9;
   text-decoration: none;
 }

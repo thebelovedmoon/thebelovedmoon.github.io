@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 /*
   font-family: "Satisfy", cursive;
   font-family: "Sono", sans-serif;
+  font-family: "Bad Script", cursive;
 */
 
 html, body {
@@ -199,4 +201,21 @@ body {
 
 .vtmFullHead-back {
   background-image: url(../vtresmarias/vtm_hinaBG.jpg);
+}
+
+.hinaURL:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.hinaURL:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.hinaURL:hover {
+  color: #eeeeee;
+  text-decoration: none;
+}
+.hinaURL:active {
+  color: #f0a9a9;
+  text-decoration: none;
 }
