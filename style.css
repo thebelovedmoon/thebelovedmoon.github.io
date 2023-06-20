@@ -216,7 +216,7 @@ a:active {
 
 .mainBtn {
   background-color: #793a80;
-  border-style: none;
+  border: solid 2.5px white;
   border-radius: 1000px;
   color: white;
   padding: 10px 25px;
