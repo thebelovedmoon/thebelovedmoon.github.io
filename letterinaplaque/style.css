@@ -28,7 +28,7 @@ html {
   text-align: center;
   background-color: #793a80;
   background-image: url(../vtresmarias/vtm_agaBG.jpg);
-  -webkit-animation: 1.25s;
+  -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -o-transition: 1.25s;
   transition: 1.25s;

@@ -26,7 +26,7 @@ html, body {
 }
 
 body {
-  background-image: url("https://thebelovedmoon.github.io/AuroraLiveVR-resource/gradient_yellow.png");
+  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/gradient_yellow.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ a:visited {
 }
 
 .ovl-sekai {
-  background-image: url("https://thebelovedmoon.github.io/AuroraLiveVR-resource/KaleidoSekai_icon_solid.svg");
+  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/KaleidoSekai_icon_solid.svg");
   background-size: 150%;
   background-position: 150% center;
   background-repeat: no-repeat;
@@ -61,7 +61,7 @@ a:visited {
   height: 75%;
 }
 .ovl-royalence {
-  background-image: url("https://thebelovedmoon.github.io/AuroraLiveVR-resource/Royalence_logo_solid.svg");
+  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/Royalence_logo_solid.svg");
   background-size: 75%;
   background-position: -50% center;
   background-repeat: no-repeat;
@@ -105,7 +105,7 @@ a:visited {
   height: 150px;
 }
 .KaleidoSekai {
-  background-image: url(https://thebelovedmoon.github.io/AuroraLiveVR-resource/KaleidoSekai_official.png);
+  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/KaleidoSekai_official.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@ a:visited {
   height: 100%;
 }
 .AuroraLiveVR {
-  background-image: url(https://thebelovedmoon.github.io/AuroraLiveVR-resource/AuroraLiveVR.png);
+  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/AuroraLiveVR.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -121,7 +121,7 @@ a:visited {
   height: 100%;
 }
 .KaleidoSekai-AgaChuu {
-  background-image: url(https://thebelovedmoon.github.io/AuroraLiveVR-resource/KaleidoSekai_ALVR-AgaChuu.png);
+  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/KaleidoSekai_ALVR-AgaChuu.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;

@@ -72,7 +72,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-animation: 1.25s;
+  -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -o-transition: 1.25s;
   transition: 1.25s;
@@ -231,7 +231,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  -webkit-animation: 1.25s;
+  -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -o-transition: 1.25s;
   transition: 1.25s;
