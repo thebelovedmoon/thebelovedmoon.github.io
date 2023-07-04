@@ -70,3 +70,35 @@ function unmutePlayer() {
 };
 
 ///////////////////////////////////////////////
+
+function fetch1_1_1() {
+  document.getElementById("ltr1_1_1").style.display = "block";
+  document.getElementById("ltr1_1_2").style.display = "none";
+  document.getElementById("ltr1_1_3").style.display = "none";
+}
+function fetch1_1_2() {
+  document.getElementById("ltr1_1_1").style.display = "none";
+  document.getElementById("ltr1_1_2").style.display = "block";
+  document.getElementById("ltr1_1_3").style.display = "none";
+}
+function fetch1_1_3() {
+  document.getElementById("ltr1_1_1").style.display = "none";
+  document.getElementById("ltr1_1_2").style.display = "none";
+  document.getElementById("ltr1_1_3").style.display = "block";
+}
+
+function fetch1_2_1() {
+  document.getElementById("ltr1_2_1").style.display = "block";
+  document.getElementById("ltr1_2_2").style.display = "none";
+  document.getElementById("ltr1_2_3").style.display = "none";
+}
+function fetch1_2_2() {
+  document.getElementById("ltr1_2_1").style.display = "none";
+  document.getElementById("ltr1_2_2").style.display = "block";
+  document.getElementById("ltr1_2_3").style.display = "none";
+}
+function fetch1_2_3() {
+  document.getElementById("ltr1_2_1").style.display = "none";
+  document.getElementById("ltr1_2_2").style.display = "none";
+  document.getElementById("ltr1_2_3").style.display = "block";
+}

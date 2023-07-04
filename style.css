@@ -37,10 +37,10 @@ html {
   text-align: center;
   background-color: #793a80;
   background-image: url(vtresmarias/vtm_agaBG.jpg);
-  -webkit-animation: 1.25s;
+  -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -o-transition: 1.25s;
-  transition: 1.25s;;
+  transition: 1.25s;
 }
 .vtmLotusLoad {
   height: 75px;
@@ -93,10 +93,7 @@ body {
 }
 
 .text {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding: 150px 250px;
   text-align: center;
 }
 @media screen and (max-width: 900px) {
@@ -240,4 +237,56 @@ a:active {
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
+}
+
+.mainCol {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.mainRow:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 800px) {
+  .mainCol {
+    width: 100%;
+  }
+}
+
+.auraBG {
+  background-color: #66a898;
+  background-image: url(vtresmarias/vtm_auraBG.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hinaBG {
+  background-color: #f0a9a9;
+  background-image: url(vtresmarias/vtm_hinaBG.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.vtmPNG {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.aura-accomplice, .hina-accomplice {
+  background-color: #000000a0;
+  padding: 25px 50px;
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
+}
+.aura-accomplice:hover {
+  background-color: #66a898a0;
+}
+.hina-accomplice:hover {
+  background-color: #f0a9a9a0;
 }
