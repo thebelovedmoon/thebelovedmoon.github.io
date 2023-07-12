@@ -20,7 +20,7 @@ previous iteration (archived 13 Nov 2022)
     <style>
       @font-face {
         font-family: "MahorobaB";
-        src: url(youjokitan/A-OTFMaruB.otf);
+        src: url(youjokitan/MahorobaB.otf);
       }
       .column {
         float: left;
