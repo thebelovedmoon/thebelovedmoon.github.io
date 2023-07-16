@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 @font-face {
   font-family: "EPSON Japanese", cursive;
@@ -9,6 +10,26 @@
   font-family: "EPSON Japanese", cursive;
   src: url(epgyobld.ttf);
   font-weight: bold;
+}
+
+@font-face {
+  font-family: "MahorobaFont";
+  src: url(youjokitan/MahorobaR.otf);
+}
+@font-face {
+  font-family: "MahorobaFont";
+  src: url(youjokitan/MahorobaM.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "MahorobaFont";
+  src: url(youjokitan/MahorobaB.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "MahorobaFont";
+  src: url(youjokitan/MahorobaH.otf);
+  font-weight: 900;
 }
 
 html, body {
@@ -53,7 +74,6 @@ body {
 header {
   background-color: #111;
   text-align: center;
-  padding: 25px;
   box-shadow: 0 7.5px 10px #59595940;
   position: -webkit-sticky;
   position: sticky;
@@ -80,8 +100,7 @@ footer {
 }
 
 .logoplace {
-  width: 100%;
-  height: 62.5px;
+  padding: 25px;
 }
 .sakurasumiyoi {
   background-image: url(sakurasumiyoi_new_logo.svg);
@@ -138,4 +157,37 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.mahorobaBack {
+  background-image: url(youjokitan/mahoroba_sayonara.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.mahorobaFore {
+  background-color: #00000080;
+  font-family: "MahorobaFont";
+  font-weight: 700;
+  text-align: center;
+}
+.mahorobaBtn {
+  background-color: #fde6ff;
+  border: none;
+  border-radius: 1000px;
+  color: black;
+  padding: 10px 25px;
+  font-family: "MahorobaFont";
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.mahorobaBtn:hover {
+  background-color: #dff2fd;
 }
