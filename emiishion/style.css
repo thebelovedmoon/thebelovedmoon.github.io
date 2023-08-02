@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-
-@font-face {
-  font-family: "Cascadia Code", sans-serif;
-  src: url(CascadiaCode.woff2) format(woff2);
-  font-feature-settings: "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "zero", "onum";
-}
-@font-face {
-  font-family: "Cascadia Code", cursive;
-  src: url(CascadiaCodeItalic.woff2) format(woff2);
-  font-style: italic;
-  font-feature-settings: "calt", "ss01";
-}
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 
 html, body {
   margin: 0;
@@ -25,234 +14,178 @@ html, body {
   box-sizing: border-box;
 }
 
+html {
+  background-color: #fed962;
+}
+
 body {
-  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/gradient_yellow.png");
+  font-family: "Architects Daughter", cursive;
+  background-image: url(https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/gradient_yellow.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Architects Daughter", cursive;
-  color: #fff;
+  color: white;
 }
 
-a:link {
-  color: #fff;
-  text-decoration: none;
-}
-a:hover {
-  color: #f0a9a9;
-  text-decoration: none;
-}
-a:active {
-  color: #fed962;
-  text-decoration: none;
-}
-a:visited {
-  color: #ddd;
-  text-decoration: none;
-}
-
-.ovl-sekai {
-  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/KaleidoSekai_icon_solid.svg");
-  background-size: 150%;
-  background-position: 150% center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 75%;
-}
-.ovl-royalence {
-  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/Royalence_logo_solid.svg");
-  background-size: 75%;
-  background-position: -50% center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 75%;
-}
-.ovl-clr {
-  background-color: #00000080;
+#loadBlock {
+  z-index: 5;
   width: 100%;
   height: 100%;
-}
-.text {
-  width: 100%;
-  height: 100%;
-  padding-top: 250px;
-  padding-bottom: 250px;
-  padding-left: 100px;
-  padding-right: 100px;
+  position: absolute;
+  display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
-}
-@media screen and (max-width: 500px) {
-  .text {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .text {
-    font-size: x-large;
-  }
-}
-@media screen and (min-width: 2000px) {
-  .text {
-    font-size: xx-large;
-  }
-}
-
-.logoplace {
-  width: 100%;
-  height: 150px;
-}
-.KaleidoSekai {
-  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/KaleidoSekai_official.png");
-  background-size: contain;
+  background-color: #fed962;
+  background-image: url(https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/gradient_yellow.png);
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+  background-attachment: fixed;
+  -webkit-transition: 2.5s;
+  -moz-transition: 2.5s;
+  -o-transition: 2.5s;
+  transition: 2.5s;
+  box-shadow: 0 10px 15px #ffffffa0;
+  right: 0;
 }
-.AuroraLiveVR {
-  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/AuroraLiveVR.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-.KaleidoSekai-AgaChuu {
-  background-image: url("https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/KaleidoSekai_ALVR-AgaChuu.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-
-.suzuHead {
-  background-image: url(suzuHead.png);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-.AgaALVR {
-  background-image: url(AgaALVR.png);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
-.AgaEmii {
-  background-image: url(AgaChuu_EmiiShion.svg);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+.splash {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
 }
 
 header {
+  width: 100%;
+  padding: 15px;
+  background-color: #fed962;
+  color: black;
+  text-align: center;
+  display: block;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 2;
   top: 0;
-  z-index: 1;
-  background-color: #fed962;
-  color: #000;
-  width: 100%;
-  padding: 1px;
-  text-align: center;
+  box-shadow: 0 10px 15px #ffffffa0;
 }
-
 footer {
   width: 100%;
-  padding: 25px;
-  padding-bottom: 0;
-  background-color: #000;
+  padding: 15px;
+  text-align: center;
+  background-color: #3d374c;
+  color: #dcc6bb;
+  font-weight: bold;
+  font-size: medium;
+  font-family: "Hachi Maru Pop", cursive;
+}
+
+.urlHead:link, .urlHead {
+  color: black;
+  text-decoration: none;
+  padding: 0 5px;
+}
+.urlHead:hover {
+  color: gray;
+  text-decoration: none;
+}
+.urlHead:active {
+  color: white;
+  text-decoration: none;
+}
+
+.bgHead {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-image and background-attachment must be specified in style attribute of each div */
+}
+
+.intro {
+  padding: 150px 25px;
+  background-color: #00000080;
   text-align: center;
 }
 
-.dualfeed-col /* dual feed */ {
-  float: left;
-  width: 50%;
-  text-align: center;
-  padding: 20px;
+.suzuHead-logoplace {
+  width: 100%;
+  height: 75px;
 }
-.trifeed-col /* tri feed */ {
-  float: left;
-  width: 33.33%;
-  text-align: center;
-  padding: 20px;
+.suzuHead {
+  width: 100%;
+  height: 100%;
+  background-image: url(suzuHead.png);
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
-.quadfeed-col /* quad feed */ {
-  float: left;
-  width: 25%;
-  text-align: center;
-  padding: 20px;
+
+.Sacramento {
+  font-family: "Sacramento", cursive;
 }
-.feed-row:after {
+
+.floatfix::after {
   content: "";
-  display: block;
   clear: both;
+  display: table;
 }
-@media screen and (max-width: 1000px) {
-  .dualfeed-col, .trifeed-col, .quadfeed-col {
-    width: 100%;
-    padding: 10px;
+
+button {
+  background-color: #fed962;
+  border: none;
+  border-radius: 1000px;
+  color: black;
+  padding: 10px 25px;
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00000080;
+}
+button:hover {
+  background-color: #f0a9a9;
+}
+
+/* SITE-WIDE RESPONSIVE LAYOUTS */
+/* inherited from ReactOSPH/ReactSquad */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: large;
+  }
+  header {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer {
+    padding: 15px 100px;
+  }
+  .intro {
+    padding: 250px 25px;
+  }
+  .suzuHead-logoplace {
+    height: 150px;
   }
 }
-
-.jgshe-head {
-  background-image: url(http://www.jgshe.com/assets/img/bg/head.jpg);
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+@media screen and (min-width: 1080px) {
+  body {
+    font-size: larger;
+  }
+  footer {
+    padding: 15px 250px;
+  }
+  .suzuHead-logoplace {
+    height: 250px;
+  }
 }
-.AgaChuu-bg {
-  background-image: url(AgaChuu_gradient.jpg);
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: x-large;
+  }
 }
-
-.embed-iframe {
-  width: 100%;
-  height: 500px;
-}
-
-.rounded-5 {
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-.rounded-12-5 {
-  -moz-border-radius: 12.5px;
-  -ms-border-radius: 12.5px;
-  -webkit-border-radius: 12.5px;
-  -o-border-radius: 12.5px;
-  border-radius: 12.5px;
-}
-.rounded-25 {
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -o-border-radius: 25px;
-  border-radius: 25px;
-}
-.rounded-50 {
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
+@media screen and (min-width: 2160px) {
+  body {
+    font-size: xx-large;
+  }
 }
