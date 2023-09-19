@@ -71,12 +71,12 @@ header {
 }
 footer {
   width: 100%;
-  padding: 15px;
+  padding: 30px;
   text-align: center;
   background-color: #3d374c;
   color: #dcc6bb;
   font-weight: bold;
-  font-size: medium;
+  font-size: small;
   font-family: "Hachi Maru Pop", cursive;
 }
 
