@@ -137,6 +137,7 @@ button {
   color: black;
   padding: 10px 25px;
   font-family: "Architects Daughter", cursive;
+  font-size: inherit;
   text-align: center;
   text-decoration: none;
   margin: 15px;
@@ -145,6 +146,27 @@ button {
 }
 button:hover {
   background-color: #f0a9a9;
+}
+
+.AgaEmii {
+  background-image: url(AgaEmii_vroid.png);
+  background-blend-mode: normal;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-transition: 2.5s;
+  -moz-transition: 2.5s;
+  -o-transition: 2.5s;
+  transition: 2.5s;
+}
+.AgaEmii:hover {
+  background-color: #66a898;
 }
 
 /* SITE-WIDE RESPONSIVE LAYOUTS */
