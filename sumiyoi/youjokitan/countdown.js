@@ -31,7 +31,7 @@ var x = setInterval(function() {
 
   }
 
-}, 1000);
+}, 0);
 
 function ltr() {
   window.location = "letter.html";
