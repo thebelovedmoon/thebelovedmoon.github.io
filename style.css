@@ -92,15 +92,13 @@ body {
   }
 }
 
-.text {
-  padding: 150px 250px;
+.textBack {
+  padding: 150px 50px;
   text-align: center;
 }
-@media screen and (max-width: 900px) {
-  .text {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+.textFore {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .imgBorders {
@@ -162,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .vtmMain-featTxt {
   background-color: #00000060;
-  padding: 20px;
+  padding: 75px 25px;
 }
 
 a:link {
@@ -190,8 +188,8 @@ a:active {
   padding: 15px;
 }
 .navBarSpan {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: inline-block;
 }
 .navURL:link {
