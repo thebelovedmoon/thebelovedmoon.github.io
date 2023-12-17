@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../style.css" rel="stylesheet" type="text/css" media="all"> <!-- root -->
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <title>2023年の桜のマンガ ～Sakura's Mangas of 2023～</title>
+    <link rel="icon" href="../../sakurasumiyoi_new_icon.svg" type="image/x-icon">
+    <meta name="theme-color" content="#595959">
+    <meta name="msapplication-navbutton-color" content="#595959">
+    <style type="text/css">
+      /* insert css args here */
+      body {
+        background-image: url(../yearinmanga_2023.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .comingSoon {
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        word-break: break-all;
+      }
+      h1 {
+        font-size: 5em;
+      }
+    </style>
+    <script type="text/javascript">
+      const timer = setInterval(function() {
+        const time = new Date("December 31, 2023 18:30:00 GMT+09:00").getTime();
+        const now = new Date().getTime();
+        const distance = time - now;
+        var d = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2);
+        var h = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
+        var m = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
+        var s = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
+        document.getElementById("timer").innerHTML = d + ":" + h + ":" + m + ":" + s;
+        if (distance <= 0) {
+          clearInterval(timer);
+          document.getElementById("timer").innerHTML = "00:00:00:00";
+        }
+      }, 0);
+    </script>
+  </head>
+  <body>
+    <div class="comingSoon">
+      <div>
+        <p>2023年の桜のマンガ ～Sakura's Mangas of 2023～ will be revealed in:</p>
+        <h1 id="timer"></h1>
+      </div>
+    </div>
+  </body>
+</html>

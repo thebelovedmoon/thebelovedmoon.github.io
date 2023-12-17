@@ -1,34 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+  /* font-family: "Kiwi Maru", serif; */
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+  /* font-family: "Courgette", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  /* font-family: "Noto Serif Display", serif;*/
 
 @font-face {
   font-family: "EPSON Japanese", cursive;
-  src: url(epgyosho.ttf);
+  src: url(fonts/epgyosho.ttf);
 }
 @font-face {
   font-family: "EPSON Japanese", cursive;
-  src: url(epgyobld.ttf);
+  src: url(fonts/epgyobld.ttf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: "MahorobaFont";
-  src: url(youjokitan/MahorobaR.otf);
+  src: url(fonts/MahorobaR.otf);
 }
 @font-face {
   font-family: "MahorobaFont";
-  src: url(youjokitan/MahorobaM.otf);
+  src: url(fonts/MahorobaM.otf);
   font-weight: 500;
 }
 @font-face {
   font-family: "MahorobaFont";
-  src: url(youjokitan/MahorobaB.otf);
+  src: url(fonts/MahorobaB.otf);
   font-weight: 700;
 }
 @font-face {
   font-family: "MahorobaFont";
-  src: url(youjokitan/MahorobaH.otf);
+  src: url(fonts/MahorobaH.otf);
   font-weight: 900;
 }
 

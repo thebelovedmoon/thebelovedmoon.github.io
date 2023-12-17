@@ -1,20 +1,20 @@
 @font-face {
   font-family: "MahorobaFont";
-  src: url(MahorobaR.otf);
+  src: url(../fonts/MahorobaR.otf);
 }
 @font-face {
   font-family: "MahorobaFont";
-  src: url(MahorobaM.otf);
+  src: url(../fonts/MahorobaM.otf);
   font-weight: 500;
 }
 @font-face {
   font-family: "MahorobaFont";
-  src: url(MahorobaB.otf);
+  src: url(../fonts/MahorobaB.otf);
   font-weight: 700;
 }
 @font-face {
   font-family: "MahorobaFont";
-  src: url(MahorobaH.otf);
+  src: url(../fonts/MahorobaH.otf);
   font-weight: 900;
 }
 
@@ -111,7 +111,6 @@ body {
 
 .mahotanIntro {
   padding: 150px 50px;
-  background-color: #00000080;
   text-align: center;
   background-size: cover;
   background-position: center center;
@@ -173,6 +172,7 @@ button {
   -moz-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+  box-shadow: 0 0 15px #00000080;
 }
 button:hover {
   background-color: #dff2fd;

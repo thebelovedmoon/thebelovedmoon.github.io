@@ -27,7 +27,7 @@ var x = setInterval(function() {
     document.getElementById("bodyOut").style.cssText = "-moz-transition: all 2.5s; -ms-transition: all 2.5s; -webkit-transition: all 2.5s; -o-transition: all 2.5s; transition: all 2.5s; background: #000; cursor: auto;";
     document.getElementById("sayonara").style.cssText = "-moz-transition: all 2.5s; -ms-transition: all 2.5s; -webkit-transition: all 2.5s; -o-transition: all 2.5s; transition: all 2.5s; color: #ffffff40;";
 
-    setTimeout('ltr()', 5000);
+    setTimeout('ltr()', 1000);
 
   }
 

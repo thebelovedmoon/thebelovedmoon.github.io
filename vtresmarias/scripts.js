@@ -2,7 +2,7 @@ function lotusLoading() {
   setTimeout(function() {
     document.getElementById("vtmLotus").remove();
     document.getElementById("loading").style.height = "0";
-  }, 5000);
+  }, 1000);
 }
 
 //code from https://linuxhint.com/change-image-on-hover-in-javascript 

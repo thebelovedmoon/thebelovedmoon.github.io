@@ -1,171 +1,213 @@
-@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-
-@font-face {
-  font-family: "Monotype Corsiva", cursive;
-  src: url(../MTCORSVA.TTF);
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden;
-  word-wrap: break-word;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background: linear-gradient(to bottom right, #111111 25%, #595959 100%);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Courgette', cursive;
-  color: #fff;
+  background-color: #e27faf;
+  scroll-behavior: smooth;
 }
 
-.title {
-  background-image: url(yearinmanga.png);
+.heroHead {
+  background-image: url(yearinmanga_2023.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
-  height: 75%;
-  padding: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  line-height: 0.25;
-  font-size: xx-large;
-  white-space: nowrap;
-}
-@media screen and (max-width: 500px) {
-  .title {
-    height: 50%;
-    font-size: medium;
-  }
+  padding: 250px 25px;
 }
 
-.tbCol {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Serif Display", serif;
+}
+p {
+  font-family: "Kiwi Maru", serif;
+}
+
+.divBlockBack {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.divBlockFore {
+  padding: 250px 25px;
+  background-color: #00000060;
+}
+.txtBlock {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mangaCol {
   float: left;
   width: 50%;
-  padding: 25px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.tbRow:after {
+.mangaRow:after {
   content: "";
   display: block;
   clear: both;
 }
-@media screen and (max-width: 750px) {
-  .tbCol {
-    width: 100%;
-    padding-bottom: 0;
-  }
-}
-
-.tbSupp {
-  float: left;
-  width: 20%;
-  padding: 25px;
-}
-@media screen and (max-width: 2500px) {
-  .tbSupp {
-    width: 20%;
-  }
-}
-@media screen and (max-width: 2000px) {
-  .tbSupp {
-    width: 25%;
-  }
-}
-@media screen and (max-width: 1500px) {
-  .tbSupp {
-    width: 33.33%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .tbSupp {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 750px) {
-  .tbSupp {
+@media screen and (max-width: 900px) {
+  .mangaCol {
     width: 100%;
   }
 }
 
-.feat {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-
-.grad-left {
-  background: linear-gradient(to right, #11111100 0%, #111111ff 95%);
-}
-.grad-right {
-  background: linear-gradient(to left, #11111100 0%, #111111ff 95%);
-}
-@media screen and (max-width: 750px) {
-  .grad-left, .grad-right {
-    background: linear-gradient(to bottom, #11111100 0%, #111111ff 95%);
-  }
-}
-
-.honorable {
-  width: 100%;
-  padding: 25px;
-}
-
-.ytembed {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-}
-.ytembed::after {
-  padding-top: 56.25%;
-  display: block;
-  content: '';
-}
-.ytembed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-a:link {
-  color: #fff;
-  text-decoration: none;
-}
-a:hover {
-  color: #999;
-  text-decoration: none;
-}
-a:active {
-  color: #ddd;
-  text-decoration: none;
-}
-a:visited {
-  color: #bbb;
-  text-decoration: none;
-}
-
-footer {
-  background-color: #000;
-  padding: 10px;
+.mangaColSel {
+  padding: 75px 25px;
   text-align: center;
+  color: white;
+  background-color: #000000d0;
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
+}
+.mangaColSel:hover {
+  background-color: #00000080;
+  cursor: pointer;
+}
+
+button /* root button */ {
+  background-color: #e27faf;
+  border: solid black;
+  border-radius: 1000px;
+  color: black;
+  padding: 15px 25px;
+  font-family: "Kiwi Maru", serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+button:hover {
+  background-color: black;
+  border: solid #e27faf;
+  color: #e27faf;
+}
+
+.bounceUp {
+  animation: bncUp 2.5s ease infinite;
+}
+@keyframes bncUp {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+.bounceDown {
+  animation: bncDwn 2.5s ease infinite;
+}
+@keyframes bncDwn {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(30px);}
+	60% {transform: translateY(15px);}
+}
+/* related codepen: https://codepen.io/nelledejones/pen/gOOPWrK */
+
+.mangaShowc {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 75vh;
+  top: 0;
+}
+@media screen and (max-height: 700px) {
+  .mangaShowc {
+    height: 62.5vh;
+  }
+}
+
+.rankedCollapse {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  border: none;
+  color: black;
+  border-radius: 25px;
+  background-image: url(../sakurasumiyoi_new_icon.svg);
+  background-size: 20%;
+  background-position: 110% center;
+  background-repeat: no-repeat;
+}
+.rankedExpand, .rankedCollapse:hover, .mangaBtn:hover, .notableManga:hover {
+  border: none;
+  background-color: black;
+  color: white;
+}
+.rankedCollapse::after {
+  font-family: "Material Symbols Rounded";
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 24;
+  content: "\e5cf";
+  font-size: 1em;
+  float: right;
+}
+.rankedExpand::after {
+  font-family: "Material Symbols Rounded";
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 24;
+  content: "\e5ce";
+  font-size: 1em;
+  float: right;
+}
+.mangaBtn {
+  border: none;
+  color: black;
+  border-radius: 25px;
+}
+.notableManga::after {
+  font-family: "Material Symbols Rounded";
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 24;
+  content: "\e1c4";
+  font-size: 1em;
+  float: right;
+}
+
+.mangaDetailsBack {
+  width: 85%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+  margin: 0 auto;
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 0 0 25px 25px;
+}
+.mangaDetailsFore {
+  border-radius: inherit;
+  background-color: #000000d0;
+  padding: 5px 20px 20px 20px;
+  text-align: left;
+}
+
+#backToTop {
+  bottom: 10px;
+  left: 50%;
+  display: none;
+  position: fixed;
+  border: none;
+  outline: none;
+  background-color: #e27faf;
+  color: white;
+  padding: 10px;
+  z-index: 99;
+  margin: 0 auto;
+}
+#backToTop::after {
+  font-family: "Material Symbols Rounded";
+  content: "\e5d8";
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
 }
