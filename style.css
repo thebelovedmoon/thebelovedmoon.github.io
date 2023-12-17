@@ -209,34 +209,6 @@ a:active {
   text-decoration: none;
 }
 
-.mainBtn {
-  background-color: #793a80;
-  border: solid 1.25px white;
-  border-radius: 1000px;
-  color: white;
-  padding: 10px 25px;
-  font-family: "Sono", sans-serif;
-  font-size: large;
-  text-align: center;
-  text-decoration: none;
-  margin: 15px;
-  cursor: pointer;
-  -webkit-transition: 0.75s;
-  -moz-transition: 0.75s;
-  -o-transition: 0.75s;
-  transition: 0.75s;
-}
-.mainBtn:hover {
-  background-color: #66a898;
-}
-.mainBtn:active {
-  background-color: #f0a9a9;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-}
-
 .mainCol {
   float: left;
   width: 50%;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-/* the OFFICIAL google font implemented for 「VTresMarias - V三人のマリア - 」 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* the OFFICIAL google fonts implemented for 「VTresMarias - V三人のマリア - 」 */
 
 :root {
   /* vtm primary colors */
@@ -15,7 +16,8 @@
   --vtmFore: url(vtm_trioGraphic.png);
   --vtmTypefaceNormal: url(vtm_typeface_normal.svg);
   --vtmTypefaceWide: url(vtm_typeface_wide.svg);
-  --vtmFontface: "Satisfy", cursive;
+  --vtmFontFace1: "Satisfy", cursive;
+  --vtmFontFace2: "Noto Serif Display", serif;
 }
 
 html, body {
@@ -42,7 +44,7 @@ html {
 }
 
 body {
-  font-family: var(--vtmFontface);
+  font-family: var(--vtmFontFace1);
   color: white;
   text-align: center;
 }
@@ -55,6 +57,10 @@ body {
   body {
     font-size: xx-large;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--vtmFontFace2);
 }
 
 #loading {
@@ -111,6 +117,13 @@ body {
   }
 }
 
+.bgSet {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .heroHead {
   padding-top: 250px;
   padding-bottom: 250px;
@@ -132,8 +145,19 @@ body {
   }
 }
 
-.textdiv {
-  padding: 100px;
+.textDiv {
+  padding: 100px 50px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.mariaProfile {
+  width: 375px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 /* section below applies universally to pages affiliated with vtm. */
@@ -177,9 +201,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  padding: 50px;
   text-align: center;
-  font-family: var(--vtmFontface);
+  font-family: var(--vtmFontFace1);
   color: white;
 }
 .vtm-typeface {
@@ -239,4 +262,34 @@ body {
 }
 .disappearHead {
   height: 0 !important;
+}
+
+.vtmBtn {
+  background-color: #793a80;
+  border: solid 1.25px white;
+  border-radius: 1000px;
+  color: white;
+  padding: 10px 25px;
+  font-family: var(--vtmFontFace2);
+  font-weight: 700;
+  font-style: italic;
+  font-size: large;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px;
+  cursor: pointer;
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -o-transition: 0.75s;
+  transition: 0.75s;
+}
+.vtmBtn:hover {
+  background-color: #66a898;
+}
+.vtmBtn:active {
+  background-color: #f0a9a9;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
