@@ -276,17 +276,17 @@ a:active {
   background-repeat: no-repeat;
 }
 
-.aura-accomplice, .hina-accomplice {
+.aura-maria, .hina-maria {
   background-color: #000000a0;
-  padding: 25px 50px;
+  padding: 75px 50px;
   -webkit-transition: 0.75s;
   -moz-transition: 0.75s;
   -o-transition: 0.75s;
   transition: 0.75s;
 }
-.aura-accomplice:hover {
+.aura-maria:hover {
   background-color: #66a898a0;
 }
-.hina-accomplice:hover {
+.hina-maria:hover {
   background-color: #f0a9a9a0;
 }
