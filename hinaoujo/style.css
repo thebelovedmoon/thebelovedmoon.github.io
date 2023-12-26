@@ -34,7 +34,7 @@ html {
   align-items: center;
   text-align: center;
   background-color: #f0a9a9;
-  background-image: url(https://vtresmarias.github.io/vtm_hinaBG.jpg);
+  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_hinaBG.jpg);
   -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -o-transition: 1.25s;
@@ -200,7 +200,7 @@ body {
 }
 
 .vtmFullHead-back {
-  background-image: url(https://vtresmarias.github.io/vtm_hinaBG.jpg);
+  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_hinaBG.jpg);
 }
 
 .hinaURL:link {

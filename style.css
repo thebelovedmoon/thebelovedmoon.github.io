@@ -36,7 +36,7 @@ html {
   align-items: center;
   text-align: center;
   background-color: #793a80;
-  background-image: url(https://vtresmarias.github.io/vtm_agaBG.jpg);
+  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_agaBG.jpg);
   -webkit-transition: 1.25s;
   -moz-transition: 1.25s;
   -o-transition: 1.25s;
@@ -135,7 +135,7 @@ body {
 }
 
 .vtmFullHead-back {
-  background-image: url(https://vtresmarias.github.io/vtm_agaBG.jpg);
+  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_agaBG.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .vtmMain-back {
   width: 100%;
-  background-image: url(https://vtresmarias.github.io/vtm_trioGraphic.png), url(https://vtresmarias.github.io/pastelsky_1.jpg);
+  background-image: url(https://vtresmarias.github.io/media/images/vtm_trioGraphic.png), url(https://vtresmarias.github.io/media/images/backgrounds/pastelsky_1.jpg);
   background-blend-mode: normal;
   background-attachment: fixed;
   background-size: cover;
@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .vtmMain-fore {
   width: 100%;
-  background-image: url(https://vtresmarias.github.io/vtm_typeface_wide.svg);
+  background-image: url(https://vtresmarias.github.io/media/svg/vtm_typeface_wide.svg);
   background-size: 115%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -227,14 +227,14 @@ a:active {
 
 .auraBG {
   background-color: #66a898;
-  background-image: url(https://vtresmarias.github.io/vtm_auraBG.jpg);
+  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_auraBG.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .hinaBG {
   background-color: #f0a9a9;
-  background-image: url(https://vtresmarias.github.io/vtm_hinaBG.jpg);
+  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_hinaBG.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
