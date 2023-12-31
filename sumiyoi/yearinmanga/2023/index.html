@@ -5,56 +5,555 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../style.css" rel="stylesheet" type="text/css" media="all"> <!-- root -->
     <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"> <!-- google fonts -->
     <title>2023年の桜のマンガ ～Sakura's Mangas of 2023～</title>
     <link rel="icon" href="../../sakurasumiyoi_new_icon.svg" type="image/x-icon">
     <meta name="theme-color" content="#595959">
     <meta name="msapplication-navbutton-color" content="#595959">
     <style type="text/css">
       /* insert css args here */
-      body {
-        background-image: url(../yearinmanga_2023.png);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+      img {
+        width: 750px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
       }
-      .comingSoon {
-        color: white;
-        padding: 15px;
+      .rankIntro {
+        padding: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
         height: 100vh;
-        word-break: break-all;
       }
-      h1 {
-        font-size: 5em;
+      #disappearIntro {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
       }
     </style>
-    <script type="text/javascript">
-      const timer = setInterval(function() {
-        const time = new Date("December 31, 2023 23:45:00 GMT+09:00").getTime();
-        const now = new Date().getTime();
-        const distance = time - now;
-        var d = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2);
-        var h = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
-        var m = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
-        var s = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
-        document.getElementById("timer").innerHTML = d + ":" + h + ":" + m + ":" + s;
-        if (distance <= 0) {
-          clearInterval(timer);
-          document.getElementById("timer").innerHTML = "00:00:00:00";
-        }
-      }, 0);
-    </script>
+    <script src="../scripts.js" type="text/javascript"></script>
   </head>
   <body>
-    <div class="comingSoon">
-      <div>
-        <p>2023年の桜のマンガ ～Sakura's Mangas of 2023～ will be revealed in:</p>
-        <h1 id="timer"></h1>
+    <div id="disappearIntro" style="display: block; cursor: pointer;" onclick="startView()">
+      <div class="heroHead rankIntro" style="background-image: url(../yearinmanga_2023.png);">
+        <div>
+          <img src="2023年の桜のマンガ.svg" alt="">
+          <br><br>
+          <!--
+          <p>scroll down to begin</p>
+          <img class="bounceDown" style="width: 20px;" src="../scrolldown.svg" alt="">
+          -->
+          <p>Click anywhere to begin</p>
+        </div>
       </div>
+    </div>
+    <div id="appearContents" style="display: none;">
+      <div id="showEmbed" onclick="disappearModal()">
+        <div class="flexEmbed">
+          <div id="embedViewer"></div>
+        </div>
+      </div>
+      <button id="backToTop" onclick="backToTop()" title="go back to top of page"></button>
+      <header id="scrollToHead">
+        <div class="logoplace">
+          <img src="2023年の桜のマンガ.svg" alt="" style="width: 175px;">
+        </div>
+      </header>
+      <div class="mangaShowc" style="background-image: url(../yearinmanga_2023_orig.png);"></div>
+      <div class="divBlockBack" style="background-image: url(../yearinmanga_2023_orig.png);">
+        <div class="divBlockFore" style="border-radius: 25px 25px 0 0; background-color: #000000c0; padding: 50px 25px 0 25px;">
+          <div class="txtBlock">
+            <img class="bounceUp" style="width: 20px;" src="../scrollup.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="divBlockBack" style="background-image: url(../yearinmanga_2023_orig.png);">
+        <div class="divBlockFore" style="background-color: #000000c0; padding: 250px 25px 50px 25px;">
+          <div class="txtBlock">
+            <h1>a year of an Idol's Heart</h1>
+            <br>
+            <p>
+              we've shifted the focus to our lovely Idols who have gone beyond what was allowed
+              to tell us the story about their hardships, their achievements, and their attempts
+              at love. and it's not just the Idols that we usually see in concerts and
+              television -- it can go as far as cabaret clubs, a train station, to even in the
+              classroom!
+            </p>
+            <p>
+              the 25 mangas shown below have proved to break borders and warm our hearts with
+              their presences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="divBlockBack" style="background-image: url(../yearinmanga_2023_orig.png);">
+        <div class="divBlockFore" style="background-color: #000000c0; padding: 50px 25px 250px 25px;">
+          <div class="txtBlock">
+            <div style="padding: 12.5px 0;"> <!-- rank 1 -->
+              <button class="rankedCollapse">Rank 1: Change In Attitude Of Class President Upon Discovering My Cell Phone Wallpaper Of Idol</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/01.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    One of the two primary hallmarks of the year&#39;s manga lineup!! This is how
+                    we come up with a prime example of dealing with our dearest Idols with the
+                    best we can!!
+                  </p>
+                  <p>
+                    Shuta has been very keen on supporting Hiyori ever since she was Dream+&#39;s
+                    Haru, that he&#39;s doing whatever he can to support her dreams and to rule
+                    out any uncertainties that come in her way.
+                  </p>
+                  <p>
+                    I would like to personally applaud Yoshie for her support towards Hiyori
+                    despite the circumstances -- it makes me think that there&#39;s still much to
+                    be done to alleviate the suffering the Idols have inflicted.
+                  </p>
+                  <p>
+                    Echoing the words of @GoodOlFiddle: &quot;Idols make people smile but they
+                    don&#39;t have anyone to make <strong>them</strong> smile.&quot;
+                  </p>
+                  <p>
+                    Going out-of-character for a bit: I know a friend who knows a lot of Idol
+                    friends from Japan that they only interact on X (Twitter). There&#39;s also an
+                    Idol from that circle that he&#39;s closely fond of that he&#39;s willing to
+                    do whatever it takes to support her in any way he can. In my personal case, I
+                    have some interactions with some of them -- VTubers even -- that have been a
+                    part of my life that I&#39;ve been willing to support them in whatever I can.
+                    (That&#39;s also why I founded the Marias in honor of the two VTubers who have
+                    been the primary reasons I can keep going throughout the day with
+                    determination.)
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="MaH6z7YGo9o?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 2 -->
+              <button class="rankedCollapse">Rank 2: Flowers for the Ice Queen</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/02.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Another one of the two primary hallmarks of the year&#39;s manga lineup!! This
+                    is a remark that regardless of which lifestyle you connect yourself into,
+                    there&#39;s still gonna be ways for love to prosper in all directions.
+                  </p>
+                  <p>
+                    Yo&#39;s profession as a florist has attracted a number of customers, that it
+                    had the attention of the customers from a specific cabaret club -- where
+                    Shinobu used to work. The past history both had shared (which was revealed in
+                    the later parts of the story) has rekindled their feelings, though I&#39;m
+                    fairly certain that it&#39;s the memories along the way that made them bond
+                    together like a strong glue.
+                  </p>
+                  <p>
+                    Overall, the experience was worth the wait as I&#39;ve come across this many
+                    times; it&#39;s actually refreshing to see related stories that anticipates
+                    one&#39;s heart to be able to reap the fruit of love and labor.
+                  </p>
+                  <p>
+                    In any case, Yo has melted Shinobu&#39;s icy heart and bloomed with hazel
+                    flowers on their souls.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="f6eyX-xTWTM?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 3 -->
+              <button class="rankedCollapse">Rank 3: The Top 3 Hostesses Have Been Coming Over to My Place For Some Reason?!</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/03.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    One of the lone winners of this lineup!! This has captured the essence of
+                    cabaret clubs, perseverance, and a Yomeiri Kousou-like harem experience!!
+                  </p>
+                  <p>
+                    AoHaru Manga Library made its mark in the video manga genre with repeated
+                    names such as Keiichi, Nagisa, Yui, and Noa. But regardless of the
+                    nameschemes, it&#39;s the stories that draws me in to the genre, and this is
+                    one of them!!
+                  </p>
+                  <p>
+                    Keiichi Sato works at some sort of a cabaret club (that somehow has a similar
+                    vibe like the last one), but then gets ridiculed by no other than Narita.
+                    (That name sounds awful imo.)
+                  </p>
+                  <p>
+                    Anyhow, what followed was a slew of circumstances and ways to work out sets of
+                    issues; as well as finding ways to challenge the norm. In the end, the three
+                    -- Noa, Yui, and Nagisa -- had their hearts inch closer to Keiichi&#39;s.
+                  </p>
+                  <p>
+                    Quoting @RayKaz25: &quot;Sometimes it takes a real man to become the best
+                    girl.&quot; This points to the fact that Keiichi had gone undercover (as
+                    Keina) to rule out Noa&#39;s biggest circumstance in the story. Narita got
+                    what he deserved in the end, which is a nice outcome I&#39;d like to see from
+                    a typical antagonist.
+                  </p>
+                  <p>
+                    Out-of-character, Keiichi being Keina is probably what I&#39;ll be feeling
+                    when I do feminine-related things. And since I&#39;ll be doing cosplays,
+                    I figured I&#39;ll take on that approach.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="v6ZERqyBYbc?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 4 -->
+              <button class="rankedCollapse">Rank 4: The Pop Idol Famous for Her Coldness Towards Her Fan is Only Nice to Me!?...</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/04.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="7m9K8d3CBjI?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 5 -->
+              <button class="rankedCollapse">Rank 5: When I Ignored the Most Popular Idol at a Handshake Event…</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/05.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="kDJ5gljCMsI?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 6 -->
+              <button class="rankedCollapse">Rank 6: My favorite idol was hiding in my closet...!?</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/06.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="9GlGMHY1wTw?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 7 -->
+              <button class="rankedCollapse">Rank 7: Ignored the No.1 Club Hostess, Spent a Lot of Money on the Bottom and as a Result...</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/07.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>          
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="Br44Lj83-kI?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 8 -->
+              <button class="rankedCollapse">Rank 8: My favorite idol who retired was at my house doing housework!?</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/08.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="q_yI-pNkGiY?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 9 -->
+              <button class="rankedCollapse">Rank 9: Everyone Says I'm Incompetent, But The daughter of CEO Found My Potential. And Then...</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/09.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="pd4wHKfhmCc?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 10 -->
+              <button class="rankedCollapse">Rank 10: My beautician wants to be only one who can cut my hair but...</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/10.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="-DDF75k5biw?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 11 -->
+              <button class="rankedCollapse">Rank 11: The slacker CEO shows his true strengths when his employees are in trouble</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/11.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="o68ENVW7peA?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 12 -->
+              <button class="rankedCollapse">Rank 12: I was a useless employee and got fired → The beautiful boss who always helped me suddenly...</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/12.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="zcLfp9-aiY8?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 13 -->
+              <button class="rankedCollapse">Rank 13: Lean On Me</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/13.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="0k_yTnDd7b8?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 14 -->
+              <button class="rankedCollapse">Rank 14: I Found Out My Girlfriend Was Cheating On Me After Coming Back From A Business Trip.</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/14.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="XdYXwz_NroU?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 15 -->
+              <button class="rankedCollapse">Rank 15: My girlfriend broke up with me then attractive shy girl kissed me</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/15.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="ZhXLto5tl-Y?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 16 -->
+              <button class="rankedCollapse">Rank 16: Got Fired From Company for Helping Woman, But She's Actually CEO, and I Became Her Secretary?!</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/16.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="XDab61qNAjc?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 17 -->
+              <button class="rankedCollapse">Rank 17: The almost gone cooking club turned out to be the best thing...</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/17.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="n5CZ7-1mrho?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 18 -->
+              <button class="rankedCollapse">Rank 18: I helped out a food delivery girl and she decided to moved in with me</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/18.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="-sPerFsMK_M?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 19 -->
+              <button class="rankedCollapse">Rank 19: I was a yankee but now I'm just an introvert. One day, a beautiful girl talk to me...</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/19.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="vIXSrrx8zh8?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 20 -->
+              <button class="rankedCollapse">Rank 20: I resigned in protest against the female president. After that, I started my own business...</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/20.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="dhmgmxgjtMQ?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 21 -->
+              <button class="rankedCollapse">Rank 21: When I Reunited with My Former Arch-Nemesis, the Badass Girl, at a Hostess Club…</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/21.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="NcvB0KeL-dg?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 22 -->
+              <button class="rankedCollapse">Rank 22: I helped a homeless girl... 8 years later...</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/22.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="QNKTaCKA_nM?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 23 -->
+              <button class="rankedCollapse">Rank 23: I stood up for the girl who was told she was ugly and wore a mask to school</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/23.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="Zy_gcuIzAsA?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 24 -->
+              <button class="rankedCollapse">Rank 24: My elementary teacher went missing over summer break. 10 years later…</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/24.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="Etf2vz7H9Ok?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+            <div style="padding: 12.5px 0;"> <!-- rank 25 -->
+              <button class="rankedCollapse">Rank 25: "Why is this uneducated guy here?" says my former classmate at my best friend's wedding, and</button>
+              <div class="mangaDetailsBack" style="background-image: url(mangathumbs/25.jpg);">
+                <div class="mangaDetailsFore">
+                  <p>
+                    Details to be disclosed on 3 Jan at 12am JST.
+                  </p>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="4yAMIcCNh7g?rel=1">Watch</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          var collapsible = document.getElementsByClassName("rankedCollapse");
+          for (var rankedManga = 0; rankedManga < collapsible.length; rankedManga++) {
+            collapsible[rankedManga].addEventListener("click", function() {
+              this.classList.toggle("rankedExpand");
+              var mangaDetailsBack = this.nextElementSibling;
+              if (mangaDetailsBack.style.maxHeight){
+                mangaDetailsBack.style.maxHeight = null;
+              } else {
+                mangaDetailsBack.style.maxHeight = mangaDetailsBack.scrollHeight + "px";
+              } 
+            });
+          }
+          // code: https://wwww3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_symbol
+        </script>
+      </div>
+      <div class="divBlockBack" style="background-image: url(../yearinmanga_2023_orig.png);">
+        <div class="divBlockFore" style="border-radius: 0 0 25px 25px; background-color: #000000c0; padding: 0 25px 50px 25px;"></div>
+      </div>
+      <div class="mangaShowc" style="background-image: url(../yearinmanga_2023_orig.png);"></div>
+      <div class="divBlockBack" style="background-image: url(../yearinmanga_2023_orig.png);">
+        <div style="background: linear-gradient(to bottom, #00000000, #00000000 50%, #e27faf); height: 50px;"></div>
+      </div>
+      <div class="divBlockBack" style="background-image: url(mangathumbs/01.jpg);">
+        <div style="background: linear-gradient(to top, #00000000, #00000000 50%, #e27faf); height: 50px;"></div>
+      </div>
+      <div class="mangaShowc" style="background-image: url(mangathumbs/01.jpg);"></div>
+      <div class="divBlockBack" style="background-image: url(mangathumbs/01.jpg);">
+        <div class="divBlockFore" style="border-radius: 25px 25px 0 0; background-color: #000000c0; padding: 50px 25px 0 25px;"></div>
+      </div>
+      <div class="divBlockBack" style="background-image: url(mangathumbs/01.jpg);">
+        <div class="divBlockFore" style="background-color: #000000c0;">
+          <div class="txtBlock">
+            <img src="hiyori_shinobu.svg" alt="">
+            <br><br>
+            <p>
+              this year marks the birth of the new playlist called "Dream+: An Idol's Heart" -- a
+              series catering to Idol-like stories full of uncertainties and love!! this has been
+              curated with a vision that Idols are humans too -- a concept that's mostly overlooked
+              by the public.
+            </p>
+            <p>
+              this playlist covers a wide variety of stories from Idols, to girls from cabaret
+              clubs, to individuals whose spirit closely resembles one of both!!
+            </p>
+            <p>
+              accompanied in this playlist are the first two winning stories of this year's lineup:
+              Shuta and Hiyori, and Yo and Shinobu!! their remarkable experiences and how they
+              found love became the series' hallmark of many related genres to come forward with
+              their own!!
+            </p>
+            <br>
+            <button class="mangaBtn" onclick="revealEmbed(this.value)" value="MaH6z7YGo9o?list=PLF03i1Sr1R1-Qdpa68955EYLps_8RL8ti&rel=0">check out the playlist</button>
+          </div>
+        </div>
+      </div>
+      <div class="divBlockBack" style="background-image: url(mangathumbs/01.jpg);">
+        <div style="background: linear-gradient(to bottom, #000000c0, #000000c0 50%, #e27faf); height: 50px;"></div>
+      </div>
+      <div class="divBlockBack" style="background-image: url(mangathumbs/02.jpg);">
+        <div style="background: linear-gradient(to top, #000000c0, #000000c0 50%, #e27faf); height: 50px;"></div>
+      </div>
+      <div class="divBlockBack" style="background-image: url(mangathumbs/02.jpg);">
+        <div class="divBlockFore" style="background-color: #000000c0;">
+          <div class="txtBlock">
+            <h1>the Notable Mangas of the Year</h1>
+            <br>
+            <p>
+              墨宵🌸桜 Ch. has featured 5 notable mangas that have also gone the same magnitude of
+              impact as the top 25, and it would hurt for them not to take the spotlight! let's
+              take a look at the wildcard winners below:
+            </p>
+            <br>
+            <div style="padding: 12.5px 0;">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="1-Dy-gUDEqE?rel=0">
+                Found a girl with terrible odor so I brought her into a bathhouse as a public bathhouse owner
+              </button>
+            </div>
+            <div style="padding: 12.5px 0;">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="l1BASm0bWLc?rel=0">
+                I helped my introvert classmate, and she is now a pretty idol???
+              </button>
+            </div>
+            <div style="padding: 12.5px 0;">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="JXEiug2z0II?rel=0">
+                My beautiful boss hates me for some reasons that I don't know！
+              </button>
+            </div>
+            <div style="padding: 12.5px 0;">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="PomP9r_UhGg?rel=0">
+                A Delinquent Girl Had Fallen on a Nerd after He Reprimande about Her Heavy Make-up
+              </button>
+            </div>
+            <div style="padding: 12.5px 0;">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="lqUeu06y6Ok?rel=0">
+                I Pretended to Be A Useless Employee, But My Beautiful Boss Found that I'm so Competent
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divBlockBack" style="background-image: url(mangathumbs/02.jpg);">
+        <div class="divBlockFore" style="border-radius: 0 0 25px 25px; background-color: #000000c0; padding: 0 25px 50px 25px;"></div>
+      </div>
+      <div class="mangaShowc" style="background-image: url(mangathumbs/02.jpg);"></div>
+      <footer>
+        <div class="footerTXT">
+          <img src="../../sakurasumiyoi_new_full.svg" alt="" style="width: 200px;">
+          <br><br>
+          <p>2020-2023 thebelovedmoon and associates (tbmassoc)</p>
+          <p>Sakura Sumiyoi 【墨宵🌸桜】 (a tbmassoc brand) is not affiliated with Mary Jane 【メリー・ジェーン】.</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

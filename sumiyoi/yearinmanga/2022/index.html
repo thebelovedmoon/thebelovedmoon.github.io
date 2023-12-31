@@ -49,6 +49,12 @@
       </div>
     </div>
     <div id="appearContents" style="display: none;">
+      <div id="showEmbed" onclick="disappearModal()">
+        <div class="flexEmbed">
+          <div id="embedViewer"></div>
+        </div>
+      </div>
+      <button id="backToTop" onclick="backToTop()" title="go back to top of page"></button>
       <header id="scrollToHead">
         <div class="logoplace">
           <img src="2022年の桜のマンガ.svg" alt="" style="width: 175px;">
@@ -82,7 +88,7 @@
       <div class="divBlockBack" style="background-image: url(../yearinmanga_2022_orig.png);">
         <div class="divBlockFore" style="background-color: #000000c0; padding: 50px 25px 250px 25px;">
           <div class="txtBlock">
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 1 -->
               <button class="rankedCollapse">Rank 1: After my team betrayed me, I met my gaming mate who turned out to be the world's No.1 gamer!</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/01.jpg);">
                 <div class="mangaDetailsFore">
@@ -104,11 +110,11 @@
                     All in all, it&#39;s worth a read, and I&#39;m looking forward to seeing the
                     equivalents of this subject matter!
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/V3ssW_F_Ots')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="V3ssW_F_Ots?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 2 -->
               <button class="rankedCollapse">Rank 2: An indifferent pop idol responds warmly only to me → I got ○○ in my had after our handshake</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/02.jpg);">
                 <div class="mangaDetailsFore">
@@ -134,11 +140,11 @@
                     The retranslated version can be accessed
                     <a rel="noopener noreferrer" href="https://youtu.be/9a2Q1Ol1tpc" target="_blank">here</a>.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/u_VCzW3YVpE')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="u_VCzW3YVpE?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 3 -->
               <button class="rankedCollapse">Rank 3: After Helping Out A Girl Who Was About To Cry, Her Sister Offered To Spend The Night At My Place</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/03.jpg);">
                 <div class="mangaDetailsFore">
@@ -152,11 +158,11 @@
                     But her persistence despite the fact that she&#39;s about to give up gave him
                     the chance to love her for what she really is, regardless of social status.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/fPPYcvEs4iU')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="fPPYcvEs4iU?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 4 -->
               <button class="rankedCollapse">Rank 4: I Helped A Humble Janitor At Work And Things Got A Bit Crazy</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/04.jpg);">
                 <div class="mangaDetailsFore">
@@ -176,11 +182,11 @@
                     And let&#39;s not forget that Nanami became a utility worker to evaluate the
                     state of society within the workplace, which led her to Kensuke in the end!
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/H9JPw0CmsSY')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="H9JPw0CmsSY?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 5 -->
               <button class="rankedCollapse">Rank 5: An Introverted Nerd Is Living With A Beautiful Android Girl. I Didn't See That Coming...</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/05.jpg);">
                 <div class="mangaDetailsFore">
@@ -191,11 +197,11 @@
                     circumstances. And the fact that Itsuki did whatever he could to protect Yuri
                     got her to appreciate him more.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/YXhBPx7bTE4')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="YXhBPx7bTE4?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 6 -->
               <button class="rankedCollapse">Rank 6: A Neat And Clean Girl Made Me A Virtual Prince After Applying For A High-Paying Job</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/06.jpg);">
                 <div class="mangaDetailsFore">
@@ -215,11 +221,11 @@
                     <a rel="noopener noreferrer" href="http://one2one-agency.jp/idol/neatandclean" target="_blank">NAC</a>,
                     right?
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/8H4jhXxcJAA')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="8H4jhXxcJAA?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 7 -->
               <button class="rankedCollapse">Rank 7: A Dirty Homeless Father And Daughter Ordered Only One Small Beef Bowl Late At Night</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/07.jpg);">
                 <div class="mangaDetailsFore">
@@ -235,11 +241,11 @@
                     affair a lesson is so smooth, Yuki already made up her mind! Can&#39;t believe
                     he was a former delinquent, though -- still!
                   </p>                  
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/lsAOSu16brM')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="lsAOSu16brM?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 8 -->
               <button class="rankedCollapse">Rank 8: My GF Broke Up With Me Because I Was Paralyzed but My Hot Therapist Marries Me</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/08.jpg);">
                 <div class="mangaDetailsFore">
@@ -260,11 +266,11 @@
                     variations and all I can say is hats off to them for making their dreams come
                     true in the end! Truly a rewarding sight to behold!
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/brWA1rW8wss')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="brWA1rW8wss?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 9 -->
               <button class="rankedCollapse">Rank 9: I See A Girl In White At The Intersection Every Day. When I Called Out To Her, She...</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/09.jpg);">
                 <div class="mangaDetailsFore">
@@ -285,11 +291,11 @@
                     you.&quot; I&#39;m sure it&#39;ll be a footnote for all the deeds that we do
                     every day.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/NVFaBoQtDZ8')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="NVFaBoQtDZ8?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 10 -->
               <button class="rankedCollapse">Rank 10: My Crush And I Got Pretty Wet On A School Trip. And What Happened Then?</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/10.jpg);">
                 <div class="mangaDetailsFore">
@@ -307,11 +313,11 @@
                   <p>
                     Shame on Erika, though.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/L8s-jjRzxCc')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="L8s-jjRzxCc?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 11 -->
               <button class="rankedCollapse">Rank 11: I Hired A Housekeeper And It Turned Out To My Super Strict Boss. And Then, We Got Married.</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/11.jpg);">
                 <div class="mangaDetailsFore">
@@ -327,11 +333,11 @@
                     about the circumstances that she had with her mother. That kind of chemistry
                     is what made me hooked on to this story!
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/vnSGlBB1lGc')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="vnSGlBB1lGc?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 12 -->
               <button class="rankedCollapse">Rank 12: A girl who used to mock me now works at a... Girl: &quot;Whatever.&quot; I: &quot;I’ll Pay back your debt.&quot;</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/12.jpg);">
                 <div class="mangaDetailsFore">
@@ -363,11 +369,11 @@
                     There&#39;s a whole lotta details I gotta go with this manga, but I&#39;ll save
                     that for another page.. I hope by next month or two.
                   </i></p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/pvzEaUOTJhw')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="pvzEaUOTJhw?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 13 -->
               <button class="rankedCollapse">Rank 13: The Beautiful Boss Forgot To Turn Off The Online Meeting And Confessed To Me But I Could Hear</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/13.jpg);">
                 <div class="mangaDetailsFore">
@@ -390,11 +396,11 @@
                     aren&#39;t being honest with themselves so that&#39;s why there&#39;s a trope
                     like this. I wonder how it applies to the real world, though..
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/PmCSeDUXzBQ')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="PmCSeDUXzBQ?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 14 -->
               <button class="rankedCollapse">Rank 14: My toxic parents kicked me out, so I decided to run away with my cute childhood friend</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/14.jpg);">
                 <div class="mangaDetailsFore">
@@ -430,11 +436,11 @@
                     these. They want to claim bragging rights when they have succesful children,
                     yet never takes responsibility when those children are a failure.&quot;
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/UONL1BtRbto')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="UONL1BtRbto?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 15 -->
               <button class="rankedCollapse">Rank 15: Unfriendly Childhood Sisters Hate Me, But Their Likability Towards Me Goes Up High！</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/15.jpg);">
                 <div class="mangaDetailsFore">
@@ -452,11 +458,11 @@
                     off-guard. Imagine the future mangas from Sarubedo adhering to that same
                     trope.. this will be deadly.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/dMNYAf5EHSA')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="dMNYAf5EHSA?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 16 -->
               <button class="rankedCollapse">Rank 16: An Elite, Rich Lady Wants To Make Me, A Poor Anime Nerd, Her Servant</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/16.jpg);">
                 <div class="mangaDetailsFore">
@@ -475,11 +481,11 @@
                     appears to be open and honest afterwards. So, to me, it&#39;s a plus that she
                     changed because of Haruto -- as evident in the end.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/U6cvHGNKaB0')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="U6cvHGNKaB0?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 17 -->
               <button class="rankedCollapse">Rank 17: I'm Actually A Two Way Baseball Prodigy, But I Kept It Hidden Until The Koshien, Because...</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/17.jpg);">
                 <div class="mangaDetailsFore">
@@ -494,11 +500,11 @@
                     him to make the move and step up against the odds. And that blooming love was
                     the result of it all.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/TH8YoGKOnWY')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="TH8YoGKOnWY?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 18 -->
               <button class="rankedCollapse">Rank 18: I was Made to Confessed Love as a Punishment but All the Pretty Girls Ended up Saying Yes！</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/18.jpg);">
                 <div class="mangaDetailsFore">
@@ -515,11 +521,11 @@
                     who&#39;s been associating with two women that he got the closest to. I wonder
                     what the trio was doing as of late..
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/zmP0FIrBk8A')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="zmP0FIrBk8A?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 19 -->
               <button class="rankedCollapse">Rank 19: There was a lost girl so I prepared to be late for a job interview and helped her. She was..</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/19.jpg);">
                 <div class="mangaDetailsFore">
@@ -539,11 +545,11 @@
                     I&#39;m really hoping that this trope will be a norm in future mangas,
                     considering its lessons and experiences afterwards.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/7L6fkPMTEeE')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="7L6fkPMTEeE?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 20 -->
               <button class="rankedCollapse">Rank 20: Here Comes A Shivering Woman Wearing Santa Claus Costume</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/20.jpg);">
                 <div class="mangaDetailsFore">
@@ -557,11 +563,11 @@
                   <p>
                     In essence, I call it a happy Christmas gift!!
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/3GA_6nsp9uE')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="3GA_6nsp9uE?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 21 -->
               <button class="rankedCollapse">Rank 21: I Have Insomnia And Ordered A Pillow Online. Then A Big Box Came And A Girl Jumped Out Of It</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/21.jpg);">
                 <div class="mangaDetailsFore">
@@ -583,11 +589,11 @@
                     THREE YEARS in a row while Arisa is just the runner-up for TWO YEARS?! What
                     irony..
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/gEuL1v1A_dg')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="gEuL1v1A_dg?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 22 -->
               <button class="rankedCollapse">Rank 22: I went into a company in a run-down building and there was the beautiful female president</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/22.jpg);">
                 <div class="mangaDetailsFore">
@@ -604,14 +610,14 @@
                   </p>
                   <p>
                     Not to be confused with
-                    <a rel="noopener noreferrer" href="https://mobile.twitter.com/Hinasukii" target="_blank">Hina Oujo (the vtuber)</a>
+                    <a rel="noopener noreferrer" href="https://mobile.twitter.com/Hinasukii" target="_blank">Hina Oujo (the VTuber)</a>
                     as they both have the same first name.
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/-W3irYI7dvg')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="-W3irYI7dvg?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 23 -->
               <button class="rankedCollapse">Rank 23: I went to a village where they had eyewitness information on Hasshaku-Sama</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/23.jpg);">
                 <div class="mangaDetailsFore">
@@ -633,11 +639,11 @@
                     But in the end, there&#39;s no curse -- but a bond that made them strong..
                     agh, I can&#39;t focus on all this!
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/NuoRKN5rrJ4')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="NuoRKN5rrJ4?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 24 -->
               <button class="rankedCollapse">Rank 24: I was fired for incompetence despite being a genius...</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/24.jpg);">
                 <div class="mangaDetailsFore">
@@ -661,11 +667,11 @@
                     And I have to say it again, the womanizer and the exec deserved that sheer
                     punishment without any recourse!
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/o3BcxwEszgM')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="o3BcxwEszgM?rel=1">Watch</button>
                 </div>
               </div>
             </div>
-            <div style="padding: 12.5px 0;">
+            <div style="padding: 12.5px 0;"> <!-- rank 25 -->
               <button class="rankedCollapse">Rank 25: I was called a cheater and displaced from a professional game team. And then...</button>
               <div class="mangaDetailsBack" style="background-image: url(mangathumbs/25.jpg);">
                 <div class="mangaDetailsFore">
@@ -686,17 +692,16 @@
                   <p>
                     And by the way, into the nothingness Gesuo and his mother go!!
                   </p>
-                  <button class="mangaBtn" onclick="window.open('https://youtu.be/mtL3L2Mcsoo')">Watch</button>
+                  <button class="mangaBtn" onclick="revealEmbed(this.value)" value="mtL3L2Mcsoo?rel=1">Watch</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <script type="text/javascript">
-          var coll = document.getElementsByClassName("rankedCollapse");
-          var i;
-          for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
+          var collapsible = document.getElementsByClassName("rankedCollapse");
+          for (var rankedManga = 0; rankedManga < collapsible.length; rankedManga++) {
+            collapsible[rankedManga].addEventListener("click", function() {
               this.classList.toggle("rankedExpand");
               var mangaDetailsBack = this.nextElementSibling;
               if (mangaDetailsBack.style.maxHeight){
@@ -764,27 +769,27 @@
             </p>
             <br>
             <div style="padding: 12.5px 0;">
-              <button class="rankedCollapse notableManga" onclick="window.open('https://youtu.be/fac3w_Y1giE');">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="fac3w_Y1giE?rel=0">
                 I Found Out My Harsh Boss Is Cosplaying As Sexy Santa
               </button>
             </div>
             <div style="padding: 12.5px 0;">
-              <button class="rankedCollapse notableManga" onclick="window.open('https://youtu.be/negpsuFOzlQ');">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="negpsuFOzlQ?rel=0">
                 The Most Prideful Girl In School... Is Actually Living In A Small Tatami Room Next Door
               </button>
             </div>
             <div style="padding: 12.5px 0;">
-              <button class="rankedCollapse notableManga" onclick="window.open('https://youtu.be/WngMLHfJ16I');">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="WngMLHfJ16I?rel=0">
                 The hated girl who wears sunglasses to class was the introvert I helped back in middle school
               </button>
             </div>
             <div style="padding: 12.5px 0;">
-              <button class="rankedCollapse notableManga" onclick="window.open('https://youtu.be/tXYJetYGlAQ');">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="tXYJetYGlAQ?rel=0">
                 I Moved Into A Rental Apartment That Comes With A KUUDERE MAID
               </button>
             </div>
             <div style="padding: 12.5px 0;">
-              <button class="rankedCollapse notableManga" onclick="window.open('https://youtu.be/OUKHP4hSfFM');">
+              <button class="rankedCollapse notableManga" onclick="revealEmbed(this.value)" value="OUKHP4hSfFM?rel=0">
                 An Introverted Nerd Saved a Young Girl Abandoned by Her Evil Parents. "Will You Marry Me?”
               </button>
             </div>
@@ -797,7 +802,7 @@
       <div class="mangaShowc" style="background-image: url(mangathumbs/02.jpg);"></div>
       <div class="divBlockBack" style="background-image: url(mangathumbs/02.jpg);">
         <div style="padding: 25px; text-align: center;">
-          <button onclick="window.open('oldver', '_self')">check out the old version</button>
+          <button class="mangaBtn" onclick="window.open('oldver', '_self')">check out the old version</button>
         </div>
       </div>
       <footer>
