@@ -75,7 +75,6 @@ html {
 }
 
 body {
-  background-color: #f0a9a9;
   font-family: "Satisfy", cursive;
   color: white;
 }
@@ -90,94 +89,7 @@ body {
   }
 }
 
-.text {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  padding-left: 250px;
-  padding-right: 250px;
-  text-align: center;
-}
-@media screen and (max-width: 900px) {
-  .text {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-.bkOVL {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: absolute;
-  background-color: #00000080;
-}
-.redebutPlayer {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.imgBorders {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 25%;
-}
-.textOVL {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.bg1 {
-  /* image by pikisuperstar on Freepik */
-  background-image: url(backgrounds/6574814.jpg);
-}
-.bg2 {
-  /* photo by eberhard 🖐 grossgasteiger on Unsplash */
-  background-image: url(backgrounds/eberhard-grossgasteiger-nqYbkm8Wg_I-unsplash.jpg);
-}
-.bg3 {
-  /* photo by X. Wen on Unsplash */
-  background-image: url(backgrounds/x-wen-qjCHPZbeXCQ-unsplash.jpg);
-}
-
-/*
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-thumb {
-  background: #ffffff80;
-  border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #ffffffc0;
-}
-*/
-
-.hinaTimer {
-  width: 100%;
-  padding: 5px;
-  background-color: black;
-  color: white;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-family: "Sono", sans-serif;
-  text-align: center;
-  z-index: 1;
-}
-#hinaDebutTimer {
-  font-size: xx-large;
-  font-weight: 700;
-}
-
-.hinaBTN {
+button {
   background-color: #f0a9a9;
   border-style: none;
   border-radius: 1000px;
@@ -190,17 +102,13 @@ body {
   margin: 15px;
   cursor: pointer;
 }
-.hinaBTN:hover {
+button:hover {
   background-color: #c98989;
 }
 
-.imgEmbed {
+img {
   max-width: 100%;
   height: auto;
-}
-
-.vtmFullHead-back {
-  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_hinaBG.jpg);
 }
 
 .hinaURL:link {
