@@ -29,9 +29,10 @@ img, blockquote, iframe {
   border-radius: 12.5px;
 }
 
-.forceCenterIfSmall {
+img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+  margin-bottom: 15px;
 }
