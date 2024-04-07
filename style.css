@@ -1,21 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap");
-
-/*
-  font-family: "Hachi Maru Pop", cursive;
-  font-family: "Satisfy", cursive;
-  font-family: "Poppins", sans-serif;
-  font-family: "Sono", sans-serif;
-*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  -ms-word-wrap: break-word;
   word-wrap: break-word;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -24,239 +16,97 @@ html, body {
 
 html {
   background-color: #793a80;
+  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-#loading {
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #793a80;
-  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_agaBG.jpg);
-  -webkit-transition: 1.25s;
-  -moz-transition: 1.25s;
-  -o-transition: 1.25s;
-  transition: 1.25s;
-}
-.vtmLotusLoad {
-  height: 75px;
-  width: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  opacity: 1;
-  -webkit-animation: lotusLoad 2.5s infinite;
-  animation: lotusLoad 2.5s infinite;
-}
-@-webkit-keyframes lotusLoad {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-@keyframes lotusLoad {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-.lotusCol {
-  float: left;
-  width: 33.33%;
-}
-.lotusRow:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-@media screen and (max-width: 750px) {
-  .lotusCol {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-}
-
 body {
-  background-color: #793a80;
-  font-family: "Satisfy", cursive;
-  color: white;
-}
-@media screen and (min-width: 1000px) {
-  body {
-    font-size: x-large;
-  }
-}
-@media screen and (min-width: 2000px) {
-  body {
-    font-size: xx-large;
-  }
-}
-
-.textBack {
-  padding: 150px 50px;
-  text-align: center;
-}
-.textFore {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.imgBorders {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 25%;
-}
-.textOVL {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/*
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-thumb {
-  background: #ffffff80;
-  border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #ffffffc0;
-}
-*/
-
-.imgEmbed {
-  max-width: 100%;
-  height: auto;
-}
-
-.vtmFullHead-back {
-  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_agaBG.jpg);
+  font-family: "Noto Serif Display", "Noto Serif JP", serif;
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: #3d374c;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Hachi Maru Pop", cursive;
+  letter-spacing: -2px;
+}
+h1 {
+  font-style: italic;
 }
 
-.vtmMain-back {
-  width: 100%;
-  background-image: url(https://vtresmarias.github.io/media/images/vtm_trioGraphic.png), url(https://vtresmarias.github.io/media/images/backgrounds/vtm_1.jpg);
-  background-blend-mode: normal;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center, center center;
-  background-repeat: no-repeat;
-}
-.vtmMain-fore {
-  width: 100%;
-  background-image: url(https://vtresmarias.github.io/media/svg/vtm_typeface_wide.svg);
-  background-size: 115%;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.vtmMain-featTxt {
-  background-color: #00000060;
-  padding: 75px 25px;
-}
-
-a:link {
-  color: white;
-  text-decoration: none;
-}
-a:visited {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  color: white;
-  text-decoration: none;
-}
-a:active {
-  color: white;
-  text-decoration: none;
-}
-
-.navBar {
-  background-color: inherit;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px;
-}
-.navBarSpan {
-  padding-left: 10px;
-  padding-right: 10px;
-  display: inline-block;
-}
-.navURL:link {
-  color: #ffffff;
-  text-decoration: none;
-}
-.navURL:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-.navURL:hover {
-  color: #66a898;
-  text-decoration: none;
-}
-.navURL:active {
-  color: #f0a9a9;
-  text-decoration: none;
-}
-
-.mainCol {
-  float: left;
-  width: 50%;
-  text-align: center;
-}
-.mainRow:after {
-  content: "";
+img, video {
+  max-width: 100%;
+  height: auto;
   display: block;
-  clear: both;
-}
-@media screen and (max-width: 800px) {
-  .mainCol {
-    width: 100%;
-  }
+  margin: 0 auto;
+  pointer-events: none;
 }
 
-.auraBG {
-  background-color: #66a898;
-  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_auraBG.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.hinaBG {
-  background-color: #f0a9a9;
-  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_hinaBG.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.vtmPNG {
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-.aura-maria, .hina-maria {
-  background-color: #000000a0;
-  padding: 75px 50px;
+button {
+  background-color: #793a80;
+  border: solid 1.25px white;
+  border-radius: 1000px;
+  color: white;
+  padding: 10px 25px;
+  font-family: inherit;
+  font-weight: 600;
+  font-style: italic;
+  font-size: medium;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
   -webkit-transition: 0.75s;
   -moz-transition: 0.75s;
   -o-transition: 0.75s;
   transition: 0.75s;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
 }
-.aura-maria:hover {
-  background-color: #66a898a0;
+button:hover {
+  background-color: #66a898;
 }
-.hina-maria:hover {
-  background-color: #f0a9a9a0;
+button:active {
+  background-color: #f0a9a9;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+a:link, a:visited {
+  color: #c4b0a6;
+  text-decoration: none;
+}
+a:hover {
+  color: #eed5c9;
+  text-decoration: none;
+}
+a:active {
+  color: #584b7a;
+  text-decoration: none;
+}
+
+/* SITE-WIDE RESPONSIVE LAYOUTS */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: normal;
+  }
+}
+@media screen and (min-width: 1080px) {
+  body {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1620px) {
+  body {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 2160px) {
+  body {
+    font-size: x-large;
+  }
 }
