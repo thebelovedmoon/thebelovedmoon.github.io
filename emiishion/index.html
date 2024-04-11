@@ -3,139 +3,128 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <title>Emii Shion【絵美紫苑】👑🐣</title>
-    <link rel="icon" href="https://abs.twimg.com/emoji/v2/svg/1f423.svg" type="image/x-icon">
-    <style type="text/css">
-      /* insert custom css here */
-      .schedule {
-        width: 1250px;
-        max-width: 100%;
-        height: auto;
-        border-radius: 15px;
-      }
-    </style>
+    <meta name="author" content="EmiiShion">
+    <title>絵美紫苑とアーサー王👑🐣</title>
+    <link rel="icon" href="Leidram_3.png" type="image/x-icon">
     <meta name="og:type" content="website">
-    <meta name="og:title" content="Emii Shion【絵美紫苑】👑🐣">
-    <meta name="og:image" content="https://thebelovedmoon.github.io/emiishion/UntilNextTime.png">
+    <meta name="og:title" content="絵美紫苑とアーサー王👑🐣">
+    <meta name="og:image" content="https://thebelovedmoon.github.io/emiishion/Leidram_wp.png">
     <meta name="og:url" content="https://thebelovedmoon.github.io/emiishion">
-    <meta name="og:description" content="until next time!!👑🐣">
+    <meta name="og:description" content="will you join the Reincarnated Phoenix Queen and the Cursed Legend on the Round Table?👑🐣">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@EmiiShion">
-    <meta name="theme-color" content="#fed962">
-    <meta name="msapplication-TileColor" content="#fed962">
-    <meta name="msapplication-navbutton-color" content="#fed962">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#fed962">
+    <meta name="twitter:creator" content="@EmiiShion">
+    <meta name="theme-color" content="#d6d8e5">
+    <meta name="msapplication-TileColor" content="#d6d8e5">
+    <meta name="msapplication-navbutton-color" content="#d6d8e5">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#d6d8e5">
+    <!-- custom css -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      .Leidram_head_back {
+        width: 100vw;
+        height: 100vh;
+        background-color: #d6d8e5;
+        background-image: url(Leidram_wp.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-transition: 1.5s;
+        -moz-transition: 1.5s;
+        -o-transition: 1.5s;
+        transition: 1.5s;
+        position: fixed;
+        z-index: 2;
+        box-shadow: 0 10px 15px #fed962a0;
+        cursor: pointer;
+      }
+      .Leidram_head_fore {
+        width: 100vw;
+        height: 100vh;
+        padding: 25px;
+        background-color: #000000a0;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        -webkit-transition: 1.5s;
+        -moz-transition: 1.5s;
+        -o-transition: 1.5s;
+        transition: 1.5s;
+      }
+      .fadeIn {
+        opacity: 1;
+        -webkit-transition: .75s;
+        -moz-transition: .75s;
+        -o-transition: .75s;
+        transition: .75s;
+      }
+      .fadeOut {
+        opacity: 0;
+        -webkit-transition: .75s;
+        -moz-transition: .75s;
+        -o-transition: .75s;
+        transition: .75s;
+      }
+    </style>
     <!-- custom scripts -->
-    <script src="scripts.js" type="text/javascript"></script>
+    <script src="scripts.js" type="text/javascript"></script> <!-- inbuilt -->
+    <script type="text/javascript">
+      function launch() {
+        // launch javascript args here
+      }
+    </script>
+    <script type="text/javascript">
+      // attach in-html custom javascript args here
+      function dismissIntro() {
+        document.getElementById("dismissIntro1").style.cursor = "initial";
+        document.getElementById("dismissElmts").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("dismissElmts").classList.remove("fadeOut");
+          document.getElementById("dismissElmts").style.display = "none";
+          document.getElementById("dismissIntro1").style.height = "0";
+          document.getElementById("dismissIntro2").style.height = "0";
+          document.getElementById("dismissIntro2").style.padding = "0";
+          setTimeout(function() {
+            document.getElementById("dismissIntro1").style.display = "none";
+            document.getElementById("dismissIntro2").style.display = "none";
+          }, 1500);
+        }, 750);
+      }
+    </script>
   </head>
-  <body onload="load()">
-    <div id="loadBlock">
-      <div id="loader">
-        <img class="splash" src="EmiiShion_crown.svg" alt="">
+  <body onload="launch()">
+    <div id="dismissIntro1" class="Leidram_head_back" onclick="dismissIntro()">
+      <div id="dismissIntro2" class="Leidram_head_fore">
+        <div id="dismissElmts">
+          <img src="LEIDRAM2024_logo.svg" alt="" width="750">
+          <br>
+          <p>click anywhere to continue..</p>
+        </div>
       </div>
     </div>
     <header>
-      <div style="padding: 0 5px; font-weight: bold;">Emii Shion.</div>
-      <div>
-        <a rel="noopener noreferrer" class="urlHead" href="https://twitch.tv/EmiiShion" target="_blank">Twitch</a>
-        <a rel="noopener noreferrer" class="urlHead" href="https://youtube.com/@EmiiShion" target="_blank">YouTube</a>
-        <a rel="noopener noreferrer" class="urlHead" href="https://mobile.x.com/EmiiShion" target="_blank">Twitter/X</a>
-        <a rel="noopener noreferrer" class="urlHead" href="mailto:emiishionALVR@gmail.com" target="_blank">Email</a>
-      </div>
+      <b>home</b>&emsp;
+      <a class="headURL" href="blog">blog</a>&emsp;
+      <a class="headURL" href="leidram">leidram</a>
     </header>
-    <div class="intro">
-      <div style="width: 750px; max-width: 100%; margin: 0 auto;">
-        <h1>the Reincarnated Phoenix Queen would like to have your attention please!!👑🐣</h1>
-      </div>
+    <div style="width: 750px; max-width: 100%; margin: 0 auto; padding: 250px 25px; text-align: center;">
+      <h1>under construction!!</h1>
+      <br>
+      <p>
+        as the new home of the Reginas -- Emii Shion and Arthur Regina Leidram,
+        we're doing whatever we can to bring the new look to you!! you can expect
+        the new (and some improved) features to arrive in the coming weeks~
+      </p>
+      <p>
+        meanwhile, you can check out the following socials for updates:
+      </p>
+      <button onclick="window.open('https://mobile.x.com/EmiiShion')">twtr/X</button>
+      <button onclick="window.open('https://twitch.tv/EmiiShion')">twitch</button>
+      <button onclick="window.open('https://youtube.com/@EmiiShion')">youtube</button>
+      <button onclick="window.open('https://discord.gg/bwPvTbqwD6')">discord</button>
     </div>
-    <div style="padding: 100px 25px; text-align: center; display: none;"> <!-- announce -->
-      <img class="schedule" style="width: 750px;" src="https://pbs.twimg.com/media/GBYrnf-aMAAbSuF?format=png&name=4096x4096" alt="">
-    </div>
-    <div class="bgHead" style="background-image: url(https://global.discourse-cdn.com/business4/uploads/neomonstersforum/original/2X/c/c984ef191d9b59db90465b84a1d9b3f99a027beb.png);">
-      <div class="intro floatfix" style="padding: 100px 25px;">
-        <div style="width: 750px; max-width: 100%; float: left; text-align: left;">
-          <h1 class="Sacramento">the Evertale Series</h1>
-          <p>
-            join Emii on their journey as they unravel the secrets of Erden and beyond through
-            Evertale, a Japanese RPG developed by ZigZaGame!!
-          </p>
-          <p><b>
-            streaming every Friday and Saturday; and are subject to change.
-          </b></p>
-        </div>
-      </div>
-    </div>
-    <div class="bgHead" style="background-image: url(https://thebelovedmoon.github.io/thebelovedmoon/AuroraLiveVR-resource/gradient_pink.png); background-attachment: fixed;">
-      <div class="intro floatfix" style="padding: 100px 25px;">
-        <div style="width: 750px; max-width: 100%; float: right; text-align: right;">
-          <h1 class="Sacramento">the lore</h1>
-          <p>
-            in her past life, Emii Shion【絵美紫苑】👑🐣 failed to save her kingdom and died a tragic
-            death attempting to save her subjects from a deadly plague. the gods saw that she was
-            pure of heart and decided to give her another chance at life. they gifted her the ability 
-            to resurrect, but there was a catch. each time she dies, she is isekai-ed into a new world
-            and returns as a new type of bird. in every single world, she is the Queen of a falling
-            kingdom that she must save. each time she fails to save her kingdom and perishes, the cycle
-            renews.
-          </p>
-          <p><i>
-            full lore will be revised and submitted as a book in the future.
-          </i></p>
-        </div>
-      </div>
-    </div>
-    <div class="intro" style="padding: 100px 25px;">
-      <h1 class="Sacramento">schedule</h1>
-      <!-- <img class="schedule" src="https://cdn.discordapp.com/attachments/1060132386429472818/1203602070062768160/leidram_sched.png" alt=""> -->
-      <img class="schedule" src="schedpause.png" alt="">
-    </div>
-    <div class="bgHead" style="background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_defBG.jpg); background-attachment: fixed;">
-      <div class="intro floatfix" style="padding: 100px 25px;">
-        <div style="width: 750px; max-width: 100%; float: left; text-align: left;">
-          <div>
-            <img style="
-              width: 500px;
-              max-width: 100%;
-              height: auto;
-            " src="AgaChuu_EmiiShion.svg" alt="">
-          </div>
-          <br>
-          <h1 class="Sacramento">a new life with the Leaves🍃</h1>
-          <p>
-            Emii and 💚🍃Aga-chuu💗🌸 are set for an experience unlike any other as their presences have
-            been unified. following its integration stream months ago, it has been decided that the two
-            vtubers will now act as one to expand the horizons and bring an experience unlike any other.
-          </p>
-          <p>
-            behind-the-scenes, thebelovedmoon did this in honor of the late Suzu Puyotori (previously
-            performed by 💗🌸) and in trust in continuing its legacy. upon consideration, he is
-            committed to maintaining that legacy that was bestowed upon him for the better of all. this
-            channel -- categorized as the alternative -- mainly focuses on Evertale episodes every Friday
-            and Saturday, but that can also expand to a variety of unique experiences but still share the
-            same affinity as the mainstream.
-          </p>
-          <p><i>
-            refer to the panels of both channels to learn more.
-          </i></p>
-          <br>
-          <a onclick="showChannels()" href="#">
-            <div>
-              <div class="AgaEmii"></div>
-            </div>
-          </a>
-          <div id="showChannels" style="display: none; text-align: center;">
-            <button onclick="window.open('https://twitch.tv/thebelovedmoon/about')">mainstream</button>
-            <button onclick="window.open('https://twitch.tv/EmiiShion/about')">alternative</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      Emii Shion【絵美紫苑】👑🐣 is a part of 💚🍃Aga-chuu💗🌸's vtubing venture, and is a brand of
-      thebelovedmoon and associates (tbmassoc).
-    </footer>
   </body>
 </html>
-
-<!-- UPDATED 20 SEP 2023 -->

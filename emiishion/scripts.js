@@ -1,10 +1,6 @@
-function load() {
-  setTimeout(function() {
-    document.getElementById("loader").remove();
-    document.getElementById("loadBlock").style.width = "0";
-  }, 1000);
+function randomLeidram(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
 }
-
-function showChannels() {
-  document.getElementById("showChannels").style.display = "block";
-}
+// code from https://stackoverflow.com/questions/50013591/random-image-on-html-refresh 
