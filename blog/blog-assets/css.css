@@ -25,14 +25,17 @@
   width: auto;
 }
 
-img, blockquote, iframe {
+img, iframe {
   border-radius: 12.5px;
 }
-
 img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
+  pointer-events: none;
+}
+blockquote {
+  border-radius: 0 12.5px 12.5px 0;
 }
