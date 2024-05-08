@@ -28,6 +28,9 @@
       td {
         text-align: right;
       }
+      .statBtn {
+        cursor: pointer;
+      }
     </style>
     <!-- custom scripts -->
     <script src="scripts.js" type="text/javascript"></script> <!-- inbuilt -->
@@ -53,6 +56,7 @@
       <a class="headURL" href="cv">CV</a>
     </header>
     <div style="width: 750px; max-width: 100%; margin: 0 auto; padding: 250px 25px; text-align: center;">
+      <img id="randomLeidram" src="" alt="" style="width: 192px;">
       <h1>so you found this page. good for you.</h1>
       <p>
         this is a dedicated page where you can find more information about Arthur
@@ -60,7 +64,6 @@
         useful information related to her first incarnation as King Arthur (from
         Evertale).
       </p>
-      <img id="randomLeidram" src="" alt="" style="width: 192px;">
       <br>
       <h2>basic information</h2>
       <table>
@@ -77,7 +80,7 @@
         </tr>
         <tr>
           <th scope="row">birthdate</th>
-          <td>TBD</td>
+          <td>[N/A]</td>
         </tr>
         <tr>
           <th scope="row">age</th>
@@ -119,7 +122,7 @@
           <td>Ruler of the Round Table</td>
         </tr>
         <tr>
-          <th scope="row">markings</th>
+          <th scope="row">classifications</th>
           <td>
             <img style="width: 1.75em; display: inline-block;" src="https://evertaletoolbox.azurewebsites.net/files/cache/ui/app/RarityIconSsr01.png" alt="">
             <img style="width: 1.75em; display: inline-block;" src="https://evertaletoolbox.azurewebsites.net/files/cache/ui/elements/Dark.png" alt="">
@@ -127,7 +130,7 @@
           </td>
         </tr>
         <tr>
-          <th scope="row">conjures</th>
+          <th scope="row">conjures/minions</th>
           <td>
             <img style="width: 1.75em; display: inline-block;" src="https://evertaletoolbox.azurewebsites.net/files/cache/monsters/icon/DeathMinion01_1.png" alt="">
           </td>
@@ -140,46 +143,49 @@
           </td>
         </tr>
       </table>
-      <h3>base stats</h3>
+      <h3>statistics</h3>
+      <p id="stat_REF">
+        <a class="statBtn" onclick="stat_lv1()">Level 1</a>&emsp;
+        <b>Base</b>&emsp;
+        <a class="statBtn" onclick="stat_enc()">Encyclopedia</a>&emsp;
+        <a class="statBtn" onclick="stat_max()">MAX</a>
+      </p>
       <table>
         <tr>
           <th scope="row">power</th>
-          <td>134,520</td>
+          <td id="stat_POW">134,520</td>
         </tr>
         <tr>
           <th scope="row">awakenings</th>
-          <td>0 (max. 4)</td>
+          <td id="stat_AWK">&#x29be;&#x29be;&#x29be;&#x29be;</td>
         </tr>
         <tr>
           <th scope="row">hit point</th>
-          <td>6,370</td>
+          <td id="stat_HP">6,370</td>
         </tr>
         <tr>
           <th scope="row">attack</th>
-          <td>968</td>
+          <td id="stat_ATK">968</td>
         </tr>
         <tr>
           <th scope="row">speed</th>
-          <td>424</td>
+          <td id="stat_SPD">424</td>
         </tr>
         <tr>
           <th scope="row">level</th>
-          <td>30</td>
+          <td id="stat_LV">30</td>
         </tr>
         <tr>
           <th scope="row">boost</th>
-          <td>0 (max. depends on player level)</td>
+          <td id="stat_BST">0</td>
         </tr>
         <tr>
           <th scope="row">potential</th>
-          <td>
-            0% (inc. value depends on how many Potential Fruits you have and
-            rate of percentage)
-          </td>
+          <td id="stat_POT">0%</td>
         </tr>
         <tr>
           <th scope="row">mastery</th>
-          <td>0 (max. 40)</td>
+          <td id="stat_MST">0 / 40</td>
         </tr>
       </table>
       <h3>active skills</h3>
@@ -221,6 +227,41 @@
             This attack ignores the Counter Stance status effect, and the
             effects of Skin passive skills. This skill becomes locked for 50TU
             after use.
+          </td>
+        </tr>
+      </table>
+      <h3>related story/ies</h3>
+      <p><i>
+        these are manually compiled and some of them may be inaccurate.
+      </i></p>
+      <table>
+        <tr>
+          <th scope="col">story title</th>
+          <th scope="col" style="text-align: right;">initial release date (EN)</th>
+          <th scope="col" style="text-align: right;">synopsis</th>
+        </tr>
+        <tr>
+          <th scope="row">Where Fates Converge</th>
+          <td>4 Apr 2023</td>
+          <td>
+            The heroes venture to an unknown land called Camelot, where they
+            meet the knights of the Round Table.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">King Arthur, the Cursed Legend</th>
+          <td>17 Aug 2023</td>
+          <td>
+            Accompanied by Gawain and Lancelot, the legendary knights of the
+            Round Table, King Arthur sails to war against the Keepers of Avalon.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Exiles of the Round Table</th>
+          <td>4 Apr 2024</td>
+          <td>
+            Far beyond Camelot and the isles of legend, at the edge of the known
+            world, a colossal prison tower stands tall.
           </td>
         </tr>
       </table>
