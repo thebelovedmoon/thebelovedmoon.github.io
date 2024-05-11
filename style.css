@@ -1,4 +1,15 @@
+/* official vtm gfont implementation */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* extra font implementations */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+
+/* main elements */
 
 html, body {
   margin: 0;
@@ -15,7 +26,7 @@ html, body {
 }
 
 html {
-  background-color: #793a80;
+  background-color: #3d374c;
   background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_1.jpg);
   background-size: cover;
   background-position: center center;
@@ -23,26 +34,54 @@ html {
   background-attachment: fixed;
 }
 body {
-  font-family: "Noto Serif Display", "Noto Serif JP", serif;
+  font-family: "Noto Serif Display", "Noto Serif JP", "Segoe UI Emoji", "Noto Color Emoji", serif;
   letter-spacing: -1px;
   font-weight: 500;
   color: #3d374c;
-  filter: drop-shadow(2px 4px 16px #3d374c80);
 }
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -2px;
+  text-shadow: 2px 4px 16px #3d374c80;
 }
 h1 {
   font-style: italic;
+  text-align: center;
 }
 
 img, video {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
   pointer-events: none;
+}
+
+header {
+  background-color: #dcc6bb;
+  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 15px;
+  box-shadow: 2px 4px 100px 16px #3d374c80;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 140;
+  top: 0;
+}
+footer {
+  background-color: #dcc6bb;
+  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 15px;
+  box-shadow: 2px 4px 100px 16px #3d374c80;
+  z-index: 140;
+  text-align: center;
+  font-weight: 700;
 }
 
 button {
@@ -77,36 +116,133 @@ button:active {
 }
 
 a:link, a:visited {
-  color: #c4b0a6;
+  color: #3d374c;
   text-decoration: none;
 }
 a:hover {
-  color: #eed5c9;
+  color: #786d97;
   text-decoration: none;
 }
 a:active {
-  color: #584b7a;
+  color: #dcc6bb;
   text-decoration: none;
 }
 
-/* SITE-WIDE RESPONSIVE LAYOUTS */
+
+/* custom classes */
+
+.logoHead {
+  width: 150px;
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+.navURLs {
+  text-align: right;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 16px #3d374c80;
+  -ms-word-break: keep-all;
+  word-break: keep-all;
+}
+.outlURL {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
+.navActive {
+  font-weight: 800;
+}
+
 @media screen and (min-width: 768px) {
-  body {
-    font-size: normal;
+  .wide {
+    display: block;
+  }
+  .mobile {
+    display: none;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (max-width: 767px) {
+  .wide {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+.flexStuff {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.heroIMG {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3d374c;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.textArea {
+  width: 765px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 250px 15px;
+}
+
+.textBG {
+  background-color: #3d374c;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* hide scrollbar (as per https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp) */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+/* responsive layouts */
+
+@media screen and (min-width: 768px) {
   body {
     font-size: large;
   }
 }
-@media screen and (min-width: 1620px) {
+@media screen and (min-width: 1080px) {
   body {
     font-size: larger;
   }
 }
-@media screen and (min-width: 2160px) {
+@media screen and (min-width: 1440px) {
   body {
     font-size: x-large;
   }
 }
+@media screen and (min-width: 2160px) {
+  body {
+    font-size: xx-large;
+  }
+}
+
+
+/* notes */
+
+/*
+
+  box-shadow: 2px 4px 100px 16px [#3d374c80/#dcc6bb80];
+  filter: drop-shadow(2px 4px 16px [#3d374c80/#dcc6bb80]);
+  text-shadow: 2px 4px 16px [#3d374c80/#dcc6bb80];
+
+*/
