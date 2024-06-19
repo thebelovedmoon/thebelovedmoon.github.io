@@ -3,198 +3,46 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-    <link rel="icon" href="https://abs-0.twimg.com/emoji/v2/svg/1f343.svg" type="image/x-icon">
-    <style type="text/css">
-      /* insert custom css here */
-      html {
-        min-height: 100%;
-        background-color: #793a80;
-        background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_defBG.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-      }
-      body {
-        height: 100%;
-      }
-      .slideTranst {
-        list-style: none;
-        z-index: 1;
-      }
-      .slideTranst li span {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        color: transparent;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        opacity: 0;
-        z-index: 0;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -webkit-animation: imageAnimation 24s linear infinite 0s;
-        -moz-animation: imageAnimation 24s linear infinite 0s;
-        animation: imageAnimation 24s linear infinite 0s;
-      }
-      .slideTranst li h3 {
-        position: absolute;
-        z-index: 2;
-        bottom: 150px;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        -webkit-animation: titleAnimation 24s linear 1 0s;
-        -moz-animation: titleAnimation 24s linear 1 0s;
-        animation: titleAnimation 24s linear 1 0s;
-      }
-      .slideTranst li:nth-child(1) span {
-        background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_auraBG.jpg");
-      }
-      .slideTranst li:nth-child(2) span {
-        background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_agaBG.jpg");
-        -webkit-animation-delay: 6s;
-        -moz-animation-delay: 6s;
-        animation-delay: 6s;
-      }
-      .slideTranst li:nth-child(3) span {
-        background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_hinaBG.jpg");
-        -webkit-animation-delay: 12s;
-        -moz-animation-delay: 12s;
-        animation-delay: 12s;
-      }
-      @-webkit-keyframes imageAnimation {
-        0% {
-          opacity: 0;
-          -webkit-animation-timing-function: ease-in;
-        }
-        12.5% {
-          opacity: 1;
-          -webkit-animation-timing-function: ease-out;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @-moz-keyframes imageAnimation {
-        0% {
-          opacity: 0;
-          -moz-animation-timing-function: ease-in;
-        }
-        12.5% {
-          opacity: 1;
-          -moz-animation-timing-function: ease-out;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @keyframes imageAnimation {
-        0% {
-          opacity: 0;
-          -webkit-animation-timing-function: ease-in;
-          -moz-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-        }
-        12.5% {
-          opacity: 1;
-          -webkit-animation-timing-function: ease-out;
-          -moz-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @-webkit-keyframes titleAnimation {
-        0% {
-          opacity: 0;
-        }
-        12.5% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @-moz-keyframes titleAnimation {
-        0% {
-          opacity: 0;
-        }
-        12.5% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @keyframes titleAnimation {
-        0% {
-          opacity: 0;
-        }
-        12.5% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 1;
-        }
-        37.5% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      .no-cssanimations .slideTranst li span {
-        opacity: 1;
-      }
-    </style>
+    <meta name="author" content="thebelovedmoon">
+    <title>404 not found</title>
     <meta name="theme-color" content="#3d374c">
     <meta name="msapplication-TileColor" content="#3d374c">
     <meta name="msapplication-navbutton-color" content="#3d374c">
     <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
+    <!-- custom css -->
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css" media="all"> <!-- builtin -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" type="text/css" media="all"> <!-- google fonts -->
+    <style type="text/css">
+      /* in-page css */
+      @import url(/assets/css/home.css);
+      @import url(/assets/css/404.css);
+      header {
+        background: linear-gradient(#3d374ca0, #00000000);
+        justify-content: right;
+      }
+    </style>
     <!-- custom scripts -->
+    <script src="/assets/js/main.js" type="text/javascript"></script> <!-- builtin -->
+    <script type="text/javascript">
+      function pageInit() {
+        // pageInit() args here
+      }
+    </script>
+    <script type="text/javascript">
+      // in-page javascript
+    </script>
   </head>
-  <body onclick="window.location.href='/';">
-    <ul class="slideTranst">
-      <li><span>vtm_aura</span></li>
-      <li><span>vtm_aga</span></li>
-      <li><span>vtm_hina</span></li>
-    </ul>
+  <body onload="init()">
+    <header>
+      <div class="urlRefs">
+        <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/')">home</span>
+      </div>
+    </header>
+    <div class="notFoundText">
+      <h1>404 not found</h1>
+    </div>
+    <footer>
+      <span>©2022 「VTresMarias - V三人のマリア - 」</span>
+    </footer>
   </body>
 </html>

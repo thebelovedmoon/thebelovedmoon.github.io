@@ -1,80 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="thebelovedmoon">
-  <title>Mother Agatha, the First Maria🍃</title>
-  <link rel="icon" href="https://vtresmarias.github.io/pwa/media/maria_1_icon.png" type="image/x-icon">
-  <link rel="apple-touch-icon" href="https://vtresmarias.github.io/pwa/media/maria_1_icon.png" type="image/x-icon">
-  <meta name="og:type" content="website">
-  <meta name="og:title" content="Mother Agatha, the First Maria🍃">
-  <meta name="og:image" content="https://pbs.twimg.com/media/GKJrJnbbYAAdAVy?format=jpg&name=large">
-  <meta name="og:url" content="https://thebelovedmoon.github.io">
-  <meta name="og:description" content="your precious 💚🍃Aga-chuu💗🌸!! 「VTresMarias - V三人のマリア - 」">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@thebelovedmoon">
-  <meta name="twitter:creator" content="@thebelovedmoon">
-  <meta name="theme-color" content="#793a80">
-  <meta name="msapplication-TileColor" content="#793a80">
-  <meta name="msapplication-navbutton-color" content="#793a80">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#793a80">
-  <!-- custom css -->
-  <link href="style.css" rel="stylesheet" type="text/css" media="all"> <!-- inbuilt -->
-  <style type="text/css">
-    /* attach in-html custom css args here */
-  </style>
-  <!-- custom scripts -->
-  <script src="scripts.js" type="text/javascript"></script> <!-- inbuilt -->
-  <script type="text/javascript">
-    function launch() {
-      // launch javascript args here
-    }
-  </script>
-  <script type="text/javascript">
-    // attach in-html custom javascript args here
-  </script>
-</head>
-  <body onload="launch()">
-    <header class="wide">
-      <div class="flexStuff">
-        <img class="logoHead" src="media/logo.png" alt="logo">
-        <div class="navURLs">
-          <span class="outlURL navActive">home</span>
-          <a class="outlURL" rel="noopener noreferrer" href="about">about</a>
-          <a class="outlURL" rel="noopener noreferrer" href="blog">blog</a>
-          <a class="outlURL" rel="noopener noreferrer" href="cosplay">cosplay</a>
-          <a class="outlURL" rel="noopener noreferrer" href="https://vtresmarias.github.io" target="_blank">V三人のマリア</a>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="thebelovedmoon">
+    <title>Mother Agatha, the First Maria🍃</title>
+    <link rel="icon" href="/assets/images/icons/maria_1_icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/images/icons/maria_1_icon.png" type="image/x-icon">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="Mother Agatha, the First Maria🍃">
+    <meta name="og:image" content="https://thebelovedmoon.github.io/assets/images/preview/firstMaria.png">
+    <meta name="og:url" content="https://thebelovedmoon.github.io">
+    <meta name="og:description" content="your precious 💚🍃Aga-chuu💗🌸!! 「VTresMarias - V三人のマリア - 」">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@thebelovedmoon">
+    <meta name="twitter:creator" content="@thebelovedmoon">
+    <meta name="theme-color" content="#793a80">
+    <meta name="msapplication-TileColor" content="#793a80">
+    <meta name="msapplication-navbutton-color" content="#793a80">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#793a80">
+    <!-- custom css -->
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css" media="all"> <!-- builtin -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" type="text/css" media="all"> <!-- google fonts -->
+    <style type="text/css">
+      /* in-page css */
+      @import url(/assets/css/home.css);
+      @import url(/assets/css/hero.css);
+      header {
+        background: linear-gradient(#793a80a0, #00000000);
+      }
+      .material-symbols-rounded:hover {
+        color: #793a80;
+      }
+    </style>
+    <!-- custom scripts -->
+    <script src="/assets/js/main.js" type="text/javascript"></script> <!-- builtin -->
+    <script src="/assets/js/nav_firstMaria.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function pageInit() {
+        // pageInit() args here
+        webQuery();
+      }
+    </script>
+    <script type="text/javascript">
+      // in-page javascript
+    </script>
+  </head>
+  <body onload="init()">
+    <header>
+      <img class="vtLogo" src="/assets/images/logos/firstMaria.png" alt="Mother Agatha, the First Maria🍃" width="150px">
+      <div class="urlRefs">
+        <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/')">home</span>
+        <span class="material-symbols-rounded" title="About the VTuber" onclick="nav('/?vt=about')">account_circle</span>
+        <span class="material-symbols-rounded" title="Read the Blog" onclick="nav('/?vt=blog')">rss_feed</span>
+        <span class="material-symbols-rounded" title="#AgaCosplay" onclick="nav('/?vt=cosplay')">apparel</span>
+        <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="redir('https://vtresmarias.github.io')">info</span>
       </div>
     </header>
-    <header class="mobile">
-      <div class="centerHead">
-        <img class="logoHead" style="margin: 0 auto;" src="media/logo.png" alt="logo">
-        <div style="max-width: 150px; height: 15px;"></div>
-        <div class="navURLs" style="text-align: center;">
-          <span class="outlURL navActive">home</span>
-          <a class="outlURL" rel="noopener noreferrer" href="about">about</a>
-          <a class="outlURL" rel="noopener noreferrer" href="blog">blog</a>
-          <a class="outlURL" rel="noopener noreferrer" href="cosplay">cosplay</a>
-          <a class="outlURL" rel="noopener noreferrer" href="https://vtresmarias.github.io" target="_blank">V三人のマリア</a> 
-        </div>
-      </div>
-    </header>
-    <div style="box-shadow: 2px 4px 100px 16px #3d374c80;">
-      <div class="heroIMG" style="background-image: url(https://vtresmarias.github.io/media/images/20240128_remaster.png);"></div>
-      <div class="heroIMG" style="background-image: url(media/header_AgaChuu.png); height: 75vh;"></div>
-    </div>
-    <div">
-      <div class="textArea" style="text-align: center;">
-        <h1>the website of the First Maria🍃</h1>
-        <p>
-          welcome!! you can find more about the First Maria🍃 in great detail,
-          as well the ventures behind the character -- thebelovedmoon!!
-        </p>
-      </div>
-    </div>
+    <div class="vtmWP"></div>
+    <div class="vtmWP" style="background-image: url(/assets/images/preview/firstMaria.png) !important;"></div>
     <footer>
-      ©2022 「VTresMarias - V三人のマリア - 」
+      <span>©2022 「VTresMarias - V三人のマリア - 」</span>
     </footer>
   </body>
 </html>
