@@ -10,12 +10,12 @@
     <meta name="msapplication-navbutton-color" content="#3d374c">
     <meta name="apple-mobile-web-app-status-bar-style" content="#3d374c">
     <!-- custom css -->
-    <link href="/assets/css/main.css" rel="stylesheet" type="text/css" media="all"> <!-- builtin -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" type="text/css" media="all"> <!-- google fonts -->
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css" media="all"> <!-- base -->
     <style type="text/css">
       /* in-page css */
-      @import url(/assets/css/home.css);
-      @import url(/assets/css/404.css);
+      @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"); /* google fonts */
+      @import url("/assets/css/home.css");
+      @import url("/assets/css/404.css");
       header {
         background: linear-gradient(#3d374ca0, #00000000);
         justify-content: right;
@@ -25,7 +25,7 @@
       }
     </style>
     <!-- custom scripts -->
-    <script src="/assets/js/main.js" type="text/javascript"></script> <!-- builtin -->
+    <script src="/assets/js/main.js" type="text/javascript"></script> <!-- base -->
     <script type="text/javascript">
       function pageInit() {
         // pageInit() args here
