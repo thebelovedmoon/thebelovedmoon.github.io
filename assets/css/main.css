@@ -1,4 +1,4 @@
-@import url(/assets/css/fonts.css);
+@import url("/assets/css/fonts.css");
 
 html, body {
   margin: 0;
@@ -15,7 +15,7 @@ html, body {
 
 html {
   background-color: #3d374c;
-  background-image: url(https://vtresmarias.github.io/media/images/backgrounds/vtm_1.jpg);
+  background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_1.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
