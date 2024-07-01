@@ -1,4 +1,6 @@
-@import url("/assets/css/fonts.css");
+@import url("/assets/css/fonts.css"); /* import fonts */
+@import url("/assets/css/responsive.css"); /* responsive layout */
+
 
 html, body {
   margin: 0;
@@ -89,36 +91,21 @@ a:active {
   text-decoration: none;
 }
 
-/* responsive fontsize */
-@media screen and (max-width: 540px) {
-  body {
-    font-size: small;
-  }
+/* googlefonts icons */
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
-@media screen and (min-width: 540px) and (max-width: 1080px) {
-  body {
-    font-size: normal;
-  }
-}
-@media screen and (min-width: 1080px) and (max-width: 1620px) {
-  body {
-    font-size: large;
-  }
-}
-@media screen and (min-width: 1620px) and (max-width: 2160px) {
-  body {
-    font-size: larger;
-  }
-}
-@media screen and (min-width: 2160px) and (max-width: 2700px) {
-  body {
-    font-size: x-large;
-  }
-}
-@media screen and (min-width: 2700px) {
-  body {
-    font-size: xx-large;
-  }
+.material-symbols-rounded:hover {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 24;
 }
 
 /* hide scrollbar */
