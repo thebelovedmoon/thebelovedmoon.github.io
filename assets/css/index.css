@@ -44,3 +44,32 @@ footer {
 #mobileNav > span[title="Close Panel"] {
   margin-left: 15px;
 }
+
+.vtmWP {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/images/VTresMarias.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.profileHead {
+  width: 100vw;
+  padding: 250px 15px;
+  background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_3.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -5;
+}
+.profileHead > div {
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+}

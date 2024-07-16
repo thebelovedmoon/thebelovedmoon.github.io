@@ -1,0 +1,76 @@
+#navProfile, #navPodcast, #navCosplay {
+  display: none;
+}
+
+/* =============== /?vt?=about =============== */
+
+.info {
+  background-color: #793a80;
+  color: white;
+  padding: 250px 15px;
+}
+.info > div {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.info > div > h2 > span {
+  display: block;
+}
+
+/* =========== /?vt?=stateofvtuber =========== */
+
+/* ============== /?vt?=cosplay ============== */
+
+.cosIntro {
+  background-color: #e1cc63;
+  color: #2d2438;
+  padding: 250px 15px;
+}
+.cosIntro > div {
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.cosIntro > div > h1 {
+  text-align: initial;
+}
+
+div[cosDetails] {
+  margin: 1em 0;
+}
+div[cosDetails] > * {
+  margin: 0 !important;
+}
+
+.cosBlog {
+  background-color: #2d2438 !important;
+  color: white !important;
+  text-align: center;
+}
+
+div[cosBlog] {
+  background-color: #793a80;
+  border: #dcc6bb solid 2.5pt;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 500px;
+  max-width: 100%;
+  margin: 1em auto;
+  cursor: pointer;
+}
+div[cosBlog]:hover {
+  background-color: #502655;
+}
+div[cosBlog] > img {
+  width: inherit;
+  aspect-ratio: 16 / 9;
+}
+div[cosBlog] > div {
+  text-align: initial;
+  max-width: 100%;
+  padding: 15px;
+}
+div[cosBlog] > div > * {
+  margin: 0 !important;
+}

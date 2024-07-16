@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="thebelovedmoon">
     <title>Mother Agatha, the First Maria🍃</title>
-    <link rel="icon" href="/assets/images/icons/maria_1_icon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/assets/images/icons/maria_1_icon.png" type="image/x-icon">
+    <link rel="icon" href="https://thebelovedmoon.github.io/assets/images/icons/maria_1_icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://thebelovedmoon.github.io/assets/images/icons/maria_1_icon.png" type="image/x-icon">
     <meta name="og:type" content="website">
     <meta name="og:title" content="Mother Agatha, the First Maria🍃">
     <meta name="og:image" content="https://thebelovedmoon.github.io/assets/images/preview/firstMaria.png">
@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="/assets/css/_main.css" type="text/css" media="all"> <!-- base -->
     <style type="text/css">
     /* in-page css */
-      @import url("/assets/css/home.css");
-      @import url("/assets/css/hero.css");
+      @import url("/assets/css/index.css");
+      @import url("/assets/css/maria/firstMaria.css");
       header {
         background: linear-gradient(#793a80a0, #00000000);
       }
@@ -54,7 +54,7 @@
       <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/')">home</span>
       <span class="material-symbols-rounded" title="About the VTuber" onclick="nav('/?vt=about')">account_circle</span>
       <span class="material-symbols-rounded" title="Read the Blog" onclick="redir('/blog')">rss_feed</span>
-      <span class="material-symbols-rounded" title="#AgaCosplay" onclick="nav('/?vt=stateofvtuber')">podcasts</span>
+      <span class="material-symbols-rounded" title="State of the VTuber Community" onclick="nav('/?vt=stateofvtuber')">podcasts</span>
       <span class="material-symbols-rounded" title="#AgaCosplay" onclick="nav('/?vt=cosplay')">apparel</span>
       <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="redir('https://vtresmarias.github.io')">spa</span>
       <span class="material-symbols-rounded" title="Close Panel" onclick="panelClose()">close</span>
@@ -65,7 +65,7 @@
         <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/')">home</span>
         <span class="material-symbols-rounded" title="About the VTuber" onclick="nav('/?vt=about')">account_circle</span>
         <span class="material-symbols-rounded" title="Read the Blog" onclick="redir('/blog')">rss_feed</span>
-        <span class="material-symbols-rounded" title="#AgaCosplay" onclick="nav('/?vt=stateofvtuber')">podcasts</span>
+        <span class="material-symbols-rounded" title="State of the VTuber Community" onclick="nav('/?vt=stateofvtuber')">podcasts</span>
         <span class="material-symbols-rounded" title="#AgaCosplay" onclick="nav('/?vt=cosplay')">apparel</span>
         <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="redir('https://vtresmarias.github.io')">spa</span>
       </div>
@@ -73,8 +73,84 @@
         <span class="material-symbols-rounded" title="Open Panel" onclick="panelOpen()">menu</span>
       </div>
     </header>
-    <div class="vtmWP"></div>
-    <div class="vtmWP" style="background-image: url(/assets/images/preview/firstMaria.png) !important;"></div>
+    <div id="navHome"> <!-- / -->
+      <div class="vtmWP"></div>
+      <div class="vtmWP" style="background-image: url(/assets/images/preview/firstMaria.png) !important;"></div>
+    </div>
+    <div id="navProfile"> <!-- /?vt=about -->
+      <div class="profileHead"><div><h1>about the First Maria🍃</h1></div></div>
+      <div class="info">
+        <div>
+          <h2>
+            <span>the primary benefactor of the Marias.</span>
+            <span>a loving Mother at heart.</span>
+          </h2>
+          <p>
+            Mother Agatha was once a beloved Mother before everything fell apart due to
+            the brink of winter. she was given a mission from the Grand Lady upon her
+            resurrection to find those who will be a part of her life forever.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="navPodcast"> <!-- /?vt=stateofvtuber -->
+    </div>
+    <div id="navCosplay"> <!-- /?vt=cosplay -->
+      <div class="vtmWP" style="background-image: url(/assets/images/content/firstMaria/cosplay/cosplayMaria_wp.png) !important;"></div>
+      <div class="cosIntro">
+        <div>
+          <h1>are you ready to meet the Cosplay Marias?</h1>
+          <p>
+            they are almost ready to set the stage with their beauties that go beyond the
+            impossible!!
+          </p>
+        </div>
+        <br>
+        <div>
+          <h2>upcoming events</h2>
+          <p>
+            look out for the following ventures next, with each Cosplay Maria making their
+            mark throughout the Philippines and beyond:
+          </p>
+          <div cosDetails>
+            <h3>Malolos Toy Convention 2024 - Bataan Leg</h3>
+            <p>19-21 Jul 2024</p>
+            <p><i>Vista Mall Bataan, Balanga City</i></p>
+          </div>
+          <div cosDetails>
+            <h3>#AgaCosplay Invades: Bataan Tour</h3>
+            <p>August 2024</p>
+            <p><i>Province of Bataan</i></p>
+          </div>
+          <div cosDetails>
+            <h3>Cosplay Matsuri 2024</h3>
+            <p>28-30 Dec 2024</p>
+            <p><i>SMX Convention Center Manila, Pasay City</i></p>
+          </div>
+        </div>
+      </div>
+      <div class="cosIntro cosBlog">
+        <div>
+          <h2>from the First Maria🍃</h2>
+          <br>
+          <h2>2024</h2>
+          <div cosBlog onclick="redir('/blog/20240506')">
+            <img src="/blog/blog-assets/preview/20240506.png" alt="">
+            <div>
+              <h3>the ultimate local cosplaying experience.</h3>
+              <p><i>published 6 May 2024</i></p>
+            </div>
+          </div>
+          <div cosBlog onclick="redir('/blog/20240221')">
+            <img src="/blog/blog-assets/preview/20240221.png" alt="">
+            <div>
+              <h3>my two cosplay ventures so far</h3>
+              <p><i>published 21 Feb 2024</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <span>©2022 「VTresMarias - V三人のマリア - 」</span>
     </footer>

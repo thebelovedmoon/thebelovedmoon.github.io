@@ -8,7 +8,7 @@ function redir(rd) {
 }
 
 function nav(vt) {
-  window.open(vt, "_self");
+  window.location.replace(vt);
 }
 
 function panelOpen() {

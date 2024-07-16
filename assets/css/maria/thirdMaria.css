@@ -1,0 +1,23 @@
+#navProfile, #navSayonara, #navAnniv {
+  display: none;
+}
+
+/* =============== /?vt?=about =============== */
+
+.info {
+  background-color: #f0a9a9;
+  color: white;
+  padding: 250px 15px;
+}
+.info > div {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.info > div > h2 > span {
+  display: block;
+}
+
+/* ============== /?vt?=sayonara ============== */
+
+/* ============ /?vt?=hinaversary ============ */
