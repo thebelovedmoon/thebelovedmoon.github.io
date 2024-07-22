@@ -37,18 +37,48 @@
 }
 
 div[cosDetails] {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 div[cosDetails] > * {
+  margin: 0;
+}
+div[cosDetails] > h2 {
+  margin-bottom: 0.25rem;
+}
+
+.cosIncumbent {
+  background-color: #dcc6bb;
+  background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #3d374c;
+}
+.cosIncumbent > div > h1, p[asOf] {
+  margin: 0 !important;
+  text-align: center;
+}
+.cosIncumbent > div > div {
+  text-align: center;
+  margin: 2rem 0 !important;
+}
+.cosIncumbent > div > div > div[cosText] {
+  margin: 0.5rem 0 0 0;
+}
+.cosIncumbent > div > div > div[cosText] > * {
   margin: 0 !important;
 }
 
 .cosBlog {
-  background-color: #2d2438 !important;
-  color: white !important;
+  background-color: #2d2438;
+  color: white;
   text-align: center;
 }
-
+.cosBlog > div > h1 {
+  margin: 0 !important;
+  text-align: center;
+}
 div[cosBlog] {
   background-color: #793a80;
   border: #dcc6bb solid 2.5pt;
@@ -56,7 +86,7 @@ div[cosBlog] {
   overflow: hidden;
   width: 500px;
   max-width: 100%;
-  margin: 1em auto;
+  margin: 1rem auto;
   cursor: pointer;
 }
 div[cosBlog]:hover {
@@ -73,4 +103,59 @@ div[cosBlog] > div {
 }
 div[cosBlog] > div > * {
   margin: 0 !important;
+}
+
+/* flipcard css adapted from https://w3schools.com/howto/howto_css_flip_card.asp */
+div[flipcard] {
+  background-color: transparent;
+  width: 256px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+div[innerFlip] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: transform 0.6s;
+  -moz-transition: transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+div[flipcard]:hover div[innerFlip] {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+div[cosFront], div[cosBack] {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+div[cosBack] {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+img[cosMaria] {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
+  filter: drop-shadow(2px 4px 16px #3d374c80);
 }

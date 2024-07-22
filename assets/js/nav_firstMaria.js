@@ -17,7 +17,7 @@ function webQuery() {
     document.getElementById("navPodcast").style.display = "block";
     document.getElementById("navCosplay").style.display = "none";
   } else if (vt == "cosplay") {
-    document.title = "#AgaCosplay";
+    document.title = "#AgaCosplay × Cosplay Marias";
     document.getElementById("navHome").style.display = "none";
     document.getElementById("navProfile").style.display = "none";
     document.getElementById("navPodcast").style.display = "none";
