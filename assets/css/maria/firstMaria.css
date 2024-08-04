@@ -2,10 +2,16 @@
   display: none;
 }
 
+/* ==================== / ==================== */
+
 /* =============== /?vt?=about =============== */
 
 .info {
   background-color: #793a80;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
   padding: 250px 15px;
 }
@@ -19,6 +25,34 @@
 }
 
 /* =========== /?vt?=stateofvtuber =========== */
+
+.stateOfVTIntro {
+  background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_1.png");
+}
+
+img[stateLogo] {
+  width: 625px;
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+img[vtm-partner] {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.podcastContent > * {
+  text-align: center;
+}
+.podcastContent > img {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.podcastContent > div {
+  display: flex;
+  justify-content: center;
+}
 
 /* ============== /?vt?=cosplay ============== */
 

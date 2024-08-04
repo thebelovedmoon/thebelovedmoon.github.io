@@ -50,6 +50,9 @@
     </script>
   </head>
   <body onload="init()">
+    <div id="loadBlock"> <!-- splash screen -->
+      <img id="loaderFade" src="https://vtresmarias.github.io/media/images/loading.png" alt="">
+    </div>
     <div isMobile id="mobileNav">
       <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/')">home</span>
       <span class="material-symbols-rounded" title="About the VTuber" onclick="nav('/?vt=about')">account_circle</span>
@@ -60,7 +63,7 @@
       <span class="material-symbols-rounded" title="Close Panel" onclick="panelClose()">close</span>
     </div>
     <header>
-      <img class="vtLogo" src="/assets/images/logos/firstMaria.png" alt="Mother Agatha, the First Maria🍃" width="150px">
+      <img id="vtLogo" src="/assets/images/logos/firstMaria.png" alt="Mother Agatha, the First Maria🍃" width="150px">
       <div isDesktop class="urlRefs">
         <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/')">home</span>
         <span class="material-symbols-rounded" title="About the VTuber" onclick="nav('/?vt=about')">account_circle</span>
@@ -94,6 +97,113 @@
       </div>
     </div>
     <div id="navPodcast"> <!-- /?vt=stateofvtuber -->
+      <div class="stateOfVTIntro profileHead">
+        <div style="text-align: center;">
+          <img stateLogo src="/assets/images/content/firstMaria/stateofvtuber/logo.png" alt="">
+          <h2>coming soon to podcasts on Aug 2024</h2>
+        </div>
+      </div>
+      <div class="cosIntro" style="background-color: #793a80; color: white;">
+        <div style="width: 875px;">
+          <h1>covering VTubers and beyond since Aug 2023</h1>
+          <p><b>
+            what started as an unscripted #AgaTalks broadcast, now reaching more audiences
+            than ever!
+          </b></p>
+          <p>
+            this program started out as an attempt to compete with FalseEyeD and others'
+            style of bringing VTuber news to the growing audience, but it has grown to a
+            comprehensive compilation of noteworthy stories -- featuring articles from our
+            partners, the Collective, and beyond.
+          </p>
+          <h2>presented by 阿賀忠</h2>
+          <p>
+            the First Maria🍃 presents all of these stories in detail as she aims to
+            expand the journalistic horizons!!
+          </p>
+          <br>
+          <h2>covering news and highlights from our partners</h2>
+          <p>
+            in order to amplify the State's of everything VTubers and beyond, we turn to
+            our partners for their unwavering coverage of what we need to know inside the
+            community and beyond. here are our overall partners:
+          </p>
+          <br>
+          <img src="https://vstream.com/logo.svg" alt="VStream" width="375px">
+          <p>
+            State of the VTuber Community debuted its inaugural, unscripted August 2023
+            LIVE Edition on VStream. with it, the program turns to the platform for its
+            updates that enhances the user experience. it has since been discontinued on 1
+            Apr 2024 at 12am PDT.
+          </p>
+          </p>
+          <img src="https://vtubernewsdrop.com/content/images/2023/05/VTuber-NewsDrop-Logo-2023-White-on-Blue-5.png" alt="VTuber NewsDrop" width="375px">
+          <p>
+            VTuber NewsDrop features a comprehensive list of VTuber-centric news and
+            highlights concerning various elements. since the November 2023 LIVE Edition,
+            a selection of their articles are featured in the program.
+          </p>
+          <h2>from the Collective</h2>
+          <img vtm-partner src="https://vtresmarias.github.io/media/svg/vtm_logo_header.svg" alt="「VTresMarias - V三人のマリア - 」" width="375px">
+          <p>
+            the First Maria🍃 presents all the updates the VTuber Collective has shared
+            every month -- ranging from general updates, to website developments, and
+            ventures concerning the Marias!!
+          </p>
+        </div>
+      </div>
+      <div class="info" style="background-image: url('https://vtresmarias.github.io/media/images/backgrounds/vtm_2.jpg'); color: #3d374c;">
+        <div style="width: 500px;">
+          <h1>explore the podcasts</h1>
+          <br><br>
+          <div class="podcastContent">
+            <img src="/assets/images/content/firstMaria/stateofvtuber/podcastAlbum/liveEdition.png" alt="State of the VTuber Community ～LIVE Edition～">
+            <br>
+            <h3>State of the VTuber Community ～LIVE Edition～</h3>
+            <p><i>
+              released 31 Aug 2023
+            </i></p>
+            <p>
+              the State debuted with the first-ever LIVE Edition on 31 August 2023, and has
+              since been evolving as we try ways to deliver the news to the masses.
+            </p>
+            <p>
+              they form the basis for the Podcast Edition, although the episodes will be
+              re-aired from scratch.
+            </p>
+            <p>
+              it will also feature separate Special Reports, which will not be included in
+              the Podcast Edition as they will be integrated therein.
+            </p>
+            <div>
+              <span class="material-symbols-rounded" title="listen to the podcast on YouTube Music" onclick="window.open('https://music.youtube.com/playlist?list=PLQZt5lx5sFp-jI8QY5Q-B1z2gujvqQW4I')">video_library</span>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="podcastContent">
+            <img src="/assets/images/content/firstMaria/stateofvtuber/podcastAlbum/podcastEdition.png" alt="State of the VTuber Community (Podcast Edition)">
+            <br>
+            <h3>State of the VTuber Community (Podcast Edition)</h3>
+            <p><i>
+              releases 31 Aug 2024
+            </i></p>
+            <p>
+              the State re-emerges as the Podcast Edition, now with improved presentation
+              and how we present the news going forward!!
+            </p>
+            <p>
+              the First Maria🍃 returns with a re-imagined State, including revised versions
+              of the previous episodes!! (please note that contents of the episodes prior to
+              Aug 2024 Anniversary Edition will be either revised from scratch or removed,
+              but they can still be available via the LIVE Edition.)
+            </p>
+            <div>
+              <span class="material-symbols-rounded" title="listen to the podcast on YouTube Music" onclick="alert('coming soon!!')">video_library</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
     <div id="navCosplay"> <!-- /?vt=cosplay -->
       <div class="vtmWP" style="background-image: url(/assets/images/content/firstMaria/cosplay/cosplayMaria_wp.png) !important;"></div>

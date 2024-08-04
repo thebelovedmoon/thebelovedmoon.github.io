@@ -50,6 +50,9 @@
     </script>
   </head>
   <body onload="init()">
+    <div id="loadBlock"> <!-- splash screen -->
+      <img id="loaderFade" src="https://vtresmarias.github.io/media/images/loading.png" alt="">
+    </div>
     <div isMobile id="mobileNav">
       <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/auraostara')">home</span>
       <span class="material-symbols-rounded" title="About the VTuber" onclick="nav('/auraostara?vt=about')">account_circle</span>
@@ -58,7 +61,7 @@
       <span class="material-symbols-rounded" title="Close Panel" onclick="panelClose()">close</span>
     </div>
     <header>
-      <img class="vtLogo" src="/assets/images/logos/secondMaria.png" alt="Aura Ostara, the Second Maria🪷" width="100px">
+      <img id="vtLogo" src="/assets/images/logos/secondMaria.png" alt="Aura Ostara, the Second Maria🪷" width="100px">
       <div isDesktop class="urlRefs">
         <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/auraostara')">home</span>
         <span class="material-symbols-rounded" title="About the VTuber" onclick="nav('/auraostara?vt=about')">account_circle</span>

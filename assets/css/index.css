@@ -1,3 +1,32 @@
+#loadBlock {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #3d374c;
+  background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 0;
+  z-index: calc(2022 + 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 4px 100px 16px #3d374c80;
+  -webkit-transition: 1.25s;
+  -moz-transition: 1.25s;
+  -o-transition: 1.25s;
+  transition: 1.25s;
+}
+#loaderFade {
+  -webkit-transition: 1.25s;
+  -moz-transition: 1.25s;
+  -o-transition: 1.25s;
+  transition: 1.25s;
+}
+
 header, #mobileNav {
   width: 100vw;
   position: absolute;
@@ -18,7 +47,7 @@ footer {
   letter-spacing: normal !important;
 }
 
-.vtLogo {
+#vtLogo {
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
 
