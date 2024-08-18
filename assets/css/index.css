@@ -28,8 +28,8 @@
 }
 
 header, #mobileNav {
-  width: 100vw;
   position: absolute;
+  width: 100vw;
   top: 0;
   z-index: 2022;
   padding: 15px 30px;
