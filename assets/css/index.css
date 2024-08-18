@@ -102,3 +102,8 @@ footer {
   max-width: 100%;
   margin: 0 auto;
 }
+
+#miscBtn1, #miscBtn2 {
+  display: none;
+  margin-right: 15px !important;
+}

@@ -73,11 +73,31 @@ img[vtm-partner] {
 div[cosDetails] {
   margin: 1rem 0;
 }
-div[cosDetails] > * {
+div[cosDetails] > *, .emailBlock > * {
   margin: 0;
 }
 div[cosDetails] > h2 {
   margin-bottom: 0.25rem;
+}
+div[cosDetails] > div, .emailBlock > div {
+  margin-top: 0.5rem !important;
+}
+
+.cosNavBtn {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  margin-right: 0.25rem;
+  padding: 0.75rem;
+  border-radius: 50%;
+  background-color: #3d374c;
+  color: white;
+  font-size: inherit;
+  -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
+  filter: drop-shadow(2px 4px 16px #3d374c80);
+}
+.cosNavBtn:hover {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  background-color: #dcc6bb;
+  color: #3d374c !important;
 }
 
 .cosIncumbent {

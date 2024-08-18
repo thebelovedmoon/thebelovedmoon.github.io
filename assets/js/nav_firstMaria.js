@@ -26,12 +26,21 @@ function webQuery() {
 
   } else if (vt == "cosplay") {
 
-    document.title = "#AgaCosplay × Cosplay Marias";
+    document.title = "💚🍃阿賀忠のコスプレ💗🌸";
 
     document.getElementById("navHome").style.display = "none";
     document.getElementById("navProfile").style.display = "none";
     document.getElementById("navPodcast").style.display = "none";
     document.getElementById("navCosplay").style.display = "block";
+
+    document.getElementById("vtLogo").src = "/assets/images/content/firstMaria/_logo/AgaCosplay_Bataan2024.png"
+
+    for (let m = 1; m < 3; m++) {
+      document.getElementById("miscBtn" + m).innerHTML = "open_in_new";
+      document.getElementById("miscBtn" + m).title = "learn more";
+      document.getElementById("miscBtn" + m).onclick = () => { window.open("https://agasitecollection.github.io/agacosplay/bataan2024") };
+      document.getElementById("miscBtn" + m).style.display = "inline-block";
+    }
 
   } else {
 

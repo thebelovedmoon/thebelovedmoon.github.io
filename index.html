@@ -54,6 +54,7 @@
       <img id="loaderFade" src="https://vtresmarias.github.io/media/images/loading.png" alt="">
     </div>
     <div isMobile id="mobileNav">
+      <span id="miscBtn2" class="material-symbols-rounded"></span>
       <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/')">home</span>
       <span class="material-symbols-rounded" title="About the VTuber" onclick="nav('/?vt=about')">account_circle</span>
       <span class="material-symbols-rounded" title="Read the Blog" onclick="redir('/blog')">rss_feed</span>
@@ -65,6 +66,7 @@
     <header>
       <img id="vtLogo" src="/assets/images/logos/firstMaria.png" alt="Mother Agatha, the First Maria🍃" width="150px">
       <div isDesktop class="urlRefs">
+        <span id="miscBtn1" class="material-symbols-rounded"></span>
         <span class="material-symbols-rounded" title="Go to Home" onclick="nav('/')">home</span>
         <span class="material-symbols-rounded" title="About the VTuber" onclick="nav('/?vt=about')">account_circle</span>
         <span class="material-symbols-rounded" title="Read the Blog" onclick="redir('/blog')">rss_feed</span>
@@ -208,16 +210,17 @@
       <div class="vtmWP" style="background-image: url(/assets/images/content/firstMaria/cosplay/cosplayMaria_wp.png) !important;"></div>
       <div class="cosIntro" style="background-color: #793a80; color: white;">
         <div>
-          <h1>introducing: #AgaCosplay × Cosplay Marias (abbrev. CosMarias)</h1>
+          <!-- <h1>introducing: 阿賀忠のコスプレ × Cosplay Marias (abbrev. CosMarias)</h1> -->
+          <h1>introducing: コスプレのマリア (CosMarias)</h1>
           <p>
             what started out as the First Maria🍃's first venture into the cosplay
             universe, became a mission to unite everyone together through this and other
             means!!
           </p>
           <p>
-            this new Collective features three cosplayers -- all from different walks of
-            life -- committed to the same mission of upholding the Core Values of the
-            VTuber Collective.
+            this new Collective features three incumbent cosplayers (and many more) -- all
+            from different walks of life -- committed to the same mission of upholding the
+            Core Values of the VTuber Collective.
           </p>
           <br>
           <h2>founded by the First Maria🍃</h2>
@@ -359,27 +362,40 @@
             <p>19-21 Jul 2024&ensp;&#8226;&ensp;Vista Mall Bataan, Balanga City</p>
           </div>
           <div cosDetails>
-            <h2>#AgaCosplay Invades: Bataan Tour</h2>
-            <p>August-September 2024&ensp;&#8226;&ensp;Province of Bataan</p>
+            <h2>#AgaCosplay Invades: Bataan Tour 2024</h2>
+            <p>starts 24 Aug 2024&ensp;&#8226;&ensp;Province of Bataan</p>
+            <div>
+              <span class="cosNavBtn material-symbols-rounded" title="check out the page for more details!!" onclick="window.open('https://agasitecollection.github.io/agacosplay/bataan2024')">open_in_new</span>
+              <span class="cosNavBtn material-symbols-rounded" title="check out the announcement on Facebook" onclick="window.open('https://web.facebook.com/share/p/ffxqovScRXer847W')">info</span>
+            </div>
           </div>
           <div cosDetails>
             <h2>GachaFest! 2024</h2>
             <p>25 Aug 2024&ensp;&#8226;&ensp;SM City Olongapo, Olongapo City</p>
           </div>
           <div cosDetails>
-            <h2>Gakuen-Sai: A School Campus Festival</h2>
+            <h2>Connxt Gakuen-Sai: A School Campus Festival</h2>
             <p>14-15 Sep 2024&ensp;&#8226;&ensp;Vista Mall Bataan, Balanga City</p>
           </div>
           <div cosDetails>
             <h2>Cosplay Matsuri 2024</h2>
             <p><i>aka the Grand Appearance</i></p>
             <p>28-30 Dec 2024&ensp;&#8226;&ensp;SMX Convention Center, Pasay City</p>
+            <div>
+              <span class="cosNavBtn material-symbols-rounded" title="check out the page for more details!!" onclick="alert('coming soon!!')">open_in_new</span>
+              <!-- <span class="cosNavBtn material-symbols-rounded" title="check out the announcement on X" onclick="window.open('TODO')">info</span> -->
+            </div>
           </div>
-          <br>
-          <p><b>
-            if you want to have the CosMarias in the next convention, you can contact the
-            First Maria🍃 via email at jelsa14018@gmail.com.
-          </b></p>
+          <br><br>
+          <div class="emailBlock">
+            <p><b>
+              if you want to have the CosMarias in the next convention, you can contact the
+              incumbent First CosMaria via email by clicking the button below:
+            </b></p>
+            <div>
+              <span class="cosNavBtn material-symbols-rounded" title="email the incumbent First CosMaria for cosplay-related inquiries" onclick="window.open('mailto:jelsa14018@gmail.com?subject=cosplay%20inquiry')">mail</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="cosIntro cosBlog">
