@@ -38,7 +38,7 @@ function webQuery() {
     for (let m = 1; m < 3; m++) {
       document.getElementById("miscBtn" + m).innerHTML = "open_in_new";
       document.getElementById("miscBtn" + m).title = "learn more";
-      document.getElementById("miscBtn" + m).onclick = () => { window.open("https://agasitecollection.github.io/cosmariainception"); };
+      document.getElementById("miscBtn" + m).onclick = () => { window.open("https://tbmassoc.github.io/thebelovedmoon/cosmariainauguration"); };
       document.getElementById("miscBtn" + m).style.display = "inline-block";
     }
 
