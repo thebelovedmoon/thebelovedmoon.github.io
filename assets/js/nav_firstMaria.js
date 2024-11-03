@@ -33,7 +33,8 @@ function webQuery() {
     document.getElementById("navPodcast").style.display = "none";
     document.getElementById("navCosplay").style.display = "block";
 
-    // document.getElementById("vtLogo").src = "/assets/images/content/firstMaria/_logo/AgaCosplay_Bataan2024.png"
+    document.getElementById("vtLogo").src = "https://tbmassoc.github.io/thebelovedmoon/cosmariainauguration/assets/cosmaria_logo.png"
+    // document.getElementById("vtLogo").style.filter = "brightness(0) invert(1)";
 
     for (let m = 1; m < 3; m++) {
       document.getElementById("miscBtn" + m).innerHTML = "open_in_new";
