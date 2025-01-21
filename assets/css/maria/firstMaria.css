@@ -27,7 +27,7 @@
 /* =========== /?vt?=stateofvtuber =========== */
 
 .stateOfVTIntro {
-  background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_1.png");
+  background-image: url("https://vtresmarias.github.io/assets/images/backgrounds/vtm_1.jpg");
 }
 
 img[stateLogo] {
@@ -102,7 +102,7 @@ div[cosDetails] > div, .emailBlock > div {
 
 .cosIncumbent {
   background-color: #dcc6bb;
-  background-image: url("https://vtresmarias.github.io/media/images/backgrounds/vtm_1.jpg");
+  background-image: url("https://vtresmarias.github.io/assets/images/backgrounds/vtm_1.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
