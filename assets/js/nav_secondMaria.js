@@ -11,6 +11,8 @@ function webQuery() {
     document.getElementById("navHome").style.display = "none";
     document.getElementById("navProfile").style.display = "block";
     document.getElementById("navHiatus").style.display = "none";
+
+    navBtnHide(vt);
     
   } else if (vt == "hiatus") {
     
@@ -19,11 +21,20 @@ function webQuery() {
     document.getElementById("navHome").style.display = "none";
     document.getElementById("navProfile").style.display = "none";
     document.getElementById("navHiatus").style.display = "block";
+
+    navBtnHide(vt);
     
   } else {
     
     document.title = "Aura Ostara, the Second Maria🪷";
+
+    navBtnHide("home");
     
   }
 
+}
+
+function navBtnHide(lbl) {
+  let format = ["desktop", "mobile"];
+  for (let v = 0; v < format.length; v++) { document.getElementById(lbl + "-" + format[v]).style.display = "none"; }
 }

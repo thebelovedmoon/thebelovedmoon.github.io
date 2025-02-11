@@ -12,6 +12,8 @@ function webQuery() {
     document.getElementById("navProfile").style.display = "block";
     document.getElementById("navSayonara").style.display = "none";
     document.getElementById("navAnniv").style.display = "none";
+
+    navBtnHide(vt);
     
   } else if (vt == "sayonara") {
     
@@ -21,6 +23,8 @@ function webQuery() {
     document.getElementById("navProfile").style.display = "none";
     document.getElementById("navSayonara").style.display = "block";
     document.getElementById("navAnniv").style.display = "none";
+
+    navBtnHide(vt);
     
   } else if (vt == "hinaversary") {
     
@@ -30,11 +34,20 @@ function webQuery() {
     document.getElementById("navProfile").style.display = "none";
     document.getElementById("navSayonara").style.display = "none";
     document.getElementById("navAnniv").style.display = "block";
+
+    navBtnHide(vt);
     
   } else {
     
     document.title = "Hina Oujo, the Third Maria🌸";
+
+    navBtnHide("home");
     
   }
 
+}
+
+function navBtnHide(lbl) {
+  let format = ["desktop", "mobile"];
+  for (let v = 0; v < format.length; v++) { document.getElementById(lbl + "-" + format[v]).style.display = "none"; }
 }
