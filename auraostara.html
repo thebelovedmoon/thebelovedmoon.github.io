@@ -25,12 +25,8 @@
       /* in-page css */
       @import url("/assets/css/index.css");
       @import url("/assets/css/maria/secondMaria.css");
-      header {
-        background: linear-gradient(#66a898a0, #00000000);
-      }
-      .material-symbols-rounded:hover {
-        color: #66a898;
-      }
+      header { background: linear-gradient(#66a898a0, #00000000); }
+      .material-symbols-rounded:hover { color: #66a898 !important; }
       #mobileNav, #mobileNav > .material-symbols-rounded:hover {
         background-color: #66a898;
         color: white !important;
@@ -38,11 +34,11 @@
     </style>
     <!-- custom scripts -->
     <script src="/assets/js/_main.js" type="text/javascript"></script> <!-- base -->
-    <script src="/assets/js/nav_secondMaria.js" type="text/javascript"></script>
+    <script src="/assets/js/maria/secondMaria.js" type="text/javascript"></script>
     <script type="text/javascript">
       function pageInit() {
         // pageInit() args here
-        webQuery();
+        webQry();
       }
     </script>
     <script type="text/javascript">
@@ -55,9 +51,9 @@
     </div>
     <div isMobile id="mobileNav">
       <span id="miscBtn2" class="material-symbols-rounded"></span>
-      <span id="home-mobile" class="material-symbols-rounded" title="Go to Home" onclick="nav('/auraostara')">home</span>
-      <span id="about-mobile" class="material-symbols-rounded" title="About the VTuber" onclick="nav('/auraostara?vt=about')">account_circle</span>
-      <span id="hiatus-mobile" class="material-symbols-rounded" title="Read the Hiatus Note" onclick="nav('/auraostara?vt=hiatus')">description</span>
+      <span id="home-mobile" class="material-symbols-rounded" title="go to home" onclick="nav('/auraostara')">home</span>
+      <span id="about-mobile" class="material-symbols-rounded" title="about the vtuber" onclick="nav('/auraostara?vt=about')">account_circle</span>
+      <span id="hiatus-mobile" class="material-symbols-rounded" title="read the Hiatus Note" onclick="nav('/auraostara?vt=hiatus')">description</span>
       <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="redir('https://vtresmarias.github.io')">spa</span>
       <span class="material-symbols-rounded" title="Close Panel" onclick="panelClose()">close</span>
     </div>
@@ -65,18 +61,18 @@
       <img id="vtLogo" src="/assets/images/logos/secondMaria.png" alt="Aura Ostara, the Second Maria🪷" width="100px">
       <div isDesktop class="urlRefs">
         <span id="miscBtn1" class="material-symbols-rounded"></span>
-        <span id="home-desktop" class="material-symbols-rounded" title="Go to Home" onclick="nav('/auraostara')">home</span>
-        <span id="about-desktop" class="material-symbols-rounded" title="About the VTuber" onclick="nav('/auraostara?vt=about')">account_circle</span>
-        <span id="hiatus-desktop" class="material-symbols-rounded" title="Read the Hiatus Note" onclick="nav('/auraostara?vt=hiatus')">description</span>
+        <span id="home-desktop" class="material-symbols-rounded" title="go to home" onclick="nav('/auraostara')">home</span>
+        <span id="about-desktop" class="material-symbols-rounded" title="about the vtuber" onclick="nav('/auraostara?vt=about')">account_circle</span>
+        <span id="hiatus-desktop" class="material-symbols-rounded" title="read the Hiatus Note" onclick="nav('/auraostara?vt=hiatus')">description</span>
         <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="redir('https://vtresmarias.github.io')">spa</span>
       </div>
       <div isMobile class="urlRefs">
-        <span class="material-symbols-rounded" title="Open Panel" onclick="panelOpen()">menu</span>
+        <span class="material-symbols-rounded" title="open panel" onclick="panelOpen()">menu</span>
       </div>
     </header>
     <div id="navHome"> <!-- / -->
-      <div class="vtmWP"></div>
-      <div class="vtmWP" style="background-image: url(/assets/images/preview/secondMaria.png) !important;"></div>
+      <div class="vtmWP" style="background-position: 32.5% center !important;"></div>
+      <div class="vtmWP" style="background-image: url(/assets/images/preview/secondMaria.png) !important; background-position: 32.5% center !important;"></div>
     </div>
     <div id="navProfile"> <!-- /?vt=about -->
       <div class="profileHead"><div><h1>about the Second Maria🪷</h1></div></div>
@@ -90,6 +86,234 @@
       </div>
     </div>
     <div id="navHiatus"> <!-- /?vt=hiatus -->
+      <div class="hiatusBG">
+        <div>
+          <h1>See You In The Future (Indefinite Hiatus Announcement)</h1>
+          <br>
+          <p style="text-align: center">
+            retrieved from Twitlonger, originally published 19 Oct 2022
+          </p>
+          <br><br>
+          <div hiatusTxt>
+            <p>TW: DEPRESSION, SUICIDE, ABUSE.</p>
+            <br>
+            <p>(This is over 9000 words. Good luck getting to the end!)</p>
+            <br>
+            <p>Everyone,</p>
+            <br>
+            <p>
+              I learned on Friday, October 14th that I’ve been emotionally and
+              psychologically abused by someone very close to me. It has been happening for
+              many years. I need time to think about my future. I will be on an indefinite
+              hiatus until I can find a way to come back. I may have to change many things
+              to do that in my life and it may take a long time. I don't know.
+            </p>
+            <br>
+            <p>ɪꜰ ʏᴏᴜ ᴅᴏɴ’ᴛ ʀᴇᴀᴅ ᴀɴʏᴛʜɪɴɢ ᴇʟꜱᴇ, ᴘʟᴇᴀꜱᴇ ʀᴇᴀᴅ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ᴘᴀʀᴀɢʀᴀᴘʜ.</p>
+            <br>
+            <p>
+              Everyone who reads this, please LOOK UP THE SIGNS OF EMOTIONAL ABUSE. In some
+              instances, it can be extremely covert and subtle and victims may not realize
+              it is happening. You will find ways to excuse the abusive behavior or find
+              logical ways to rationalize and trick yourself on what happened to you. They
+              will make you doubt yourself, make you think you are unwell beyond what is
+              true, that you are the problem and not them who is avoiding accountability.
+              Please talk to someone. Anyone. No matter how long it takes you to do so, no
+              matter how ashamed you feel, please don’t stop trying to talk to someone about
+              what you are experiencing. If you are isolated with your abuse, it may end up
+              destroying you. Fight for yourself.
+            </p>
+            <br>
+            <p>
+              I’m not going to release my next cover song that I had as a surprise because I
+              don't feel comfortable sharing it anymore considering how it was made and what
+              memories I have of recording the song. Just so you all know, it was Simple &
+              Clean. I wanted to dedicate it to you all for how you make me feel.
+            </p>
+            <br>
+            <p>
+              I’m sorry I didn’t understand what was happening to me or how to talk about it
+              in a way that is good enough to get better. I’m sorry I couldn’t find anything
+              to help me more until now. I’m sorry I didn’t know how to reach out to you all
+              for every moment that I wanted too. I'm sorry for any disappointment. I'm
+              sorry you didn't see this coming.
+            </p>
+            <br>
+            <p>
+              I haven’t been able to learn many new things or be consistent at all since
+              starting this. I haven’t been able to do most of what I wanted yet by this
+              point. I’ve been crushed about my time here more times then I was happy. I was
+              always torn up on how I was on all my platforms and felt disgusted with myself
+              to keep going because it. To not be well or focused enough to make you feel a
+              fantasy and to have fun and feel supported by me made me always feel terrible.
+              Even so, I had to accept it because I was doing the best I could. I knew so
+              much else was happening in my life that was making me feel like I was always
+              just surviving almost every single day. How could anyone understand that when
+              I wasn’t fully understanding what was going on myself?
+            </p>
+            <br>
+            <p>
+              How many of you can say that you started being a VTuber when you were at your
+              lowest? Why would anyone take that on when they were earlier that year
+              considering going to a mental institution? How much could you manage with
+              doing this if you had psychological and physiological symptoms that were
+              debilitating? I wanted to end my life multiple times this year, most recently
+              in August. All this time has passed but I never felt truly safe, even to this
+              day.
+            </p>
+            <br>
+            <p>
+              I have no regrets. I spent hundreds to do this and that was nothing compared
+              to my other costs for my health that did not make me nearly as happy or
+              fulfilled. The purpose was always to do this to find myself again and to do my
+              best. Even if it was going to be a failure like everything else I tried. I was
+              needing to feel what it would be like to be me with people that were new in my
+              life. Nothing I did worked before being Aura.
+            </p>
+            <br>
+            <p>
+              I want you to know I was successful in that. Becoming a VTuber helped me find
+              myself again. It reminded me how to be brave in a new way and how to think
+              about my future again. It reminded me of how I truly felt about so many parts
+              of my life. How I love creating, making people happy, and learning about what
+              is different in this world.
+            </p>
+            <br>
+            <p>
+              It took me months, but now I have more hope than I’ve had in a long time. I
+              didn’t get canceled. I didn’t get any hate. I didn’t graduate even though many
+              were probably waiting for the day. I didn’t share about all my panic attacks
+              or spirals with anxiety online to make everyone feel sad for me. I didn’t
+              fight with anyone. I kept going because I believed someone would see what I
+              saw in me.
+            </p>
+            <br>
+            <p>
+              You were always on my stream. Every single stream, at least one person was
+              with me even though I was nobody. It was amazing to me every single time. I
+              brought you something fun and good and it was from someone who felt miserable.
+              You made me laugh. You made me smile. You made me feel joy. I haven’t felt so
+              much happiness in such a long time.
+            </p>
+            <br>
+            <p>
+              I’m so proud of myself for being here to share this with you. I made it to
+              this point after fighting for so much. I’m practicing forgiveness for the time
+              I was unwell and for not being enough for myself for so long. I want to love
+              myself enough to be free from letting anyone hurt me like this again. I’m not
+              sure what it means in the end, but I’m going to find out.
+            </p>
+            <br>
+            <p>
+              Thank you to my followers. Thank you to everyone who I talked to one on one,
+              everyone I played games with, everyone I watched movies with, everyone who
+              made me laugh, everyone I reached out to and got a response back. You made my
+              life feel so hopeful with every word of fun and support you gave me.
+            </p>
+            <br>
+            <p>
+              Now, for my words of appreciation for two people that deserve special
+              recognition - MystearicaVT and RaidaZERO_EN
+            </p>
+            <br>
+            <p>Tear and Raida,</p>
+            <br>
+            <p>
+              I felt ready to move on from my failure arc for a few reasons, but mostly
+              because of you both. I knew I would be able to do so when I felt ready. From
+              all that has happened to me in my life, it feels like a red thread of fate led
+              me to you so I could find and have the strength I needed to finally help
+              myself from what I was enduring. For that, I’ll always hope for you to be
+              happy and at peace with all that you love in your life forever more.
+            </p>
+            <br>
+            <p>
+              I’m not sure when I’ll be back. I’m not sure how I’ll come back. It will be
+              like coming back to ground zero and starting from scratch when I do most
+              likely. I'm not worried at all if that is true because I know it'll be so much
+              easier when I'm healthy again. I'm not worried you all will forget me because
+              I believe in myself to make you remember me again someday. The content
+              creation world is all about constantly keeping up with making something happen
+              and I know it'll be hard to start again when I'm ready...but that is ok. I'm
+              not worried about any of that because I need to do something else right now
+              for myself.
+            </p>
+            <br>
+            <p>
+              What I do know for sure is that I love this community and I love being a
+              VTuber. I love seeing so many of you work so hard and have so much fun with
+              what you love to enjoy. I love how much easier it allows people like me to
+              connect to everyone all over the world and for us to keep improving ourselves
+              in a way that helps us.
+            </p>
+            <br>
+            <p>
+              I will continue to support those I care about to the best of my ability. I
+              will welcome any of you who want to talk or play on Discord with me if you
+              want to reach out still. I'm not going to try and promise you anything because
+              real life is so focused for me right now, but you never know what can happen
+              if don't you try.
+            </p>
+            <br>
+            <p>
+              I had to take many attempts to finish this because it made me so sad, but
+              leaving now is the right thing to do. I'm taking as much time as I need. It
+              won't be forever but it has to be enough time for me to be safe once more in
+              my life.
+            </p>
+            <br>
+            <p>
+              I have love for you all and want you to never give up on what you need for
+              yourself no matter what happens or how long it might take.
+            </p>
+            <br>
+            <p>Your ditzy-dreamer-fabulous-flowerchild nymph,</p>
+            <br>
+            <p>Aura Ostara</p>
+            <br>
+            <p>P.S. (FINAL A.D.D. FUELED THOUGHTS)</p>
+            <br>
+            <p>
+              Thebelovedmoon - You have given me more than almost anyone. I know I struggled
+              to fully appreciate you the way you deserved, but I hope you know you have
+              been absolutely incredible and amazing for me since pretty much the beginning.
+              Thank you for all the streams you were on. The first art you made of me. The
+              support you always had for me. Thank you.
+            </p>
+            <br>
+            <p>
+              Alex Oswell - I want you to love yourself for me as much as you can. I never
+              want you to give up no matter what happens to you. You are beautiful.
+            </p>
+            <br>
+            <p>
+              V-Buddies/JinOverCr - I always felt so happy and safe with you all no matter
+              what we did together. I'm so thankful to have had as much fun as I did with
+              you all. I hope you guys keep on doing what you do best and do it together
+              without any troubles in the future. Keep up the hard work Jin. I believe in
+              you.
+            </p>
+            <br>
+            <p>
+              V-Care/V-Supporters - You made it so much easier for me to keep going. I'm so
+              grateful to those of you I was able to reach out to and share with. I hope you
+              are cherished and respected for the entirety of your career for helping so
+              many like me.
+            </p>
+            <br>
+            <p>
+              DreamingWitch/Anya - Thank you for helping me dream and hope. You deserve so
+              much support and recognition for your incredible, stunning, and magical art!
+              Please take care of yourself and be successful in all you do.
+            </p>
+            <br>
+            <p>🎵 𝘕𝘦𝘷𝘦𝘳𝘮𝘰𝘳𝘦 𝘸𝘪𝘭𝘭 𝘥𝘳𝘦𝘢𝘮𝘴 𝘦𝘹𝘱𝘪𝘳𝘦</p>
+            <p>𝘒𝘦𝘦𝘱 𝘪𝘵 𝘣𝘶𝘳𝘯𝘪𝘯𝘨. 𝘒𝘦𝘦𝘱 𝘪𝘵 𝘣𝘶𝘳𝘯𝘪𝘯𝘨 𝘣𝘢𝘣𝘺, 𝘨𝘰𝘵 𝘵𝘩𝘪𝘴 𝘧𝘪𝘳𝘦</p>
+            <p>𝘏𝘰𝘭𝘥 𝘮𝘺 𝘩𝘢𝘯𝘥 𝘢𝘯𝘥 𝘥𝘰𝘯'𝘵 𝘥𝘢𝘳𝘦 𝘵𝘰 𝘭𝘦𝘵 𝘨𝘰</p>
+            <p>𝘊𝘢𝘶𝘴𝘦 𝘦𝘢𝘤𝘩 𝘥𝘢𝘺, 𝘊𝘢𝘶𝘴𝘦 𝘦𝘢𝘤𝘩 𝘥𝘢𝘺 𝘧𝘰𝘳 𝘺𝘰𝘶 𝘮𝘺 𝘭𝘰𝘷𝘦 𝘸𝘪𝘭𝘭 𝘨𝘳𝘰𝘸 🎵</p>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <span>©2022 「VTresMarias - V三人のマリア - 」</span>

@@ -1,8 +1,6 @@
-const qr = new URLSearchParams(window.location.search);
+function webQry() {
 
-function webQuery() {
-
-  var vt = qr.get("vt");
+  let vt = new URLSearchParams(window.location.search).get("vt");
 
   if (vt == "about") {
     
@@ -23,6 +21,9 @@ function webQuery() {
     document.getElementById("navProfile").style.display = "none";
     document.getElementById("navSayonara").style.display = "block";
     document.getElementById("navAnniv").style.display = "none";
+    
+    let whtn = document.querySelectorAll("header > div > span[class='material-symbols-rounded']");
+    for (let icn of whtn) { icn.setAttribute("style", "color: white;"); }
 
     navBtnHide(vt);
     

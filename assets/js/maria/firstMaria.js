@@ -1,8 +1,6 @@
-const qr = new URLSearchParams(window.location.search);
+function webQry() {
 
-function webQuery() {
-
-  var vt = qr.get("vt");
+  let vt = new URLSearchParams(window.location.search).get("vt");
 
   if (vt == "about") {
 

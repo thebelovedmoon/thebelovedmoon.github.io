@@ -11,9 +11,7 @@ html, body {
   word-wrap: break-word;
   scroll-behavior: smooth;
 }
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html {
   background-color: #3d374c;
@@ -31,9 +29,7 @@ body {
   color: #3d374c;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-shadow: 2px 4px 16px #3d374c80;
-}
+h1, h2, h3, h4, h5, h6 { text-shadow: 2px 4px 16px #3d374c80; }
 h1 {
   font-style: italic;
   text-align: center;
@@ -66,9 +62,7 @@ button {
   transition: 0.75s;
   filter: drop-shadow(2px 4px 16px #3d374c80);
 }
-button:hover {
-  background-color: #66a898;
-}
+button:hover { background-color: #66a898; }
 button:active {
   background-color: #f0a9a9;
   -webkit-transition: 0.25s;
@@ -103,14 +97,10 @@ a:active {
   -o-transition: 1s;
   transition: 1s;
 }
-.material-symbols-rounded:hover {
-  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 24;
-}
+.material-symbols-rounded:hover { font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 24; }
 
 /* hide scrollbar */
-::-webkit-scrollbar {
-  display: none;
-}
+::-webkit-scrollbar { display: none; }
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;

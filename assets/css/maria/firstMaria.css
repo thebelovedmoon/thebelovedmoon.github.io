@@ -1,6 +1,4 @@
-#navProfile, #navPodcast, #navCosplay {
-  display: none;
-}
+#navProfile, #navPodcast, #navCosplay { display: none; }
 
 /* ==================== / ==================== */
 
@@ -20,15 +18,11 @@
   max-width: 100%;
   margin: 0 auto;
 }
-.info > div > h2 > span {
-  display: block;
-}
+.info > div > h2 > span { display: block; }
 
 /* =========== /?vt?=stateofvtuber =========== */
 
-.stateOfVTIntro {
-  background-image: url("https://vtresmarias.github.io/assets/images/backgrounds/vtm_1.jpg");
-}
+.stateOfVTIntro { background-image: url("https://vtresmarias.github.io/assets/images/backgrounds/vtm_1.jpg"); }
 
 img[stateLogo] {
   width: 625px;
@@ -41,9 +35,7 @@ img[vtm-partner] {
   filter: brightness(0) invert(1);
 }
 
-.podcastContent > * {
-  text-align: center;
-}
+.podcastContent > * { text-align: center; }
 .podcastContent > img {
   width: 500px;
   margin: 0 auto;
@@ -66,22 +58,12 @@ img[vtm-partner] {
   max-width: 100%;
   margin: 0 auto;
 }
-.cosIntro > div > h1 {
-  text-align: initial;
-}
+.cosIntro > div > h1 { text-align: initial; }
 
-div[cosDetails] {
-  margin: 1rem 0;
-}
-div[cosDetails] > *, .emailBlock > * {
-  margin: 0;
-}
-div[cosDetails] > h2 {
-  margin-bottom: 0.25rem;
-}
-div[cosDetails] > div, .emailBlock > div {
-  margin-top: 0.5rem !important;
-}
+div[cosDetails] { margin: 1rem 0; }
+div[cosDetails] > *, .emailBlock > * { margin: 0; }
+div[cosDetails] > h2 { margin-bottom: 0.25rem; }
+div[cosDetails] > div, .emailBlock > div { margin-top: 0.5rem !important; }
 
 .cosNavBtn {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
@@ -117,12 +99,8 @@ div[cosDetails] > div, .emailBlock > div {
   text-align: center;
   margin: 2rem 0 !important;
 }
-.cosIncumbent > div > div > div[cosText] {
-  margin: 0.5rem 0 0 0;
-}
-.cosIncumbent > div > div > div[cosText] > * {
-  margin: 0 !important;
-}
+.cosIncumbent > div > div > div[cosText] { margin: 0.5rem 0 0 0; }
+.cosIncumbent > div > div > div[cosText] > * { margin: 0 !important; }
 
 .cosBlog {
   background-color: #2d2438;
@@ -143,9 +121,7 @@ div[cosBlog] {
   margin: 1rem auto;
   cursor: pointer;
 }
-div[cosBlog]:hover {
-  background-color: #502655;
-}
+div[cosBlog]:hover { background-color: #502655; }
 div[cosBlog] > img {
   width: inherit;
   aspect-ratio: 16 / 9;
@@ -155,9 +131,7 @@ div[cosBlog] > div {
   max-width: 100%;
   padding: 15px;
 }
-div[cosBlog] > div > * {
-  margin: 0 !important;
-}
+div[cosBlog] > div > * { margin: 0 !important; }
 
 /* flipcard css adapted from https://w3schools.com/howto/howto_css_flip_card.asp */
 div[flipcard] {

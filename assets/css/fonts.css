@@ -9,9 +9,27 @@
 /* googlefonts */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
-/* custom imports (add fonts to /assets/fonts) */
-@font-face {
-  /* Windows 11 Emoji */
+/* custom imports (add fonts to "/assets/fonts") */
+@font-face { /* Windows 11 Emoji */
   font-family: "Windows 11 Emoji";
   src: url("https://vtresmarias.github.io/assets/fonts/seguiemj.ttf") format("truetype");
+}
+@font-face { /* DiscordGG Sans */
+  font-family: "DiscordGG Sans";
+  src: url("https://assets.website-files.com/6257adef93867e50d84d30e2/652736292cbf8363b43d077a_ggsans-Normal.woff2") format("woff2");
+}
+@font-face { /* DiscordGG Sans Medium */
+  font-family: "DiscordGG Sans";
+  src: url("https://assets.website-files.com/6257adef93867e50d84d30e2/652737c319ba7da75394c4cb_ggsans-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face { /* DiscordGG Sans Semibold */
+  font-family: "DiscordGG Sans";
+  src: url("https://assets.website-files.com/6257adef93867e50d84d30e2/652737c319ba7da75394c4dc_ggsans-Semibold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face { /* DiscordGG Sans Bold */
+  font-family: "DiscordGG Sans";
+  src: url("https://assets.website-files.com/6257adef93867e50d84d30e2/652737c30510e4ad4333a424_ggsans-Bold.woff2") format("woff2");
+  font-weight: 700;
 }

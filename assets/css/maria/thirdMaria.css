@@ -1,6 +1,4 @@
-#navProfile, #navSayonara, #navAnniv {
-  display: none;
-}
+#navProfile, #navSayonara, #navAnniv { display: none; }
 
 /* =============== /?vt?=about =============== */
 
@@ -14,10 +12,40 @@
   max-width: 100%;
   margin: 0 auto;
 }
-.info > div > h2 > span {
-  display: block;
-}
+.info > div > h2 > span { display: block; }
 
 /* ============== /?vt?=sayonara ============== */
+
+.sayonaraBG {
+  background-color: #f0a9a9;
+  background-image: url("/assets/images/content/thirdMaria/hina_sayonara_notext.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding: calc(250px + 15px) 0 250px 0;
+}
+.sayonaraBG * { margin: 0; }
+.sayonaraBG > div {
+  background-color: #000000c0;
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 15px;
+  border-radius: 15px;
+}
+div[sayonaraTxt] {
+  font-family: "DiscordGG Sans", sans-serif;
+  letter-spacing: initial;
+}
+div[sayonaraTxt] p > img {
+  display: inline-block;
+  width: 0.875em;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
 
 /* ============ /?vt?=hinaversary ============ */
