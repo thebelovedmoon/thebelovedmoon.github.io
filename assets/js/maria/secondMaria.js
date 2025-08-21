@@ -6,9 +6,9 @@ function webQry() {
     
     document.title = "about the Second Maria🪷";
     
-    document.getElementById("navHome").style.display = "none";
-    document.getElementById("navProfile").style.display = "block";
-    document.getElementById("navHiatus").style.display = "none";
+    document.getElementById("navHome").setAttribute("style", "display: none;");
+    document.getElementById("navProfile").setAttribute("style", "display: block;");
+    document.getElementById("navHiatus").setAttribute("style", "display: none;");
 
     navBtnHide(vt);
     
@@ -16,9 +16,9 @@ function webQry() {
     
     document.title = "the Hiatus Note🪷";
     
-    document.getElementById("navHome").style.display = "none";
-    document.getElementById("navProfile").style.display = "none";
-    document.getElementById("navHiatus").style.display = "block";
+    document.getElementById("navHome").setAttribute("style", "display: none;");
+    document.getElementById("navProfile").setAttribute("style", "display: none;");
+    document.getElementById("navHiatus").setAttribute("style", "display: block;");
     
     let whtn = document.querySelectorAll("header > div > span[class='material-symbols-rounded']");
     for (let icn of whtn) { icn.setAttribute("style", "color: white;"); }
@@ -37,5 +37,5 @@ function webQry() {
 
 function navBtnHide(lbl) {
   let format = ["desktop", "mobile"];
-  for (let v = 0; v < format.length; v++) { document.getElementById(lbl + "-" + format[v]).style.display = "none"; }
+  for (let v = 0; v < format.length; v++) { document.getElementById(`${lbl}-${format[v]}`).setAttribute("style", "display: none;"); }
 }

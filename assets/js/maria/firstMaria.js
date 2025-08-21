@@ -6,10 +6,10 @@ function webQry() {
 
     document.title = "about the First Maria🍃";
 
-    document.getElementById("navHome").style.display = "none";
-    document.getElementById("navProfile").style.display = "block";
-    document.getElementById("navPodcast").style.display = "none";
-    document.getElementById("navCosplay").style.display = "none";
+    document.getElementById("navHome").setAttribute("style", "display: none;");
+    document.getElementById("navProfile").setAttribute("style", "display: block;");
+    document.getElementById("navPodcast").setAttribute("style", "display: none;");
+    document.getElementById("navCosplay").setAttribute("style", "display: none;");
 
     navBtnHide(vt);
 
@@ -17,10 +17,10 @@ function webQry() {
 
     document.title = "State of the VTuber Community";
 
-    document.getElementById("navHome").style.display = "none";
-    document.getElementById("navProfile").style.display = "none";
-    document.getElementById("navPodcast").style.display = "block";
-    document.getElementById("navCosplay").style.display = "none";
+    document.getElementById("navHome").setAttribute("style", "display: none;");
+    document.getElementById("navProfile").setAttribute("style", "display: none;");
+    document.getElementById("navPodcast").setAttribute("style", "display: block;");
+    document.getElementById("navCosplay").setAttribute("style", "display: none;");
 
     document.getElementById("vtLogo").src = "/assets/images/content/firstMaria/stateofvtuber/logo.png"
 
@@ -30,19 +30,19 @@ function webQry() {
 
     // document.title = "💚🍃阿賀忠のコスプレ💗🌸";
 
-    // document.getElementById("navHome").style.display = "none";
-    // document.getElementById("navProfile").style.display = "none";
-    // document.getElementById("navPodcast").style.display = "none";
-    // document.getElementById("navCosplay").style.display = "block";
+    // document.getElementById("navHome").setAttribute("style", "display: none;");
+    // document.getElementById("navProfile").setAttribute("style", "display: none;");
+    // document.getElementById("navPodcast").setAttribute("style", "display: none;");
+    // document.getElementById("navCosplay").setAttribute("style", "display: block;");
 
     // document.getElementById("vtLogo").src = "https://tbmassoc.github.io/thebelovedmoon/cosmariainauguration/assets/cosmaria_logo.png"
-    // document.getElementById("vtLogo").style.filter = "brightness(0) invert(1)";
+    // document.getElementById("vtLogo").setAttribute("style", "filter: brightness(0) invert(1);");
 
     // for (let m = 1; m < 3; m++) {
     //   document.getElementById("miscBtn" + m).innerHTML = "open_in_new";
     //   document.getElementById("miscBtn" + m).title = "learn more";
     //   document.getElementById("miscBtn" + m).onclick = () => { window.open("https://tbmassoc.github.io/thebelovedmoon/cosmariainauguration"); };
-    //   document.getElementById("miscBtn" + m).style.display = "inline-block";
+    //   document.getElementById("miscBtn" + m).setAttribute("style", "display: inline-block;");
     // }
 
     // navBtnHide(vt);
@@ -61,5 +61,5 @@ function webQry() {
 
 function navBtnHide(lbl) {
   let format = ["desktop", "mobile"];
-  for (let v = 0; v < format.length; v++) { document.getElementById(lbl + "-" + format[v]).style.display = "none"; }
+  for (let v = 0; v < format.length; v++) { document.getElementById(`${lbl}-${format[v]}`).setAttribute("style", "display: none;"); }
 }
