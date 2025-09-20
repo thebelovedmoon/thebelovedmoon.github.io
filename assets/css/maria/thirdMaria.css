@@ -36,7 +36,7 @@
   border-radius: 15px;
 }
 div[sayonaraTxt] {
-  font-family: "DiscordGG Sans", sans-serif;
+  font-family: "DiscordGG Sans", "Windows 11 Emoji", sans-serif;
   letter-spacing: initial;
 }
 div[sayonaraTxt] p > img {
