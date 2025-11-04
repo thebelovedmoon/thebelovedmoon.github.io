@@ -1,3 +1,6 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css");
+
 #loadBlock {
   position: absolute;
   width: 100vw;
@@ -54,7 +57,16 @@ footer > span { display: block; }
 footer > span > a:link, footer > span > a:visited { color: #dcc6bb; }
 footer > span > a:hover { color: #b4a39a; }
 footer > span > a:active { color: #eed6ca; }
-span[socialURLs] { margin-right: 0.5rem; }
+span.socialsV2 {
+  -moz-user-select: none;
+  user-select: none;
+  margin: 0.5rem 0.5rem 0 0;
+  & i {
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  & i:hover { color: #b4a39a; }
+}
 
 #vtLogo { filter: drop-shadow(2px 4px 16px #3d374c80); }
 
