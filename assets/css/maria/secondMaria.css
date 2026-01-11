@@ -4,7 +4,7 @@
 
 .info {
   background-color: #66a898;
-  color: white;
+  color: #ffffff;
   padding: 250px 15px;
 }
 .info > div {
@@ -23,7 +23,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
+  color: #ffffff;
   padding: calc(250px + 15px) 0 250px 0;
 }
 .hiatusBG * { margin: 0; }

@@ -21,7 +21,7 @@ function webQry() {
     document.getElementById("navHiatus").setAttribute("style", "display: block;");
     
     let whtn = document.querySelectorAll("header > div > span[class='material-symbols-rounded']");
-    for (let icn of whtn) { icn.setAttribute("style", "color: white;"); }
+    for (let icn of whtn) { icn.setAttribute("style", "color: #ffffff;"); }
     
     navBtnHide(vt);
     

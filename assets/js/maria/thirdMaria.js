@@ -23,7 +23,7 @@ function webQry() {
     document.getElementById("navAnniv").setAttribute("style", "display: none;");
     
     let whtn = document.querySelectorAll("header > div > span[class='material-symbols-rounded']");
-    for (let icn of whtn) { icn.setAttribute("style", "color: white;"); }
+    for (let icn of whtn) { icn.setAttribute("style", "color: #ffffff;"); }
 
     navBtnHide(vt);
     
@@ -35,6 +35,9 @@ function webQry() {
     document.getElementById("navProfile").setAttribute("style", "display: none;");
     document.getElementById("navSayonara").setAttribute("style", "display: none;");
     document.getElementById("navAnniv").setAttribute("style", "display: block;");
+    
+    let whtn = document.querySelectorAll("header > div > span[class='material-symbols-rounded']");
+    for (let icn of whtn) { icn.setAttribute("style", "color: #ffffff;"); }
 
     navBtnHide(vt);
     

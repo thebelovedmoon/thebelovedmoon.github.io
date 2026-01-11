@@ -44,9 +44,9 @@ img, video {
 
 button {
   background-color: #793a80;
-  border: solid 1.25px white;
+  border: solid 1.25px #ffffff;
   border-radius: 1000px;
-  color: white;
+  color: #ffffff;
   padding: 10px 25px;
   font-family: inherit;
   font-weight: 600;

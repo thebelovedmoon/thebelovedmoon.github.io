@@ -10,7 +10,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
+  color: #ffffff;
   padding: 250px 15px;
 }
 .info > div {
@@ -71,7 +71,7 @@ div[cosDetails] > div, .emailBlock > div { margin-top: 0.5rem !important; }
   padding: 0.75rem;
   border-radius: 50%;
   background-color: #3d374c;
-  color: white;
+  color: #ffffff;
   font-size: inherit;
   -webkit-filter: drop-shadow(2px 4px 16px #3d374c80);
   filter: drop-shadow(2px 4px 16px #3d374c80);
@@ -104,7 +104,7 @@ div[cosDetails] > div, .emailBlock > div { margin-top: 0.5rem !important; }
 
 .cosBlog {
   background-color: #2d2438;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 .cosBlog > div > h1 {

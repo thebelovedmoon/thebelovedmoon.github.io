@@ -4,7 +4,7 @@
 
 .info {
   background-color: #f0a9a9;
-  color: white;
+  color: #ffffff;
   padding: 250px 15px;
 }
 .info > div {
@@ -23,7 +23,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
+  color: #ffffff;
   padding: calc(250px + 15px) 0 250px 0;
 }
 .sayonaraBG * { margin: 0; }
@@ -49,3 +49,23 @@ div[sayonaraTxt] p > img {
 }
 
 /* ============ /?vt?=hinaversary ============ */
+
+.hinaVersaryBack {
+  background-color: #f0a9a9;
+  background-image: url("/assets/images/content/thirdMaria/hinaversary/hinaversary_bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.hinaVersaryTxt {
+  text-align: center;
+  padding: calc(375px + 25px) 15px 375px 15px;
+  color: #ffffff;
+  & * { display: block; }
+  & img {
+    width: 50rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
