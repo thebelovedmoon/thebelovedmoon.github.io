@@ -31,7 +31,8 @@
         background-color: #793a80;
         color: white !important;
       }
-      .BACon-important, .BACon-important:hover { color: #ec4f12 !important; }
+      #BACon-important, #BACon-important:hover,
+      #mobileNav > #BACon-important, #mobileNav > #BACon-important:hover { color: #ec4f12 !important; }
     </style>
     <!-- custom scripts -->
     <script src="/assets/js/_main.js" type="text/javascript"></script> <!-- base -->
@@ -52,7 +53,7 @@
     </div>
     <div isMobile id="mobileNav">
       <span id="miscBtn2" class="material-symbols-rounded"></span>
-      <span class="material-symbols-rounded BACon-important" title="in solidarity with Bataan Anime Convention.🧡💐" onclick="{ window.open('https://vtresmarias.github.io/letter?ref=20260109'); }">favorite</span>
+      <span id="BACon-important" class="material-symbols-rounded" title="in solidarity with Bataan Anime Convention.🧡💐" onclick="{ window.open('https://vtresmarias.github.io/letter?ref=20260109'); }">favorite</span>
       <span id="home-mobile" class="material-symbols-rounded" title="go to home" onclick="{ window.location.replace('/'); }">home</span>
       <span id="about-mobile" class="material-symbols-rounded" title="about the vtuber" onclick="{ window.location.replace('/?vt=about'); }">account_circle</span>
       <span id="blog-mobile" class="material-symbols-rounded" title="read the blog" onclick="{ window.open('/blog'); }">rss_feed</span>
@@ -65,7 +66,7 @@
       <img id="vtLogo" src="/assets/images/logos/firstMaria.png" alt="Mother Agatha, the First Maria🍃" width="150px">
       <div isDesktop class="urlRefs">
         <span id="miscBtn1" class="material-symbols-rounded"></span>
-        <span class="material-symbols-rounded BACon-important" title="in solidarity with Bataan Anime Convention.🧡💐" onclick="{ window.open('https://vtresmarias.github.io/letter?ref=20260109'); }">favorite</span>
+        <span id="BACon-important" class="material-symbols-rounded" title="in solidarity with Bataan Anime Convention.🧡💐" onclick="{ window.open('https://vtresmarias.github.io/letter?ref=20260109'); }">favorite</span>
         <span id="home-desktop" class="material-symbols-rounded" title="go to home" onclick="{ window.location.replace('/'); }">home</span>
         <span id="about-desktop" class="material-symbols-rounded" title="about the vtuber" onclick="{ window.location.replace('/?vt=about'); }">account_circle</span>
         <span id="blog-desktop" class="material-symbols-rounded" title="read the blog" onclick="{ window.open('/blog'); }">rss_feed</span>
