@@ -31,6 +31,7 @@
         background-color: #793a80;
         color: white !important;
       }
+      .BACon-important, .BACon-important:hover { color: #ec4f12 !important; }
     </style>
     <!-- custom scripts -->
     <script src="/assets/js/_main.js" type="text/javascript"></script> <!-- base -->
@@ -51,27 +52,29 @@
     </div>
     <div isMobile id="mobileNav">
       <span id="miscBtn2" class="material-symbols-rounded"></span>
-      <span id="home-mobile" class="material-symbols-rounded" title="go to home" onclick="nav('/')">home</span>
-      <span id="about-mobile" class="material-symbols-rounded" title="about the vtuber" onclick="nav('/?vt=about')">account_circle</span>
-      <span id="blog-mobile" class="material-symbols-rounded" title="read the blog" onclick="redir('/blog')">rss_feed</span>
-      <span id="stateofvtuber-mobile" class="material-symbols-rounded" title="#StateOfVTuber" onclick="nav('/?vt=stateofvtuber')">podcasts</span>
-      <span id="cosplay-mobile" class="material-symbols-rounded" title="コスプレのマリア💐" onclick="redir('https://vtresmarias.github.io/cosmaria')">photo_prints</span>
-      <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="redir('https://vtresmarias.github.io')">spa</span>
-      <span class="material-symbols-rounded" title="Close Panel" onclick="panelClose()">close</span>
+      <span class="material-symbols-rounded BACon-important" title="in solidarity with Bataan Anime Convention.🧡💐" onclick="{ window.open('https://vtresmarias.github.io/letter?ref=20260109'); }">favorite</span>
+      <span id="home-mobile" class="material-symbols-rounded" title="go to home" onclick="{ window.location.replace('/'); }">home</span>
+      <span id="about-mobile" class="material-symbols-rounded" title="about the vtuber" onclick="{ window.location.replace('/?vt=about'); }">account_circle</span>
+      <span id="blog-mobile" class="material-symbols-rounded" title="read the blog" onclick="{ window.open('/blog'); }">rss_feed</span>
+      <span id="stateofvtuber-mobile" class="material-symbols-rounded" title="#StateOfVTuber" onclick="{ window.location.replace('/?vt=stateofvtuber'); }">podcasts</span>
+      <span id="cosplay-mobile" class="material-symbols-rounded" title="コスプレのマリア💐" onclick="{ window.open('https://vtresmarias.github.io/cosmaria'); }">photo_prints</span>
+      <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="{ window.open('https://vtresmarias.github.io'); }">spa</span>
+      <span class="material-symbols-rounded" title="Close Panel" onclick="{ panelClose(); }">close</span>
     </div>
     <header>
       <img id="vtLogo" src="/assets/images/logos/firstMaria.png" alt="Mother Agatha, the First Maria🍃" width="150px">
       <div isDesktop class="urlRefs">
         <span id="miscBtn1" class="material-symbols-rounded"></span>
-        <span id="home-desktop" class="material-symbols-rounded" title="go to home" onclick="nav('/')">home</span>
-        <span id="about-desktop" class="material-symbols-rounded" title="about the vtuber" onclick="nav('/?vt=about')">account_circle</span>
-        <span id="blog-desktop" class="material-symbols-rounded" title="read the blog" onclick="redir('/blog')">rss_feed</span>
-        <span id="stateofvtuber-desktop" class="material-symbols-rounded" title="#StateOfVTuber" onclick="nav('/?vt=stateofvtuber')">podcasts</span>
-        <span id="cosplay-desktop" class="material-symbols-rounded" title="コスプレのマリア💐" onclick="redir('https://vtresmarias.github.io/cosmaria')">photo_prints</span>
-        <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="redir('https://vtresmarias.github.io')">spa</span>
+        <span class="material-symbols-rounded BACon-important" title="in solidarity with Bataan Anime Convention.🧡💐" onclick="{ window.open('https://vtresmarias.github.io/letter?ref=20260109'); }">favorite</span>
+        <span id="home-desktop" class="material-symbols-rounded" title="go to home" onclick="{ window.location.replace('/'); }">home</span>
+        <span id="about-desktop" class="material-symbols-rounded" title="about the vtuber" onclick="{ window.location.replace('/?vt=about'); }">account_circle</span>
+        <span id="blog-desktop" class="material-symbols-rounded" title="read the blog" onclick="{ window.open('/blog'); }">rss_feed</span>
+        <span id="stateofvtuber-desktop" class="material-symbols-rounded" title="#StateOfVTuber" onclick="{ window.location.replace('/?vt=stateofvtuber'); }">podcasts</span>
+        <span id="cosplay-desktop" class="material-symbols-rounded" title="コスプレのマリア💐" onclick="{ window.open('https://vtresmarias.github.io/cosmaria'); }">photo_prints</span>
+        <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="{ window.open('https://vtresmarias.github.io'); }">spa</span>
       </div>
       <div isMobile class="urlRefs">
-        <span class="material-symbols-rounded" title="open panel" onclick="panelOpen()">menu</span>
+        <span class="material-symbols-rounded" title="open panel" onclick="{ panelOpen(); }">menu</span>
       </div>
     </header>
     <div id="navHome"> <!-- / -->
@@ -174,7 +177,7 @@
               the Podcast Edition as they will be integrated therein.
             </p>
             <div>
-              <span class="material-symbols-rounded" title="listen to the podcast on YouTube Music" onclick="window.open('https://music.youtube.com/playlist?list=PLQZt5lx5sFp-jI8QY5Q-B1z2gujvqQW4I')">video_library</span>
+              <span class="material-symbols-rounded" title="listen to the podcast on YouTube Music" onclick="{ window.open('https://music.youtube.com/playlist?list=PLQZt5lx5sFp-jI8QY5Q-B1z2gujvqQW4I'); }">video_library</span>
             </div>
           </div>
           <br><br><br>
@@ -196,321 +199,7 @@
               but they can still be available via the LIVE Edition.)
             </p>
             <div>
-              <span class="material-symbols-rounded" title="listen to the podcast on Spotify" onclick="window.open('https://open.spotify.com/show/2DzT3dXWDO9lVNSmbFHIx5')">video_library</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="navCosplay"> <!-- /?vt=cosplay -->
-      <div class="vtmWP" style="background-image: url(/assets/images/content/firstMaria/cosplay/20241102.png) !important;"></div>
-      <div class="cosIntro" style="background-color: #793a80; color: #ffffff;">
-        <div>
-          <!-- <h1>introducing: 阿賀忠のコスプレ × Cosplay Marias (abbrev. CosMarias)</h1> -->
-          <h1>introducing: コスプレのマリア (CosMarias)</h1>
-          <p>
-            what started out as the First Maria🍃's first venture into the cosplay
-            universe, became a mission to unite everyone together through this and other
-            means!!
-          </p>
-          <p>
-            this new Collective features three incumbent cosplayers (and many more) -- all
-            from different walks of life -- committed to the same mission of upholding the
-            Core Values of the VTuber Collective.
-          </p>
-          <br>
-          <h2>founded by the First Maria🍃</h2>
-          <p>
-            as her unwavering desire to universally unite everyone through various means
-            strengthens, she has officially debuted as a cosplayer last 30 Dec 2023. from
-            there, she has met two more people whom she felt will aid her in its intended
-            goal.
-          </p>
-          <p>
-            in order to represent themselves in the cosplay space, she has provisioned
-            this Collective -- along with two other incumbents -- to help fulfill the
-            Marias' Core Values.
-          </p>
-          <br>
-          <h2>story</h2>
-          <p>
-            three days after VTresMarias was officially unveiled to the world, the First
-            Maria🍃 sets on her first mission: to determine which area of interest suits
-            the Collective&#39;s Core Values and aim to maintain their presence through
-            various of ways.
-          </p>
-          <p>
-            it just so happened that her primary interest beyond this is through a world
-            of cosplay, to which she was introduced to a few months prior.
-          </p>
-          <p>
-            with her unwitting determination to do something extra-special, she sets on a
-            journey and try to delve as much as she can -- which turned out to be more
-            fruitful than what needs to be. in fact, she has made friends throughout her
-            first attempt, that it had inspired her to do it over again.
-          </p>
-          <p>
-            many months have passed, and her desire to continue doing this venture is
-            constantly increasing; that it had earned her place in some cosplay
-            communities to which she belonged to. and all the while, she has met a number
-            of new friends along the way -- with some of them resonating the same value as
-            the Marias.
-          </p>
-          <p>
-            through this disposition, she has been bestowed a new mission: form a
-            Collective which aims to strengthen the Core Values, and make their hobbies
-            known to more areas.
-          </p>
-          <p>
-            serving her duty as the incumbent First CosMaria, her job has just begun to
-            bear fruit..
-          </p>
-        </div>
-      </div>
-      <div class="cosIntro cosIncumbent">
-        <div>
-          <h1>meet the CosMarias</h1>
-          <p asOf><i>as of 1 Nov 2024</i></p>
-          <div> <!-- the incumbent First CosMaria -->
-            <div flipcard>
-              <div innerFlip>
-                <div cosFront>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_1_1.png" alt="">
-                </div>
-                <div cosBack>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_1_2.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div cosText>
-              <h2>Aga</h2>
-              <p><i>the incumbent First CosMaria</i></p>
-              <p>as Mother Agatha, the First Maria🍃</p>
-            </div>
-          </div>
-          <div> <!-- the incumbent Second CosMaria -->
-            <div flipcard>
-              <div innerFlip>
-                <div cosFront>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_2_1.png" alt="">
-                </div>
-                <div cosBack>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_2_2.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div cosText>
-              <h2>Dani</h2>
-              <p><i>the incumbent Second CosMaria</i></p>
-              <p>as Musashi (Azur Lane)</p>
-            </div>
-          </div>
-          <div> <!-- the incumbent Third CosMaria -->
-            <div flipcard>
-              <div innerFlip>
-                <div cosFront>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_3_1.png" alt="">
-                </div>
-                <div cosBack>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_3_2.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div cosText>
-              <h2>Eri</h2>
-              <p><i>the incumbent Third CosMaria</i></p>
-              <p>as Albedo (Overlord)</p>
-            </div>
-          </div>
-          <div> <!-- the Fourth CosMaria -->
-            <div flipcard>
-              <div innerFlip>
-                <div cosFront>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_4_1.png" alt="">
-                </div>
-                <div cosBack>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_4_2.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div cosText>
-              <h2>Shunni</h2>
-              <p><i>the Fourth CosMaria</i></p>
-              <p>as Baconette (Bataan Anime Convention)</p>
-            </div>
-          </div>
-          <div> <!-- the Fifth CosMaria -->
-            <div flipcard>
-              <div innerFlip>
-                <div cosFront>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_5_1.png" alt="">
-                </div>
-                <div cosBack>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_5_2.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div cosText>
-              <h2>Patring</h2>
-              <p><i>the Fifth CosMaria</i></p>
-              <p>as Albedo (Black ver.) (Overlord)</p>
-            </div>
-          </div>
-          <div> <!-- the Sixth CosMaria -->
-            <div flipcard>
-              <div innerFlip>
-                <div cosFront>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_6_1.png" alt="">
-                </div>
-                <div cosBack>
-                  <img cosMaria src="/assets/images/content/firstMaria/cosplay/cosMaria/cosMaria_6_2.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div cosText>
-              <h2>Shira</h2>
-              <p><i>the Sixth CosMaria</i></p>
-              <p>as Uta (One Piece)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cosIntro" style="display: none  ;">
-        <div>
-          <h1>upcoming events</h1>
-          <p>
-            look out for the following ventures next, with each CosMaria making their mark
-            throughout the Philippines and beyond:
-          </p>
-          <br>
-          <div cosDetails style="display: none;">
-            <h2>Bataan Anime Convention (BACon) 2024</h2>
-            <p>4-5 May 2024&ensp;&#8226;&ensp;Vista Mall Bataan, Balanga City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>Malolos Toy Convention 2024 - Bataan Leg</h2>
-            <p>19-21 Jul 2024&ensp;&#8226;&ensp;Vista Mall Bataan, Balanga City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>GachaFest! 2024</h2>
-            <p>25 Aug 2024&ensp;&#8226;&ensp;SM City Olongapo, Olongapo City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>SuperCon PH FestiBlast Vol.2</h2>
-            <p>2-8 Sep 2024&ensp;&#8226;&ensp;Festival Mall Alabang, Muntinlupa City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>Connxt Gakuen-Sai: A School Campus Festival</h2>
-            <p><i>aka the Balanga Tour Special</i></p>
-            <p>15 Sep 2024&ensp;&#8226;&ensp;Vista Mall Bataan, Balanga City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>Hobby Fest Philippines North Toys Invasion</h2>
-            <p>28 Sep - 2 Oct 2024&ensp;&#8226;&ensp;SM City Baguio, Baguio City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>Cosplay Mania 2024: Zenith in the Clouds</h2>
-            <p>4-6 Oct 2024&ensp;&#8226;&ensp;SMX Convention Center Manila, Pasay City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>Malolos Toy Convention 2024 - Pampanga Leg</h2>
-            <p>12 Oct 2024&ensp;&#8226;&ensp;Vista Mall Pampanga, Angeles City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>CosMeet: Verdant Story</h2>
-            <p>26-27 Oct 2024&ensp;&#8226;&ensp;Okada Manila, Parañaque City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>Haunted Hour: Halloween Cosplay Parade</h2>
-            <p>27 Oct 2024&ensp;&#8226;&ensp;Clark Cityfront Mall, Angeles City</p>
-          </div>
-          <div cosDetails style="display: none;">
-            <h2>Project:Mirai x OXCC - V5: A VTubing, Cosplay, and Charity</h2>
-            <p>22 Dec 2024&ensp;&#8226;&ensp;Bayanihan Hall, Fiesta Communities, Limay</p>
-          </div>
-          <div cosDetails>
-            <h2>#AgaCosplay Invades: Bataan Tour S1</h2>
-            <p>Aug 2024 onwards&ensp;&#8226;&ensp;Province of Bataan</p>
-            <div>
-              <span class="cosNavBtn material-symbols-rounded" title="check out the page for more details!!" onclick="window.open('https://agasitecollection.github.io/agacosplay/bataan2024')">open_in_new</span>
-              <!-- <span class="cosNavBtn material-symbols-rounded" title="check out the announcement on Facebook" onclick="window.open('https://web.facebook.com/share/p/ffxqovScRXer847W')">info</span> -->
-            </div>
-          </div>
-          <div cosDetails>
-            <h2>Cosplay Matsuri 2024</h2>
-            <p><i>aka the Grand Appearance</i></p>
-            <p>28-30 Dec 2024&ensp;&#8226;&ensp;SMX Convention Center Manila, Pasay City</p>
-            <div>
-              <span class="cosNavBtn material-symbols-rounded" title="check out the page for more details!!" onclick="alert('coming soon!!')">open_in_new</span>
-              <!-- <span class="cosNavBtn material-symbols-rounded" title="check out the announcement on X" onclick="window.open('TODO')">info</span> -->
-            </div>
-          </div>
-          <div cosDetails>
-            <h2 style="font-weight: 900;">コスプレのマリア Chapter 0: The Sisterhood</h2>
-            <p>30 Dec 2024&ensp;&#8226;&ensp;SMX Convention Center Manila, Pasay City</p>
-            <div>
-              <span class="cosNavBtn material-symbols-rounded" title="check out the page for more details!!" onclick="window.open('https://tbmassoc.github.io/thebelovedmoon/cosmariainauguration')">open_in_new</span>
-              <!-- <span class="cosNavBtn material-symbols-rounded" title="check out the announcement on X" onclick="window.open('TODO')">info</span> -->
-            </div>
-          </div>
-          <br><br>
-          <div class="emailBlock">
-            <p><b>
-              if you want to have the CosMarias in the next convention, you can contact the
-              incumbent First CosMaria via email by clicking the button below:
-            </b></p>
-            <div>
-              <span class="cosNavBtn material-symbols-rounded" title="email the incumbent First CosMaria for cosplay-related inquiries" onclick="window.open('mailto:jelsa14018@gmail.com?subject=cosplay%20inquiry')">mail</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cosIntro cosBlog">
-        <div>
-          <h1>related Blogs</h1>
-          <p asOf><i>blog posts shown in reverse order</i></p>
-          <br>
-          <h2>2024</h2>
-          <div cosBlog onclick="redir('/blog/20241022')">
-            <img src="https://thebelovedmoon.github.io/blog/assets/preview/20241022.png" alt="">
-            <div>
-              <h3>the first-ever cosplay experience in Pampanga!!</h3>
-              <p><i>published 22 Oct 2024</i></p>
-            </div>
-          </div>
-          <div cosBlog onclick="redir('/blog/20240922')">
-            <img src="https://thebelovedmoon.github.io/blog/assets/preview/20240922.png" alt="">
-            <div>
-              <h3>despite everything, the Balanga Leg Special is a success!!</h3>
-              <p><i>published 22 Sep 2024</i></p>
-            </div>
-          </div>
-          <div cosBlog onclick="redir('/blog/20240827')">
-            <img src="https://thebelovedmoon.github.io/blog/assets/preview/20240827.png" alt="">
-            <div>
-              <h3>touring the municipality as a coser!!</h3>
-              <p><i>published 27 Aug 2024</i></p>
-            </div>
-          </div>
-          <div cosBlog onclick="redir('/blog/20240726')">
-            <img src="https://thebelovedmoon.github.io/blog/assets/preview/20240726.png" alt="">
-            <div>
-              <h3>one of the biggest stunts I've ever done.</h3>
-              <p><i>published 26 Jul 2024</i></p>
-            </div>
-          </div>
-          <div cosBlog onclick="redir('/blog/20240506')">
-            <img src="https://thebelovedmoon.github.io/blog/assets/preview/20240506.png" alt="">
-            <div>
-              <h3>the ultimate local cosplaying experience.</h3>
-              <p><i>published 6 May 2024</i></p>
-            </div>
-          </div>
-          <div cosBlog onclick="redir('/blog/20240221')">
-            <img src="https://thebelovedmoon.github.io/blog/assets/preview/20240221.png" alt="">
-            <div>
-              <h3>my two cosplay ventures so far</h3>
-              <p><i>published 21 Feb 2024</i></p>
+              <span class="material-symbols-rounded" title="listen to the podcast on Spotify" onclick="{ window.open('https://open.spotify.com/show/2DzT3dXWDO9lVNSmbFHIx5'); }">video_library</span>
             </div>
           </div>
         </div>

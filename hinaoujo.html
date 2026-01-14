@@ -51,25 +51,25 @@
     </div>
     <div isMobile id="mobileNav">
       <span id="miscBtn2" class="material-symbols-rounded"></span>
-      <span id="home-mobile" class="material-symbols-rounded" title="go to home" onclick="nav('/hinaoujo')">home</span>
-      <span id="about-mobile" class="material-symbols-rounded" title="about the vtuber" onclick="nav('/hinaoujo?vt=about')">account_circle</span>
-      <span id="sayonara-mobile" class="material-symbols-rounded" title="read the Parting Note" onclick="nav('/hinaoujo?vt=sayonara')">description</span>
-      <span id="hinaversary-mobile" class="material-symbols-rounded" title="#HinaVersary" onclick="nav('/hinaoujo?vt=hinaversary')">cake</span>
-      <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="redir('https://vtresmarias.github.io')">spa</span>
-      <span class="material-symbols-rounded" title="Close Panel" onclick="panelClose()">close</span>
+      <span id="home-mobile" class="material-symbols-rounded" title="go to home" onclick="{ window.location.replace('/hinaoujo'); }">home</span>
+      <span id="about-mobile" class="material-symbols-rounded" title="about the vtuber" onclick="{ window.location.replace('/hinaoujo?vt=about'); }">account_circle</span>
+      <span id="sayonara-mobile" class="material-symbols-rounded" title="read the Parting Note" onclick="{ window.location.replace('/hinaoujo?vt=sayonara'); }">description</span>
+      <span id="hinaversary-mobile" class="material-symbols-rounded" title="#HinaVersary" onclick="{ window.location.replace('/hinaoujo?vt=hinaversary'); }">cake</span>
+      <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="{ window.open('https://vtresmarias.github.io'); }">spa</span>
+      <span class="material-symbols-rounded" title="Close Panel" onclick="{ panelClose(); }">close</span>
     </div>
     <header>
       <img id="vtLogo" src="/assets/images/logos/thirdMaria.png" alt="Hina Oujo, the Third Maria🌸" width="200px">
       <div isDesktop class="urlRefs">
         <span id="miscBtn1" class="material-symbols-rounded"></span>
-        <span id="home-desktop" class="material-symbols-rounded" title="go to home" onclick="nav('/hinaoujo')">home</span>
-        <span id="about-desktop" class="material-symbols-rounded" title="about the vtuber" onclick="nav('/hinaoujo?vt=about')">account_circle</span>
-        <span id="sayonara-desktop" class="material-symbols-rounded" title="read the Parting Note" onclick="nav('/hinaoujo?vt=sayonara')">description</span>
-        <span id="hinaversary-desktop" class="material-symbols-rounded" title="#HinaVersary" onclick="nav('/hinaoujo?vt=hinaversary')">cake</span>
-        <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="redir('https://vtresmarias.github.io')">spa</span>
+        <span id="home-desktop" class="material-symbols-rounded" title="go to home" onclick="{ window.location.replace('/hinaoujo'); }">home</span>
+        <span id="about-desktop" class="material-symbols-rounded" title="about the vtuber" onclick="{ window.location.replace('/hinaoujo?vt=about'); }">account_circle</span>
+        <span id="sayonara-desktop" class="material-symbols-rounded" title="read the Parting Note" onclick="{ window.location.replace('/hinaoujo?vt=sayonara'); }">description</span>
+        <span id="hinaversary-desktop" class="material-symbols-rounded" title="#HinaVersary" onclick="{ window.location.replace('/hinaoujo?vt=hinaversary'); }">cake</span>
+        <span class="material-symbols-rounded" title="「VTresMarias - V三人のマリア - 」" onclick="{ window.open('https://vtresmarias.github.io'); }">spa</span>
       </div>
       <div isMobile class="urlRefs">
-        <span class="material-symbols-rounded" title="open panel" onclick="panelOpen()">menu</span>
+        <span class="material-symbols-rounded" title="open panel" onclick="{ panelOpen(); }">menu</span>
       </div>
     </header>
     <div id="navHome"> <!-- / -->

@@ -26,29 +26,6 @@ function webQry() {
 
     navBtnHide(vt);
 
-  } else if (vt == "cosplay") {
-
-    // document.title = "💚🍃阿賀忠のコスプレ💗🌸";
-
-    // document.getElementById("navHome").setAttribute("style", "display: none;");
-    // document.getElementById("navProfile").setAttribute("style", "display: none;");
-    // document.getElementById("navPodcast").setAttribute("style", "display: none;");
-    // document.getElementById("navCosplay").setAttribute("style", "display: block;");
-
-    // document.getElementById("vtLogo").src = "https://tbmassoc.github.io/thebelovedmoon/cosmariainauguration/assets/cosmaria_logo.png"
-    // document.getElementById("vtLogo").setAttribute("style", "filter: brightness(0) invert(1);");
-
-    // for (let m = 1; m < 3; m++) {
-    //   document.getElementById("miscBtn" + m).innerHTML = "open_in_new";
-    //   document.getElementById("miscBtn" + m).title = "learn more";
-    //   document.getElementById("miscBtn" + m).onclick = () => { window.open("https://tbmassoc.github.io/thebelovedmoon/cosmariainauguration"); };
-    //   document.getElementById("miscBtn" + m).setAttribute("style", "display: inline-block;");
-    // }
-
-    // navBtnHide(vt);
-
-    window.location.replace("https://vtresmarias.github.io/cosmaria");
-
   } else {
 
     document.title = "Mother Agatha, the First Maria🍃";

@@ -14,9 +14,5 @@ function removeSplash() {
   }, 1250);
 }
 
-function redir(rd) { window.open(rd); }
-
-function nav(vt) { window.location.replace(vt); }
-
 function panelOpen() { document.getElementById("mobileNav").setAttribute("style", "transform: unset;"); }
 function panelClose() { document.getElementById("mobileNav").setAttribute("style", "transform: translateY(-15rem);"); }

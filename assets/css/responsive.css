@@ -17,10 +17,10 @@
 
 /* navbars */
 @media screen and (min-width: 500px) {
-  div[isDesktop] { display: block !important; }
+  div[isDesktop] { display: flex !important; }
   div[isMobile] { display: none !important; }
 }
 @media screen and (max-width: 500px) {
   div[isDesktop] { display: none !important; }
-  div[isMobile] { display: block !important; }
+  div[isMobile] { display: flex !important; }
 }
