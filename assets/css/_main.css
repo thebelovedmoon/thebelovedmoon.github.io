@@ -85,19 +85,19 @@ a:active {
 }
 
 /* googlefonts icons */
-.material-symbols-rounded {
+span[class^="material-symbols"] {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   font-size: 2rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
   cursor: pointer;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1.25s;
+  -moz-transition: 1.25s;
+  -o-transition: 1.25s;
+  transition: 1.25s;
 }
-.material-symbols-rounded:hover { font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 24; }
+span[class^="material-symbols"]:hover { font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 24; }
 
 /* hide scrollbar */
 ::-webkit-scrollbar { display: none; }
