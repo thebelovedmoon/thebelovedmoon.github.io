@@ -39,7 +39,10 @@ header, #mobileNav {
   display: flex;
   align-items: center;
 }
-header > div > span, #mobileNav > span { margin-left: 0.5rem; }
+div[isDesktop], div[isMobile] {
+  align-items: center;
+  gap: 0.5rem;
+}
 header {
   background: linear-gradient(#dcc6bba0, #00000000);
   justify-content: space-between;
@@ -65,7 +68,6 @@ header > *, #mobileNav > * {
   transform: translateY(-15rem);
 }
 #mobileNav > span[onclick="{ panelClose(); }"] { margin-left: 1rem; }
-.urlRefs > span { margin: 0 0.375rem; }
 
 
 footer {
