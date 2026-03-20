@@ -9,7 +9,6 @@ function webQry() {
     document.getElementById("navHome").setAttribute("style", "display: none;");
     document.getElementById("navProfile").setAttribute("style", "display: block;");
     document.getElementById("navPodcast").setAttribute("style", "display: none;");
-    document.getElementById("navCosplay").setAttribute("style", "display: none;");
 
     navBtnHide(vt);
 
@@ -20,7 +19,6 @@ function webQry() {
     document.getElementById("navHome").setAttribute("style", "display: none;");
     document.getElementById("navProfile").setAttribute("style", "display: none;");
     document.getElementById("navPodcast").setAttribute("style", "display: block;");
-    document.getElementById("navCosplay").setAttribute("style", "display: none;");
 
     document.getElementById("vtLogo").src = "/assets/images/content/firstMaria/stateofvtuber/logo.png"
 
