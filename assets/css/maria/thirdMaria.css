@@ -77,3 +77,13 @@ div[sayonaraTxt] p > img {
     margin: 0 auto;
   }
 }
+
+.hinaVersaryEmbed {
+  width: 50rem;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 0.75rem;
+  display: inline-block;
+}
