@@ -1,18 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://thebelovedmoon.github.io/</loc>
-    <lastmod>2026-03-01</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://thebelovedmoon.github.io/auraostara.html</loc>
-    <lastmod>2026-03-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebelovedmoon.github.io/hinaoujo.html</loc>
-    <lastmod>2026-03-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-</urlset>
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc0fba02fa799738f6171187052844491ba7b0855632943d1ac542c75f728d36
+size 524

@@ -1,4 +1,3 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://thebelovedmoon.github.io/sitemap.xml
+version https://git-lfs.github.com/spec/v1
+oid sha256:906d7db210acebc9d5deb7112ece50e98c1631f70dab1043477aa41f50aa8136
+size 77
